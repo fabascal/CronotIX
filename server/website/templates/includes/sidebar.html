@@ -1,0 +1,66 @@
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="{{ url_for('home_blueprint.index') }}" class="brand-link">
+      <img src="static/images/brain.svg" alt="Cronotix Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">CronotIX</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="static/images/user.svg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          {% if current_user.is_authenticated %}
+          <a href="#" class="d-block">Alexander Pierce</a>
+          {% else %}
+          <a href="{{url_for('auth_blueprint.login')}}" class="d-block">Invitado</a>
+          {% endif %}
+        </div>
+      </div>
+
+     
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          {% if current_user.is_authenticated %}
+          <li class="nav-item">
+            <a href="{{url_for('home_blueprint.assistants')}}" class="nav-link {% if 'assistants' in segment %} active {% endif %}">
+              <i class="fas fa-headset nav-icon"></i>
+              <p>
+                Asistentes
+                <!-- <span class="right badge badge-danger">New</span> -->
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{url_for('home_blueprint.tunning')}}" class="nav-link {% if 'tunning' in segment %} active {% endif %}">
+              <i class="fas fa-sliders-h nav-icon"></i>
+              <p>
+                Configuración
+                <!-- <span class="right badge badge-danger">New</span> -->
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{url_for('home_blueprint.api_key')}}" class="nav-link {% if 'api_key' in segment %} active {% endif %}">
+              <i class="fas fa-lock nav-icon"></i>
+              <p>
+                Api-Key
+                <!-- <span class="right badge badge-danger">New</span> -->
+              </p>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>

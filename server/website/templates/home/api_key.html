@@ -1,0 +1,24 @@
+{% extends "layouts/base_content.html" %}
+
+{% block title %} Api-Key {% endblock %} 
+
+
+{% block header %}
+<div class="flex justify-between grow">
+    <h1 class="text-xl text-slate-200">Api-Key</h1>
+
+    <div class="bg-emerald-800 hover:bg-emerald-700 rounded-lg transition-all ease-in-out duration-300 px-2 py-1 flex justify-between">
+        <a href="{{ url_for('home_blueprint.assistants') }}" class="flex items-center" > 
+            <div class="grow flex flex-row items-center">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 20"  fill="none"  stroke="currentColor"  stroke-width="2"  
+                stroke-linecap="round"  stroke-linejoin="round"  class="stroke-slate-200"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
+                <span class="text-slate-200">Crear</span>
+            </div>
+        </a>
+    </div>
+</div> 
+{% endblock %} 
+
+{% block content %} 
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis similique non unde ipsa. Necessitatibus saepe nemo ipsum odit praesentium adipisci similique dolore. Similique reiciendis sit neque perspiciatis, necessitatibus incidunt nostrum!</p>
+{% endblock %}
