@@ -1,4 +1,4 @@
-from flask import render_template, current_app
+from flask import render_template, current_app, flash
 from flask_login import login_required
 from website.home import blueprint
 
@@ -19,4 +19,5 @@ def tunning():
 @blueprint.route('/api_key', methods=['GET'])
 @login_required
 def api_key():
+    flash("Usuario creado correctamente.",'success')
     return render_template('home/api_key.html', segment='api_key')

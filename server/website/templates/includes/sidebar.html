@@ -1,29 +1,26 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
-    <a href="{{ url_for('home_blueprint.index') }}" class="brand-link">
-      <img src="static/images/brain.svg" alt="Cronotix Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">CronotIX</span>
-    </a>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
+  
+  <!-- Brand Logo -->
+  <a href="{{ url_for('home_blueprint.index') }}" class="brand-link">
+    <img src="static/images/brain.svg" alt="Cronotix Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <span class="brand-text font-weight-light">CronotIX</span>
+  </a>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
           <img src="static/images/user.svg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           {% if current_user.is_authenticated %}
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a  class="d-block">{{current_user.username}}</a>
           {% else %}
           <a href="{{url_for('auth_blueprint.login')}}" class="d-block">Invitado</a>
           {% endif %}
         </div>
       </div>
-
-     
-
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
@@ -32,7 +29,7 @@
           {% if current_user.is_authenticated %}
           <li class="nav-item">
             <a href="{{url_for('home_blueprint.assistants')}}" class="nav-link {% if 'assistants' in segment %} active {% endif %}">
-              <i class="fas fa-headset nav-icon"></i>
+              <i class="fas fa-robot nav-icon"></i>
               <p>
                 Asistentes
                 <!-- <span class="right badge badge-danger">New</span> -->
@@ -60,7 +57,44 @@
           {% endif %}
         </ul>
       </nav>
-      <!-- /.sidebar-menu -->
+      <!-- /.sidebar-menu end -->    
+      <nav class="mt2" style="position: fixed; bottom: 0; margin-bottom: 1em;">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <li class="nav-item">
+            <a href="{{url_for('home_blueprint.api_key')}}" class="nav-link">
+              <i class="fas fa-book-open nav-icon"></i>
+              <p>
+                Documentación
+                <!-- <span class="right badge badge-danger">New</span> -->
+              </p>
+            </a>
+          </li>
+        </ul>
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <li class="nav-item">
+            <a href="{{url_for('home_blueprint.api_key')}}" class="nav-link">
+              <i class="fas fa-cubes nav-icon"></i>
+              <p>
+                Nuestros productos
+                <!-- <span class="right badge badge-danger">New</span> -->
+              </p>
+            </a>
+          </li>
+        </ul>
+        <div >
+          <div class="user-panel mt-3 pb-3 mb-3 d-flex" style="border: none;">
+            <div class="image">
+              <img src="static/images/user.svg" class="img-circle elevation-2" alt="User Image" style="background-color: #bf360c; border: .1rem solid #ded;">
+            </div>
+            <div class="info">
+              {% if current_user.is_authenticated %}
+              <a href="{{url_for('settings_blueprint.account_settings')}}" class="d-block">{{current_user.username}}</a>
+              {% else %}
+              <a href="{{url_for('auth_blueprint.login')}}" class="d-block">Invitado</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
     </div>
     <!-- /.sidebar -->
   </aside>

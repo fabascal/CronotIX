@@ -1,15 +1,14 @@
 from website import db
-from uuid import uuid4
 from flask import current_app as app
 from website.auth.utils.loginUtils import hash_pass
 from flask_login import UserMixin
+from website.utils.utils import get_uuid4
 
-def get_uuid4():
-    return uuid4().hex
 
 class User(db.Model, UserMixin):
     __tablename__ = 'users'
-    id = db.Column(db.String(36), primary_key=True, unique=True, nullable=False, default=get_uuid4)
+    id = db.Column(db.Integer, primary_key=True, unique=True)
+    id_external = db.Column(db.String(36), unique=True, nullable=False, default=get_uuid4)
     username = db.Column(db.String(100), unique=False)
     email = db.Column(db.String(100), unique=True)
     password = db.Column(db.String(100))
@@ -29,7 +28,7 @@ class User(db.Model, UserMixin):
 
 @app.login_manager.user_loader
 def login_manager(user_id):
-    user = User.query.get(user_id).first()
+    user = User.query.get(user_id)
     try:
         user.last_login_at = db.func.now()
         db.session.commit()

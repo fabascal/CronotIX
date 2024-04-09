@@ -14,7 +14,7 @@ def login():
         return redirect(url_for('home_blueprint.index'))
     form = LoginForm()
     if request.method == 'POST' and form.validate_on_submit():
-        user = User.query.filter_by(username=form.username.data).first()
+        user = User.query.filter_by(email=form.email.data).first()
         if user and verify_pass(form.password.data, user.password):
             login_user(user)
             flash('Logged in successfully', 'success')
