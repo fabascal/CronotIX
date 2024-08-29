@@ -1,0 +1,64 @@
+{% extends "layouts/base_content.html" %}
+
+{% block title %} GreetBotIX | Finanzas {% endblock %} 
+
+{% block header %}
+<section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>GreetBot | Finanzas</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="{{url_for('home_blueprint.index')}}">Home</a></li>
+            <li class="breadcrumb-item active">Finanzas</li>
+          </ol>
+        </div>
+      </div>
+    </div><!-- /.container-fluid -->
+  </section>
+{% endblock %} 
+
+{% block content %}
+    <!-- teal blue olive navy lightblue info secondary primary -->
+    <div class="card card-primary direct-chat direct-chat-lightblue .card-outline" style="margin: 0 15rem; min-height: 600px;">
+        <div class="card-header">
+            <h3 class="card-title">Chat financiero</h3>
+        </div>
+    <!-- /.card-header -->
+        <div class="card-body">
+            <!-- Conversations are loaded here -->
+            <div class="direct-chat-messages" id="direct-chat-messages">
+            
+        </div>
+        <!--/.direct-chat-messages-->
+                
+    <!-- /.direct-chat-pane -->
+    </div>
+    <!-- /.card-body -->
+    <div class="card-footer">
+        <form id="formMensaje" method="POST" autocomplete="off" 
+          data-user-id="{{current_user.id}}" data-username="{{ current_user.username | safe }}" 
+          data-user-image="{{current_user.image_path}}" data-user-type="user">
+            {{ form.hidden_tag() }}
+            {{ form.csrf_token() }}
+            <div class="input-group">
+              <div id="typingIndicator" style="display: none;">Escribiendo...</div>
+                {{ form.message(class="form-control", placeholder="Escribe tu mensaje ...") }}
+                <span class="input-group-append">
+                    {{ form.submit(class="btn btn-primary") }}
+                </span>
+            </div>
+        </form>
+    </div>
+    
+    
+    <!-- /.card-footer-->
+</div>
+
+{% endblock %} 
+
+{% block javascripts %} 
+<script src="{{url_for('static', filename='js/chatbot.js')}}"></script>
+{% endblock %}

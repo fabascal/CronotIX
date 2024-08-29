@@ -1,18 +1,16 @@
 {% extends "layouts/base.html" %}
 
 {% block title %}  {% endblock %} 
-
+{% block stylesheets %} {% endblock %}
 
 {% block main %}
-<div class=" ">
-    <header class="row-span-1 col-span-4 flex items-center px-8 ml-4">
-        {% block header %}  {% endblock %} 
-    </header>
-    <div class="row-start-2 row-end-11 col-span-4 bg-emerald-800 p-2">
-        {% block content %}  {% endblock %} 
-    </div>
 
-</div>
-
+    {% block header %}  {% endblock %} 
+    <section class="content" style="min-height: 800px ;">
+            {% block content %}  {% endblock %} 
+        
+    </section>
 
 {% endblock %}
+
+{% block javascripts %} {% endblock %}

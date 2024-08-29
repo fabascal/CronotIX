@@ -10,3 +10,9 @@ class LoginForm(FlaskForm):
                              id='pwd_login',
                              validators=[DataRequired()])
     submit = SubmitField('Acceder')
+    
+class ForgotPasswordForm(FlaskForm):
+    email = StringField('Email',
+                         id='email_forgot',
+                         validators=[DataRequired()])
+    submit = SubmitField('Recuperar')

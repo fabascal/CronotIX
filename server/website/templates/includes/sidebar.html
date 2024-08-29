@@ -3,32 +3,23 @@
   
   <!-- Brand Logo -->
   <a href="{{ url_for('home_blueprint.index') }}" class="brand-link">
-    <img src="static/images/brain.svg" alt="Cronotix Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <img src="{{url_for('static', filename='images/brain.svg')}}" alt="Cronotix Logo" class="brand-image" style="opacity: .8; float: none;">
     <span class="brand-text font-weight-light">CronotIX</span>
   </a>
   <!-- Sidebar -->
-  <div class="sidebar">
+  <div class="sidebar" style="">
     <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="static/images/user.svg" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          {% if current_user.is_authenticated %}
-          <a  class="d-block">{{current_user.username}}</a>
-          {% else %}
-          <a href="{{url_for('auth_blueprint.login')}}" class="d-block">Invitado</a>
-          {% endif %}
-        </div>
+      <div class="">
+        
       </div>
       <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+      <nav class="mt-2" style="height:calc(100% - (1em - 1px));">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false" style="height:100%;">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           {% if current_user.is_authenticated %}
           <li class="nav-item">
-            <a href="{{url_for('home_blueprint.assistants')}}" class="nav-link {% if 'assistants' in segment %} active {% endif %}">
+            <a href="{{url_for('home_blueprint.assistants')}}" class="nav-link {% if 'assistants-list' in segment %} active {% endif %}">
               <i class="fas fa-robot nav-icon"></i>
               <p>
                 Asistentes
@@ -37,64 +28,88 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{url_for('home_blueprint.tunning')}}" class="nav-link {% if 'tunning' in segment %} active {% endif %}">
-              <i class="fas fa-sliders-h nav-icon"></i>
+            <a href="{{url_for('home_blueprint.threads')}}" class="nav-link {% if 'threads' in segment %} active {% endif %}">
+              <i class="far fa-comments nav-icon"></i>
               <p>
-                Configuración
+                Conversaciones
                 <!-- <span class="right badge badge-danger">New</span> -->
               </p>
             </a>
           </li>
           <li class="nav-item">
             <a href="{{url_for('home_blueprint.api_key')}}" class="nav-link {% if 'api_key' in segment %} active {% endif %}">
-              <i class="fas fa-lock nav-icon"></i>
+              <i class="fas fa-user-lock nav-icon"></i>
               <p>
                 Api-Key
                 <!-- <span class="right badge badge-danger">New</span> -->
               </p>
             </a>
           </li>
+          <li class="nav-header">Chatbot's de {{current_user.username}}</li>
+          {% for assistant in current_user.assistants %}
+            <li class="nav-item">
+              <a href="{{url_for('home_blueprint.chatbot')}}" class="nav-link {% if 'chatbot' in segment %} active {% endif %}">
+                <i class="fas fa-comment-dots nav-icon"></i>
+                <p>
+                  {{assistant.name}}
+                  <!-- <span class="right badge badge-danger">New</span> -->
+                </p>
+              </a>
+            </li>
+          {% endfor %}
+          <li class="nav-header">Configuracion</li>
+          <li class="nav-item">
+            <a href="{{url_for('settings_blueprint.list_versions')}}" class="nav-link {% if 'assistants-version' in segment %} active {% endif %}">
+              <!-- <i class="fas fa-store-alt nav-icon"></i> -->
+              <i class="fab fa-connectdevelop nav-icon"></i>
+              <p>
+                Versiones de asistentes
+                <!-- <span class="right badge badge-danger">New</span> -->
+              </p>
+            </a>
+          </li>
           {% endif %}
+          <!-- Agrupamos los tres elementos que quieres posicionar al final -->
+    <li class="nav-item" style="margin-top: auto; display: flex; flex-direction: column;">
+      <li class="nav-header">Recursos</li>
+      
+      <li class="nav-item" style="margin-top: 0;">
+          <a href="{{url_for('home_blueprint.index')}}" class="nav-link {% if 'documentation' in segment %} active {% endif %}">
+              <i class="fas fa-book nav-icon"></i>
+              <p>Documentación</p>
+          </a>
+      </li>
+
+      <li class="nav-item dropdown" style="margin-top: 0;">
+        {% if current_user.is_authenticated %}
+            <a href="#" class="nav-link" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-user-tie nav-icon"></i>
+                <p>{{ current_user.username }}</p>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                <a class="dropdown-item" style="color:#212529;" href="#">
+                    <i class="fas fa-user" ></i> Ver Perfil
+                </a>
+                <a class="dropdown-item" href="#"  style="color:#212529;" id="copyIdButton">
+                    <i class="fas fa-copy"></i> Copiar ID
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item"  style="color:#212529;" href="{{ url_for('auth_blueprint.logout') }}">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+            </div>
+        {% else %}
+            <a class="nav-link" href="{{ url_for('auth_blueprint.login') }}">
+                <i class="fas fa-user-tie nav-icon"></i>
+                <p>Invitado</p>
+            </a>
+        {% endif %}
+    </li>
+    
+    
+  </li>
         </ul>
       </nav>
-      <!-- /.sidebar-menu end -->    
-      <nav class="mt2" style="position: fixed; bottom: 0; margin-bottom: 1em;">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <li class="nav-item">
-            <a href="{{url_for('home_blueprint.api_key')}}" class="nav-link">
-              <i class="fas fa-book-open nav-icon"></i>
-              <p>
-                Documentación
-                <!-- <span class="right badge badge-danger">New</span> -->
-              </p>
-            </a>
-          </li>
-        </ul>
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <li class="nav-item">
-            <a href="{{url_for('home_blueprint.api_key')}}" class="nav-link">
-              <i class="fas fa-cubes nav-icon"></i>
-              <p>
-                Nuestros productos
-                <!-- <span class="right badge badge-danger">New</span> -->
-              </p>
-            </a>
-          </li>
-        </ul>
-        <div >
-          <div class="user-panel mt-3 pb-3 mb-3 d-flex" style="border: none;">
-            <div class="image">
-              <img src="static/images/user.svg" class="img-circle elevation-2" alt="User Image" style="background-color: #bf360c; border: .1rem solid #ded;">
-            </div>
-            <div class="info">
-              {% if current_user.is_authenticated %}
-              <a href="{{url_for('settings_blueprint.account_settings')}}" class="d-block">{{current_user.username}}</a>
-              {% else %}
-              <a href="{{url_for('auth_blueprint.login')}}" class="d-block">Invitado</a>
-              {% endif %}
-            </div>
-          </div>
-        </div>
     </div>
     <!-- /.sidebar -->
   </aside>

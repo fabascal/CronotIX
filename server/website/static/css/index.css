@@ -1,0 +1,22 @@
+.chatbot-button {
+    border: none;
+    background-color: #007bff; /* Color de fondo azul, pero puedes cambiarlo */
+    color: white; /* Color del texto */
+    padding: 15px 20px; /* Espaciado interno */
+    border-radius: 50%; /* Esto hace que el botón sea redondo */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+    font-size: 24px; /* Tamaño del texto o ícono dentro del botón */
+    position: fixed; /* Posición fija en la pantalla */
+    bottom: 20px; /* Posicionado en la esquina inferior derecha */
+    right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave al cambiar de color o al hacer hover */
+}
+
+.chatbot-button:hover, .chatbot-button:focus {
+    background-color: #0056b3; /* Color al hacer hover */
+    transform: scale(1.1); /* Efecto de crecimiento al pasar el mouse */
+    outline: none; /* Elimina el borde al hacer click */
+}
+
+
