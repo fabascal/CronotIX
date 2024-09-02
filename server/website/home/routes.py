@@ -296,6 +296,11 @@ def getThread():
 @csrf.exempt
 @require_api_key
 def virtualAgent():
+    
+    CORS_DATA = {'Access-Control-Allow-Origin':'*',
+                                    'Access-Control-Allow-Methods':'PUT,DELETE',
+                                    'Access-Control-Allow-Headers':'content-type'}
+    
     # Obtener datos de los headers
     apikey = request.headers.get('API-KEY')
     user_id = request.headers.get('USER-ID')
@@ -305,11 +310,11 @@ def virtualAgent():
     
     # Comprobar si los headers existen
     if not apikey or not user_id:
-        return jsonify({'status': 'error', 'message': 'Faltan datos en los headers'}), 400
+        return jsonify({'status': 'error', 'message': 'Faltan datos en los headers'}), 400 , CORS_DATA
     
     request_data = request.get_json()
     if not request_data or not request_data.get('message'):
-        return jsonify({'status': 'error', 'message': 'No se ha recibido información'}), 400
+        return jsonify({'status': 'error', 'message': 'No se ha recibido información'}), 400, CORS_DATA
     
     message = request_data.get('message')
     print(f'Mensaje recibido: {message}')
@@ -350,7 +355,7 @@ def virtualAgent():
         'image_url': 'images/greetbotix.png',
         'time': datetime.now().strftime('%d %b %I:%M %p'),
         'type': 'chatbot'
-    }), 202
+    }), 202 , CORS_DATA
 
 
 

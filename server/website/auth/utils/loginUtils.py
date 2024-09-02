@@ -11,8 +11,8 @@ import bcrypt
 def hash_pass(password):
     # Convert password to bytes and hash
     hashed = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
-    return hashed
+    return hashed.decode('utf-8')
 
 def verify_pass(password, hashed_password):
-    # Check a password against the hashed version
-    return bcrypt.checkpw(password.encode('utf-8'), hashed_password)
+    # Convertir hashed_password de str a bytes antes de compararlo
+    return bcrypt.checkpw(password.encode('utf-8'), hashed_password.encode('utf-8'))

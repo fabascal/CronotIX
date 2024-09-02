@@ -13,6 +13,7 @@ class AssistantController:
     def __init__(self, client_id=None, thread_id=None, assistant_id=None):
         self.client = OpenAI()
         self.client.api_key = KEY
+        current_app.logger.info(f'llave {KEY}')
         self.assistant_id = assistant_id
         self.message = None
         self.run = None
@@ -24,7 +25,7 @@ class AssistantController:
         """
         
         Instruction = """
-            No entable ninguna otra conversación que no esté relacionada con las políticas de 'ener' o información relativa a la empresa, en caso de que el usuario esté haciendo preguntas ajenas a ella entonces discúlpese de la conversación respondiendo lo siguiente: 'Me disculpo pero como bot, solo puedo guiarte con respecto a las políticas y la información específica de la empresa.'
+            No entable ninguna otra conversación que no esté relacionada con las políticas de 'ener' o información relativa a la empresa, en caso de que el usuario esté haciendo preguntas ajenas a ella entonces discúlpese de la conversación respondiendo lo siguiente: 'Me disculpo pero como asistente virtual, solo puedo guiarte con respecto a las políticas y la información específica de la empresa.'
         """
         assistant = self.client.beta.assistants.create(
             name=data['name'],

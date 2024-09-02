@@ -5,7 +5,7 @@ from website.home.utils.keyUtils import GenerateUUIDStyled
 
 class AssistantsModels(db.Model):
     __tablename__ = 'assistantsmodels'
-    id = db.Column(db.String(36), unique=True, nullable=False, default=lambda: GenerateUUIDStyled('mdls'), primary_key=True)
+    id = db.Column(db.String(60), unique=True, nullable=False, default=lambda: GenerateUUIDStyled('mdls'), primary_key=True)
     name = db.Column(db.String(100), unique=False)
     oa_name = db.Column(db.String(100), unique=False)
     active = db.Column(db.Boolean, default=True)
@@ -19,17 +19,17 @@ class AssistantsModels(db.Model):
 
 class Assistants(db.Model):
     __tablename__ = 'assistants'
-    id = db.Column(db.String(36), unique=True, nullable=False, default=lambda: GenerateUUIDStyled('asst'), primary_key=True)
-    id_openai = db.Column(db.String(36), unique=True, nullable=False)
-    user_id = db.Column(db.String(36), db.ForeignKey('users.id'), nullable=False, index=True) # Relación one-to-many con User o Cliente
+    id = db.Column(db.String(60), unique=True, nullable=False, default=lambda: GenerateUUIDStyled('asst'), primary_key=True)
+    id_openai = db.Column(db.String(60), unique=True, nullable=False)
+    user_id = db.Column(db.String(60), db.ForeignKey('users.id'), nullable=False, index=True) # Relación one-to-many con User o Cliente
     user = db.relationship('User', back_populates='assistants')  # Relación one-to-many con User
     name = db.Column(db.String(100), unique=False)
-    description = db.Column(db.String(100), unique=False)
+    description = db.Column(db.String(200), unique=False)
     instructions = db.Column(db.String(1000), unique=False)
-    model_id = db.Column(db.String(36), db.ForeignKey('assistantsmodels.id'), nullable=False, index=True)
+    model_id = db.Column(db.String(60), db.ForeignKey('assistantsmodels.id'), nullable=False, index=True)
     model = db.relationship('AssistantsModels', back_populates='assistants')  # Relación one-to-many con Models
     functions = db.relationship("AssistantsFunctions", back_populates="assistantF", lazy='dynamic')  # Relación one-to-many con AssistantsFunctions
-    version_id = db.Column(db.String(36), db.ForeignKey('assistantsversion.id'), nullable=False, index=True)
+    version_id = db.Column(db.String(60), db.ForeignKey('assistantsversion.id'), nullable=False, index=True)
     version = db.relationship('AssistantsVersion', back_populates='assistants')  # Relación one-to-many con AssistantsVersion
     apikey = db.relationship("AssistantsApiKey", back_populates="assistantA", uselist=False)  # Relación one-to-one con AssistantsApiKey
     vector = db.relationship("AssistantsVector", back_populates="assistant", uselist=False)  # Relación one-to-one con AssistantsVector
@@ -44,10 +44,10 @@ class Assistants(db.Model):
 
 class AssistantsFunctions(db.Model):
     __tablename__ = 'assistantsfunctions'
-    id = db.Column(db.String(36), unique=True, nullable=False, default=lambda: GenerateUUIDStyled('fncs'), primary_key=True)
+    id = db.Column(db.String(60), unique=True, nullable=False, default=lambda: GenerateUUIDStyled('fncs'), primary_key=True)
     description = db.Column(db.String(100), unique=False)
     parameters = db.Column(JSONType, nullable=False)
-    assistant_id = db.Column(db.String(36), db.ForeignKey('assistants.id'), nullable=False)
+    assistant_id = db.Column(db.String(60), db.ForeignKey('assistants.id'), nullable=False)
     assistantF = db.relationship('Assistants', back_populates="functions")  # Relación many-to-one con Assistants
     active = db.Column(db.Boolean, default=True)
     created_at = db.Column(db.DateTime, server_default=db.func.now())
@@ -58,16 +58,16 @@ class AssistantsFunctions(db.Model):
     
 class AssistantsApiKey(db.Model):
     __tablename__ = 'assistantsapikey'
-    id = db.Column(db.String(36), unique=True, nullable=False, default=lambda: GenerateUUIDStyled('apky'), primary_key=True)
-    apikey = db.Column(db.String(36), unique=True, nullable=False)
-    assistant_id = db.Column(db.String(36), db.ForeignKey('assistants.id'), nullable=False, unique=True)
+    id = db.Column(db.String(60), unique=True, nullable=False, default=lambda: GenerateUUIDStyled('apky'), primary_key=True)
+    apikey = db.Column(db.String(60), unique=True, nullable=False)
+    assistant_id = db.Column(db.String(60), db.ForeignKey('assistants.id'), nullable=False, unique=True)
     assistantA = db.relationship("Assistants", back_populates="apikey")  # Relación one-to-one con Assistants
     created_at = db.Column(db.DateTime, server_default=db.func.now())
     updated_at = db.Column(db.DateTime, server_default=db.func.now(), server_onupdate=db.func.now())
     
 class AssistantsVersion(db.Model):
     __tablename__ = 'assistantsversion'
-    id = db.Column(db.String(36), unique=True, nullable=False, default=lambda: GenerateUUIDStyled('vers'), primary_key=True)
+    id = db.Column(db.String(60), unique=True, nullable=False, default=lambda: GenerateUUIDStyled('vers'), primary_key=True)
     name = db.Column(db.String(100), unique=False)
     assistants = db.relationship("Assistants", back_populates="version")  # Relación one-to-many con Assistants
     created_at = db.Column(db.DateTime, server_default=db.func.now())
@@ -75,9 +75,9 @@ class AssistantsVersion(db.Model):
     
 class AssistantsVector(db.Model):
     __tablename__ = 'assistantsvector'
-    id = db.Column(db.String(36), unique=True, nullable=False, default=lambda: GenerateUUIDStyled('vect'), primary_key=True)
+    id = db.Column(db.String(60), unique=True, nullable=False, default=lambda: GenerateUUIDStyled('vect'), primary_key=True)
     vector = db.Column(db.String, nullable=True)
-    assistant_id = db.Column(db.String(36), db.ForeignKey('assistants.id'), nullable=False, unique=True)
+    assistant_id = db.Column(db.String(60), db.ForeignKey('assistants.id'), nullable=False, unique=True)
     assistant = db.relationship("Assistants", back_populates="vector")  # Relación one-to-one con Assistants
     files = db.relationship("AssistantsFiles", back_populates="vector", lazy='dynamic')  # Relación one-to-many con AssistantsFiles
     created_at = db.Column(db.DateTime, server_default=db.func.now())
@@ -85,15 +85,15 @@ class AssistantsVector(db.Model):
     
 class AssistantsFiles(db.Model):
     __tablename__ = 'assistantsfiles'
-    id = db.Column(db.String(36), unique=True, nullable=False, default=lambda: GenerateUUIDStyled('file'), primary_key=True)
+    id = db.Column(db.String(60), unique=True, nullable=False, default=lambda: GenerateUUIDStyled('file'), primary_key=True)
     name = db.Column(db.String(100), unique=False)
     type = db.Column(db.String(50), unique=False)
     size = db.Column(db.String(50), unique=False)
     path = db.Column(db.String(100), unique=False)
     upload = db.Column(db.Boolean, default=False)
-    vector_id = db.Column(db.String(36), db.ForeignKey('assistantsvector.id'), nullable=True)  # Clave foránea hacia AssistantsVector
+    vector_id = db.Column(db.String(60), db.ForeignKey('assistantsvector.id'), nullable=True)  # Clave foránea hacia AssistantsVector
     vector = db.relationship("AssistantsVector", back_populates="files")  # Relación one-to-many con AssistantsVector
-    assistant_id = db.Column(db.String(36), db.ForeignKey('assistants.id'), nullable=True)  # Clave foránea hacia Assistants
+    assistant_id = db.Column(db.String(60), db.ForeignKey('assistants.id'), nullable=True)  # Clave foránea hacia Assistants
     assistant = db.relationship("Assistants", back_populates="file")  # Relación one-to-many con Assistants
     created_at = db.Column(db.DateTime, server_default=db.func.now())
     updated_at = db.Column(db.DateTime, server_default=db.func.now(), server_onupdate=db.func.now())

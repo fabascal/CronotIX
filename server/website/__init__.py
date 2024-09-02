@@ -5,6 +5,7 @@ from flask_login import LoginManager
 from flask_migrate import Migrate
 from flask_seeder import FlaskSeeder
 from flask_wtf.csrf import CSRFProtect
+from flask_cors import CORS
 
 db = SQLAlchemy()
 login_manager = LoginManager()
@@ -29,6 +30,8 @@ def register_blueprints(app):
 
 def create_app(config):
     app = Flask(__name__)
+    CORS(app, resources={r"/api/*": {"origins": "*"}})
+    #CORS(app, resources={r"/api/*": {"origins": ["https://tu-frontend.com", "http://localhost:3000"]}})
     app.static_folder = 'static'
     app.config.from_object(config)
     app.jinja_env.add_extension('jinja2.ext.do')
