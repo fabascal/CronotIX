@@ -48,7 +48,7 @@
           <li class="nav-header">Chatbot's de {{current_user.username}}</li>
           {% for assistant in current_user.assistants %}
             <li class="nav-item">
-              <a href="{{url_for('home_blueprint.chatbot')}}" class="nav-link {% if 'chatbot' in segment %} active {% endif %}">
+              <a href="{{url_for('home_blueprint.chatbot', assistant_id=assistant.id)}}" class="nav-link {% if 'chatbot' in segment %} active {% endif %}">
                 <i class="fas fa-comment-dots nav-icon"></i>
                 <p>
                   {{assistant.name}}

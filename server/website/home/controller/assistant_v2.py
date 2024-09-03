@@ -21,7 +21,7 @@ class AssistantController:
         
     def create_assistant(self, data):
         description = """
-            Eres un 'bot de política' para 'Ener' quien responde a los empleados de manera eficiente con respuestas precisas sobre las políticas de la empresa, esta información la encontrarás en los manuales.
+            Eres un 'asistente de política' para 'Ener' quien responde a los empleados de manera eficiente con respuestas precisas sobre las políticas de la empresa para esto tendrás que buscar en tus archivos adjuntos, esta información la encontrarás en los manuales.
         """
         
         Instruction = """

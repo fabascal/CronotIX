@@ -24,7 +24,7 @@
     <!-- teal blue olive navy lightblue info secondary primary -->
     <div class="card card-primary direct-chat direct-chat-lightblue .card-outline" style="margin: 0 15rem; min-height: 600px;">
         <div class="card-header">
-            <h3 class="card-title">Chat General</h3>
+            <h3 class="card-title">Asistente</h3>
         </div>
     <!-- /.card-header -->
         <div class="card-body">
@@ -39,6 +39,7 @@
     <!-- /.card-body -->
     <div class="card-footer">
         <form id="formMensaje" method="POST" autocomplete="off" 
+          data-assistant-id="{{assistant.id}}" data-asistant="{{ assistant.name | safe }}"
           data-user-id="{{current_user.id}}" data-username="{{ current_user.username | safe }}" 
           data-user-image="{{current_user.image_path}}" data-user-type="user">
             {{ form.hidden_tag() }}

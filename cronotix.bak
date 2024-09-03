@@ -1,0 +1,48 @@
+server {
+    listen 80;
+    server_name www.cronotix.mx cronotix.mx;
+    return 301 https://cronotix.mx$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name www.cronotix.mx;
+    ssl_certificate /etc/nginx/ssl/cronotix.mx_ssl_certificate.cer;
+    ssl_certificate_key /etc/nginx/ssl/_.cronotix.mx_private_key.key;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_prefer_server_ciphers off;
+    ssl_ciphers 'TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384';
+    return 301 https://cronotix.mx$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name cronotix.mx;
+    ssl_certificate /etc/nginx/ssl/cronotix.mx_ssl_certificate.cer;
+    ssl_certificate_key /etc/nginx/ssl/_.cronotix.mx_private_key.key;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_prefer_server_ciphers off;
+    ssl_ciphers 'TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384';
+
+    # Añadir el header Strict-Transport-Security
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/home/webops/Cronotix/server/cronotix.sock;
+        proxy_set_header Cookie $http_cookie;
+    }
+
+    # Añadir el header Content-Security-Policy
+    add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; connect-src 'self' https:; font-src 'self' data: https:; frame-src 'self' https:; object-src 'none'; base-uri 'self'; form-action 'self';";
+
+    # Añadir el header X-Content-Type-Options
+    add_header X-Content-Type-Options "nosniff" always;
+
+    # Añadir el header Referrer-Policy
+    add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+
+    # Añadir el header Permissions-Policy
+    add_header Permissions-Policy "geolocation=(self), microphone=(), camera=(), fullscreen=(self), payment=()";
+
+}

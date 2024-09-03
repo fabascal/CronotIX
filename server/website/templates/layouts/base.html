@@ -74,27 +74,28 @@
 <script src="/static/AdminLTE/plugins/chart.js/Chart.min.js"></script>
 <!-- SweetAlert2 -->
 <script src="{{url_for('static', filename='AdminLTE/plugins/sweetalert2/sweetalert2.min.js')}}"></script>
+
 <script>
   $(function() {
-    var Toast = Swal.mixin({
-      toast: true,
-      position: 'top-end',
-      showConfirmButton: false,
-      timer: 3000
-    });
-    {% with messages = get_flashed_messages(with_categories=true) %}
-      {% if messages %}
-        {% for category, message in messages %}
-          Toast.fire({
-              icon: '{{category}}',
-              title: '{{message}}'
-          })
-      {% endfor %}
-    {% endif %}
-  {% endwith %}
+      var Toast = Swal.mixin({
+          toast: true,
+          position: 'top-end',
+          showConfirmButton: false,
+          timer: 3000
+      });
+      {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+              {% for category, message in messages %}
+                  Toast.fire({
+                      icon: '{{category}}',
+                      title: '{{message}}'
+                  });
+              {% endfor %}
+          {% endif %}
+      {% endwith %}
   });
-  
 </script>
+
 
 {% block javascripts %} {% endblock %}
 </html>

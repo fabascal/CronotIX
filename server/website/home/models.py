@@ -24,7 +24,7 @@ class Assistants(db.Model):
     user_id = db.Column(db.String(60), db.ForeignKey('users.id'), nullable=False, index=True) # Relación one-to-many con User o Cliente
     user = db.relationship('User', back_populates='assistants')  # Relación one-to-many con User
     name = db.Column(db.String(100), unique=False)
-    description = db.Column(db.String(200), unique=False)
+    description = db.Column(db.String(300), unique=False)
     instructions = db.Column(db.String(1000), unique=False)
     model_id = db.Column(db.String(60), db.ForeignKey('assistantsmodels.id'), nullable=False, index=True)
     model = db.relationship('AssistantsModels', back_populates='assistants')  # Relación one-to-many con Models

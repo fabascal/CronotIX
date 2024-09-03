@@ -66,3 +66,1630 @@
 [2024-09-02 14:47:21 -0600] [51839] [INFO] Booting worker with pid: 51839
 [2024-09-02 14:47:21 -0600] [51840] [INFO] Booting worker with pid: 51840
 [2024-09-02 14:47:22 -0600] [51841] [INFO] Booting worker with pid: 51841
+[2024-09-02 17:12:46 -0600] [51819] [INFO] Handling signal: term
+[2024-09-02 17:12:47 -0600] [51823] [INFO] Worker exiting (pid: 51823)
+[2024-09-02 17:12:47 -0600] [51841] [INFO] Worker exiting (pid: 51841)
+[2024-09-02 17:12:47 -0600] [51833] [INFO] Worker exiting (pid: 51833)
+[2024-09-02 17:12:47 -0600] [51835] [INFO] Worker exiting (pid: 51835)
+[2024-09-02 17:12:47 -0600] [51839] [INFO] Worker exiting (pid: 51839)
+[2024-09-02 17:12:47 -0600] [51837] [INFO] Worker exiting (pid: 51837)
+[2024-09-02 17:12:47 -0600] [51829] [INFO] Worker exiting (pid: 51829)
+[2024-09-02 17:12:47 -0600] [51840] [INFO] Worker exiting (pid: 51840)
+[2024-09-02 17:12:47 -0600] [51831] [INFO] Worker exiting (pid: 51831)
+[2024-09-02 17:12:47 -0600] [51830] [INFO] Worker exiting (pid: 51830)
+[2024-09-02 17:12:47 -0600] [51828] [INFO] Worker exiting (pid: 51828)
+[2024-09-02 17:12:47 -0600] [51838] [INFO] Worker exiting (pid: 51838)
+[2024-09-02 17:12:47 -0600] [51834] [INFO] Worker exiting (pid: 51834)
+[2024-09-02 17:12:47 -0600] [51836] [INFO] Worker exiting (pid: 51836)
+[2024-09-02 17:12:47 -0600] [51832] [INFO] Worker exiting (pid: 51832)
+[2024-09-02 17:12:47 -0600] [51822] [INFO] Worker exiting (pid: 51822)
+[2024-09-02 17:12:47 -0600] [51826] [INFO] Worker exiting (pid: 51826)
+[2024-09-02 17:12:47 -0600] [51824] [INFO] Worker exiting (pid: 51824)
+[2024-09-02 17:12:47 -0600] [51827] [INFO] Worker exiting (pid: 51827)
+[2024-09-02 17:12:47 -0600] [51825] [INFO] Worker exiting (pid: 51825)
+[2024-09-02 17:12:47 -0600] [51819] [INFO] Shutting down: Master
+[2024-09-02 17:12:47 -0600] [56822] [INFO] Starting gunicorn 23.0.0
+[2024-09-02 17:12:47 -0600] [56822] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (56822)
+[2024-09-02 17:12:47 -0600] [56822] [INFO] Using worker: gthread
+[2024-09-02 17:12:47 -0600] [56826] [INFO] Booting worker with pid: 56826
+[2024-09-02 17:12:47 -0600] [56827] [INFO] Booting worker with pid: 56827
+[2024-09-02 17:12:48 -0600] [56828] [INFO] Booting worker with pid: 56828
+[2024-09-02 17:12:48 -0600] [56829] [INFO] Booting worker with pid: 56829
+[2024-09-02 17:12:48 -0600] [56830] [INFO] Booting worker with pid: 56830
+[2024-09-02 17:12:48 -0600] [56831] [INFO] Booting worker with pid: 56831
+[2024-09-02 17:12:48 -0600] [56832] [INFO] Booting worker with pid: 56832
+[2024-09-02 17:12:48 -0600] [56833] [INFO] Booting worker with pid: 56833
+[2024-09-02 17:12:48 -0600] [56834] [INFO] Booting worker with pid: 56834
+[2024-09-02 17:12:48 -0600] [56835] [INFO] Booting worker with pid: 56835
+[2024-09-02 17:12:48 -0600] [56836] [INFO] Booting worker with pid: 56836
+[2024-09-02 17:12:48 -0600] [56837] [INFO] Booting worker with pid: 56837
+[2024-09-02 17:12:48 -0600] [56838] [INFO] Booting worker with pid: 56838
+[2024-09-02 17:12:48 -0600] [56839] [INFO] Booting worker with pid: 56839
+[2024-09-02 17:12:48 -0600] [56847] [INFO] Booting worker with pid: 56847
+[2024-09-02 17:12:48 -0600] [56848] [INFO] Booting worker with pid: 56848
+[2024-09-02 17:12:48 -0600] [56849] [INFO] Booting worker with pid: 56849
+[2024-09-02 17:12:48 -0600] [56850] [INFO] Booting worker with pid: 56850
+[2024-09-02 17:12:48 -0600] [56851] [INFO] Booting worker with pid: 56851
+[2024-09-02 17:12:48 -0600] [56853] [INFO] Booting worker with pid: 56853
+[2024-09-02 17:24:56 -0600] [56822] [INFO] Handling signal: term
+[2024-09-02 17:24:56 -0600] [56848] [INFO] Worker exiting (pid: 56848)
+[2024-09-02 17:24:56 -0600] [56849] [INFO] Worker exiting (pid: 56849)
+[2024-09-02 17:24:56 -0600] [56850] [INFO] Worker exiting (pid: 56850)
+[2024-09-02 17:24:56 -0600] [56851] [INFO] Worker exiting (pid: 56851)
+[2024-09-02 17:24:56 -0600] [56853] [INFO] Worker exiting (pid: 56853)
+[2024-09-02 17:24:56 -0600] [56827] [INFO] Worker exiting (pid: 56827)
+[2024-09-02 17:24:56 -0600] [56826] [INFO] Worker exiting (pid: 56826)
+[2024-09-02 17:24:56 -0600] [56828] [INFO] Worker exiting (pid: 56828)
+[2024-09-02 17:24:56 -0600] [56829] [INFO] Worker exiting (pid: 56829)
+[2024-09-02 17:24:56 -0600] [56830] [INFO] Worker exiting (pid: 56830)
+[2024-09-02 17:24:56 -0600] [56831] [INFO] Worker exiting (pid: 56831)
+[2024-09-02 17:24:56 -0600] [56832] [INFO] Worker exiting (pid: 56832)
+[2024-09-02 17:24:56 -0600] [56833] [INFO] Worker exiting (pid: 56833)
+[2024-09-02 17:24:56 -0600] [56834] [INFO] Worker exiting (pid: 56834)
+[2024-09-02 17:24:56 -0600] [56835] [INFO] Worker exiting (pid: 56835)
+[2024-09-02 17:24:57 -0600] [56836] [INFO] Worker exiting (pid: 56836)
+[2024-09-02 17:24:57 -0600] [56837] [INFO] Worker exiting (pid: 56837)
+[2024-09-02 17:24:57 -0600] [56838] [INFO] Worker exiting (pid: 56838)
+[2024-09-02 17:24:57 -0600] [56839] [INFO] Worker exiting (pid: 56839)
+[2024-09-02 17:24:57 -0600] [56847] [INFO] Worker exiting (pid: 56847)
+[2024-09-02 17:24:57 -0600] [56822] [INFO] Shutting down: Master
+[2024-09-02 17:25:01 -0600] [57218] [INFO] Starting gunicorn 23.0.0
+[2024-09-02 17:25:01 -0600] [57218] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (57218)
+[2024-09-02 17:25:01 -0600] [57218] [INFO] Using worker: gthread
+[2024-09-02 17:25:01 -0600] [57220] [INFO] Booting worker with pid: 57220
+[2024-09-02 17:25:01 -0600] [57221] [INFO] Booting worker with pid: 57221
+[2024-09-02 17:25:01 -0600] [57222] [INFO] Booting worker with pid: 57222
+[2024-09-02 17:25:01 -0600] [57223] [INFO] Booting worker with pid: 57223
+[2024-09-02 17:25:01 -0600] [57224] [INFO] Booting worker with pid: 57224
+[2024-09-02 17:25:01 -0600] [57225] [INFO] Booting worker with pid: 57225
+[2024-09-02 17:25:01 -0600] [57229] [INFO] Booting worker with pid: 57229
+[2024-09-02 17:25:01 -0600] [57230] [INFO] Booting worker with pid: 57230
+[2024-09-02 17:25:01 -0600] [57231] [INFO] Booting worker with pid: 57231
+[2024-09-02 17:25:01 -0600] [57232] [INFO] Booting worker with pid: 57232
+[2024-09-02 17:25:01 -0600] [57233] [INFO] Booting worker with pid: 57233
+[2024-09-02 17:25:01 -0600] [57234] [INFO] Booting worker with pid: 57234
+[2024-09-02 17:25:01 -0600] [57235] [INFO] Booting worker with pid: 57235
+[2024-09-02 17:25:01 -0600] [57236] [INFO] Booting worker with pid: 57236
+[2024-09-02 17:25:01 -0600] [57237] [INFO] Booting worker with pid: 57237
+[2024-09-02 17:25:02 -0600] [57238] [INFO] Booting worker with pid: 57238
+[2024-09-02 17:25:02 -0600] [57239] [INFO] Booting worker with pid: 57239
+[2024-09-02 17:25:02 -0600] [57240] [INFO] Booting worker with pid: 57240
+[2024-09-02 17:25:02 -0600] [57241] [INFO] Booting worker with pid: 57241
+[2024-09-02 17:25:02 -0600] [57242] [INFO] Booting worker with pid: 57242
+[2024-09-02 17:35:19 -0600] [57218] [INFO] Handling signal: term
+[2024-09-02 17:35:20 -0600] [57240] [INFO] Worker exiting (pid: 57240)
+[2024-09-02 17:35:20 -0600] [57235] [INFO] Worker exiting (pid: 57235)
+[2024-09-02 17:35:20 -0600] [57241] [INFO] Worker exiting (pid: 57241)
+[2024-09-02 17:35:20 -0600] [57233] [INFO] Worker exiting (pid: 57233)
+[2024-09-02 17:35:20 -0600] [57239] [INFO] Worker exiting (pid: 57239)
+[2024-09-02 17:35:20 -0600] [57222] [INFO] Worker exiting (pid: 57222)
+[2024-09-02 17:35:20 -0600] [57229] [INFO] Worker exiting (pid: 57229)
+[2024-09-02 17:35:20 -0600] [57232] [INFO] Worker exiting (pid: 57232)
+[2024-09-02 17:35:20 -0600] [57242] [INFO] Worker exiting (pid: 57242)
+[2024-09-02 17:35:20 -0600] [57224] [INFO] Worker exiting (pid: 57224)
+[2024-09-02 17:35:20 -0600] [57237] [INFO] Worker exiting (pid: 57237)
+[2024-09-02 17:35:20 -0600] [57238] [INFO] Worker exiting (pid: 57238)
+[2024-09-02 17:35:20 -0600] [57231] [INFO] Worker exiting (pid: 57231)
+[2024-09-02 17:35:20 -0600] [57221] [INFO] Worker exiting (pid: 57221)
+[2024-09-02 17:35:20 -0600] [57220] [INFO] Worker exiting (pid: 57220)
+[2024-09-02 17:35:20 -0600] [57236] [INFO] Worker exiting (pid: 57236)
+[2024-09-02 17:35:20 -0600] [57230] [INFO] Worker exiting (pid: 57230)
+[2024-09-02 17:35:20 -0600] [57223] [INFO] Worker exiting (pid: 57223)
+[2024-09-02 17:35:20 -0600] [57234] [INFO] Worker exiting (pid: 57234)
+[2024-09-02 17:35:20 -0600] [57225] [INFO] Worker exiting (pid: 57225)
+[2024-09-02 17:35:21 -0600] [57218] [INFO] Shutting down: Master
+[2024-09-02 17:35:21 -0600] [57678] [INFO] Starting gunicorn 23.0.0
+[2024-09-02 17:35:21 -0600] [57678] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (57678)
+[2024-09-02 17:35:21 -0600] [57678] [INFO] Using worker: gthread
+[2024-09-02 17:35:21 -0600] [57681] [INFO] Booting worker with pid: 57681
+[2024-09-02 17:35:21 -0600] [57682] [INFO] Booting worker with pid: 57682
+[2024-09-02 17:35:21 -0600] [57683] [INFO] Booting worker with pid: 57683
+[2024-09-02 17:35:21 -0600] [57684] [INFO] Booting worker with pid: 57684
+[2024-09-02 17:35:21 -0600] [57685] [INFO] Booting worker with pid: 57685
+[2024-09-02 17:35:21 -0600] [57686] [INFO] Booting worker with pid: 57686
+[2024-09-02 17:35:21 -0600] [57687] [INFO] Booting worker with pid: 57687
+[2024-09-02 17:35:21 -0600] [57688] [INFO] Booting worker with pid: 57688
+[2024-09-02 17:35:21 -0600] [57689] [INFO] Booting worker with pid: 57689
+[2024-09-02 17:35:21 -0600] [57697] [INFO] Booting worker with pid: 57697
+[2024-09-02 17:35:21 -0600] [57698] [INFO] Booting worker with pid: 57698
+[2024-09-02 17:35:21 -0600] [57699] [INFO] Booting worker with pid: 57699
+[2024-09-02 17:35:21 -0600] [57681] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/gthread.py", line 94, in init_process
+    super().init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/wsgi.py", line 18, in <module>
+    app = create_app(app_config)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 63, in create_app
+    register_blueprints(app)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 33, in register_blueprints
+    module = import_module('website.{}.routes'.format(module_name))
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/website/home/routes.py", line 109, in <module>
+    def assistant_addFile():
+TypeError: 'module' object is not callable
+[2024-09-02 17:35:21 -0600] [57681] [INFO] Worker exiting (pid: 57681)
+[2024-09-02 17:35:22 -0600] [57700] [INFO] Booting worker with pid: 57700
+[2024-09-02 17:35:22 -0600] [57682] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/gthread.py", line 94, in init_process
+    super().init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/wsgi.py", line 18, in <module>
+    app = create_app(app_config)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 63, in create_app
+    register_blueprints(app)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 33, in register_blueprints
+    module = import_module('website.{}.routes'.format(module_name))
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/website/home/routes.py", line 109, in <module>
+    def assistant_addFile():
+TypeError: 'module' object is not callable
+[2024-09-02 17:35:22 -0600] [57682] [INFO] Worker exiting (pid: 57682)
+[2024-09-02 17:35:22 -0600] [57701] [INFO] Booting worker with pid: 57701
+[2024-09-02 17:35:22 -0600] [57702] [INFO] Booting worker with pid: 57702
+[2024-09-02 17:35:22 -0600] [57703] [INFO] Booting worker with pid: 57703
+[2024-09-02 17:35:22 -0600] [57683] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/gthread.py", line 94, in init_process
+    super().init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/wsgi.py", line 18, in <module>
+    app = create_app(app_config)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 63, in create_app
+    register_blueprints(app)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 33, in register_blueprints
+    module = import_module('website.{}.routes'.format(module_name))
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/website/home/routes.py", line 109, in <module>
+    def assistant_addFile():
+TypeError: 'module' object is not callable
+[2024-09-02 17:35:22 -0600] [57683] [INFO] Worker exiting (pid: 57683)
+[2024-09-02 17:35:22 -0600] [57678] [ERROR] Worker (pid:57681) exited with code 3
+[2024-09-02 17:35:22 -0600] [57678] [ERROR] Worker (pid:57682) was sent SIGTERM!
+[2024-09-02 17:35:22 -0600] [57678] [ERROR] Worker (pid:57683) was sent SIGTERM!
+[2024-09-02 17:35:22 -0600] [57684] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/gthread.py", line 94, in init_process
+    super().init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/wsgi.py", line 18, in <module>
+    app = create_app(app_config)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 63, in create_app
+    register_blueprints(app)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 33, in register_blueprints
+    module = import_module('website.{}.routes'.format(module_name))
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/website/home/routes.py", line 109, in <module>
+    def assistant_addFile():
+TypeError: 'module' object is not callable
+[2024-09-02 17:35:22 -0600] [57684] [INFO] Worker exiting (pid: 57684)
+[2024-09-02 17:35:22 -0600] [57685] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/gthread.py", line 94, in init_process
+    super().init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/wsgi.py", line 18, in <module>
+    app = create_app(app_config)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 63, in create_app
+    register_blueprints(app)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 33, in register_blueprints
+    module = import_module('website.{}.routes'.format(module_name))
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/website/home/routes.py", line 109, in <module>
+    def assistant_addFile():
+TypeError: 'module' object is not callable
+[2024-09-02 17:35:22 -0600] [57685] [INFO] Worker exiting (pid: 57685)
+[2024-09-02 17:35:22 -0600] [57686] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/gthread.py", line 94, in init_process
+    super().init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/wsgi.py", line 18, in <module>
+    app = create_app(app_config)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 63, in create_app
+    register_blueprints(app)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 33, in register_blueprints
+    module = import_module('website.{}.routes'.format(module_name))
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/website/home/routes.py", line 109, in <module>
+    def assistant_addFile():
+TypeError: 'module' object is not callable
+[2024-09-02 17:35:22 -0600] [57686] [INFO] Worker exiting (pid: 57686)
+[2024-09-02 17:35:22 -0600] [57687] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/gthread.py", line 94, in init_process
+    super().init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/wsgi.py", line 18, in <module>
+    app = create_app(app_config)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 63, in create_app
+    register_blueprints(app)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 33, in register_blueprints
+    module = import_module('website.{}.routes'.format(module_name))
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/website/home/routes.py", line 109, in <module>
+    def assistant_addFile():
+TypeError: 'module' object is not callable
+[2024-09-02 17:35:22 -0600] [57687] [INFO] Worker exiting (pid: 57687)
+[2024-09-02 17:35:22 -0600] [57688] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/gthread.py", line 94, in init_process
+    super().init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/wsgi.py", line 18, in <module>
+    app = create_app(app_config)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 63, in create_app
+    register_blueprints(app)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 33, in register_blueprints
+    module = import_module('website.{}.routes'.format(module_name))
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/website/home/routes.py", line 109, in <module>
+    def assistant_addFile():
+TypeError: 'module' object is not callable
+[2024-09-02 17:35:22 -0600] [57688] [INFO] Worker exiting (pid: 57688)
+[2024-09-02 17:35:22 -0600] [57689] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/gthread.py", line 94, in init_process
+    super().init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/wsgi.py", line 18, in <module>
+    app = create_app(app_config)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 63, in create_app
+    register_blueprints(app)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 33, in register_blueprints
+    module = import_module('website.{}.routes'.format(module_name))
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/website/home/routes.py", line 109, in <module>
+    def assistant_addFile():
+TypeError: 'module' object is not callable
+[2024-09-02 17:35:22 -0600] [57689] [INFO] Worker exiting (pid: 57689)
+[2024-09-02 17:35:22 -0600] [57678] [ERROR] Worker (pid:57684) exited with code 3
+[2024-09-02 17:35:22 -0600] [57697] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/gthread.py", line 94, in init_process
+    super().init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/wsgi.py", line 18, in <module>
+    app = create_app(app_config)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 63, in create_app
+    register_blueprints(app)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 33, in register_blueprints
+    module = import_module('website.{}.routes'.format(module_name))
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/website/home/routes.py", line 109, in <module>
+    def assistant_addFile():
+TypeError: 'module' object is not callable
+[2024-09-02 17:35:22 -0600] [57697] [INFO] Worker exiting (pid: 57697)
+[2024-09-02 17:35:22 -0600] [57698] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/gthread.py", line 94, in init_process
+    super().init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/wsgi.py", line 18, in <module>
+    app = create_app(app_config)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 63, in create_app
+    register_blueprints(app)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 33, in register_blueprints
+    module = import_module('website.{}.routes'.format(module_name))
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/website/home/routes.py", line 109, in <module>
+    def assistant_addFile():
+TypeError: 'module' object is not callable
+[2024-09-02 17:35:22 -0600] [57698] [INFO] Worker exiting (pid: 57698)
+[2024-09-02 17:35:22 -0600] [57699] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/gthread.py", line 94, in init_process
+    super().init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/wsgi.py", line 18, in <module>
+    app = create_app(app_config)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 63, in create_app
+    register_blueprints(app)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 33, in register_blueprints
+    module = import_module('website.{}.routes'.format(module_name))
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/website/home/routes.py", line 109, in <module>
+    def assistant_addFile():
+TypeError: 'module' object is not callable
+[2024-09-02 17:35:22 -0600] [57699] [INFO] Worker exiting (pid: 57699)
+[2024-09-02 17:35:22 -0600] [57700] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/gthread.py", line 94, in init_process
+    super().init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/wsgi.py", line 18, in <module>
+    app = create_app(app_config)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 63, in create_app
+    register_blueprints(app)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 33, in register_blueprints
+    module = import_module('website.{}.routes'.format(module_name))
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/website/home/routes.py", line 109, in <module>
+    def assistant_addFile():
+TypeError: 'module' object is not callable
+[2024-09-02 17:35:22 -0600] [57700] [INFO] Worker exiting (pid: 57700)
+[2024-09-02 17:35:22 -0600] [57701] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/gthread.py", line 94, in init_process
+    super().init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/wsgi.py", line 18, in <module>
+    app = create_app(app_config)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 63, in create_app
+    register_blueprints(app)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 33, in register_blueprints
+    module = import_module('website.{}.routes'.format(module_name))
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/website/home/routes.py", line 109, in <module>
+    def assistant_addFile():
+TypeError: 'module' object is not callable
+[2024-09-02 17:35:22 -0600] [57701] [INFO] Worker exiting (pid: 57701)
+[2024-09-02 17:35:22 -0600] [57702] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/gthread.py", line 94, in init_process
+    super().init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/wsgi.py", line 18, in <module>
+    app = create_app(app_config)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 63, in create_app
+    register_blueprints(app)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 33, in register_blueprints
+    module = import_module('website.{}.routes'.format(module_name))
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/website/home/routes.py", line 109, in <module>
+    def assistant_addFile():
+TypeError: 'module' object is not callable
+[2024-09-02 17:35:22 -0600] [57702] [INFO] Worker exiting (pid: 57702)
+[2024-09-02 17:35:22 -0600] [57703] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/gthread.py", line 94, in init_process
+    super().init_process()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/webops/Cronotix/server/venv/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/wsgi.py", line 18, in <module>
+    app = create_app(app_config)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 63, in create_app
+    register_blueprints(app)
+  File "/home/webops/Cronotix/server/website/__init__.py", line 33, in register_blueprints
+    module = import_module('website.{}.routes'.format(module_name))
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/webops/Cronotix/server/website/home/routes.py", line 109, in <module>
+    def assistant_addFile():
+TypeError: 'module' object is not callable
+[2024-09-02 17:35:22 -0600] [57703] [INFO] Worker exiting (pid: 57703)
+[2024-09-02 17:36:18 -0600] [57828] [INFO] Starting gunicorn 23.0.0
+[2024-09-02 17:36:18 -0600] [57828] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (57828)
+[2024-09-02 17:36:18 -0600] [57828] [INFO] Using worker: gthread
+[2024-09-02 17:36:18 -0600] [57830] [INFO] Booting worker with pid: 57830
+[2024-09-02 17:36:18 -0600] [57831] [INFO] Booting worker with pid: 57831
+[2024-09-02 17:36:18 -0600] [57832] [INFO] Booting worker with pid: 57832
+[2024-09-02 17:36:18 -0600] [57833] [INFO] Booting worker with pid: 57833
+[2024-09-02 17:36:18 -0600] [57834] [INFO] Booting worker with pid: 57834
+[2024-09-02 17:36:18 -0600] [57835] [INFO] Booting worker with pid: 57835
+[2024-09-02 17:36:18 -0600] [57836] [INFO] Booting worker with pid: 57836
+[2024-09-02 17:36:18 -0600] [57837] [INFO] Booting worker with pid: 57837
+[2024-09-02 17:36:18 -0600] [57838] [INFO] Booting worker with pid: 57838
+[2024-09-02 17:36:18 -0600] [57839] [INFO] Booting worker with pid: 57839
+[2024-09-02 17:36:18 -0600] [57840] [INFO] Booting worker with pid: 57840
+[2024-09-02 17:36:18 -0600] [57841] [INFO] Booting worker with pid: 57841
+[2024-09-02 17:36:18 -0600] [57842] [INFO] Booting worker with pid: 57842
+[2024-09-02 17:36:18 -0600] [57843] [INFO] Booting worker with pid: 57843
+[2024-09-02 17:36:18 -0600] [57844] [INFO] Booting worker with pid: 57844
+[2024-09-02 17:36:18 -0600] [57845] [INFO] Booting worker with pid: 57845
+[2024-09-02 17:36:18 -0600] [57846] [INFO] Booting worker with pid: 57846
+[2024-09-02 17:36:18 -0600] [57847] [INFO] Booting worker with pid: 57847
+[2024-09-02 17:36:18 -0600] [57848] [INFO] Booting worker with pid: 57848
+[2024-09-02 17:36:18 -0600] [57849] [INFO] Booting worker with pid: 57849
+[2024-09-02 21:44:55 -0600] [57828] [INFO] Handling signal: term
+[2024-09-02 21:44:55 -0600] [57846] [INFO] Worker exiting (pid: 57846)
+[2024-09-02 21:44:55 -0600] [57849] [INFO] Worker exiting (pid: 57849)
+[2024-09-02 21:44:55 -0600] [57834] [INFO] Worker exiting (pid: 57834)
+[2024-09-02 21:44:55 -0600] [57837] [INFO] Worker exiting (pid: 57837)
+[2024-09-02 21:44:55 -0600] [57830] [INFO] Worker exiting (pid: 57830)
+[2024-09-02 21:44:55 -0600] [57832] [INFO] Worker exiting (pid: 57832)
+[2024-09-02 21:44:55 -0600] [57833] [INFO] Worker exiting (pid: 57833)
+[2024-09-02 21:44:55 -0600] [57835] [INFO] Worker exiting (pid: 57835)
+[2024-09-02 21:44:55 -0600] [57847] [INFO] Worker exiting (pid: 57847)
+[2024-09-02 21:44:55 -0600] [57844] [INFO] Worker exiting (pid: 57844)
+[2024-09-02 21:44:55 -0600] [57838] [INFO] Worker exiting (pid: 57838)
+[2024-09-02 21:44:55 -0600] [57840] [INFO] Worker exiting (pid: 57840)
+[2024-09-02 21:44:55 -0600] [57848] [INFO] Worker exiting (pid: 57848)
+[2024-09-02 21:44:55 -0600] [57836] [INFO] Worker exiting (pid: 57836)
+[2024-09-02 21:44:55 -0600] [57831] [INFO] Worker exiting (pid: 57831)
+[2024-09-02 21:44:55 -0600] [57845] [INFO] Worker exiting (pid: 57845)
+[2024-09-02 21:44:55 -0600] [57842] [INFO] Worker exiting (pid: 57842)
+[2024-09-02 21:44:55 -0600] [57843] [INFO] Worker exiting (pid: 57843)
+[2024-09-02 21:44:55 -0600] [57839] [INFO] Worker exiting (pid: 57839)
+[2024-09-02 21:44:55 -0600] [57841] [INFO] Worker exiting (pid: 57841)
+[2024-09-02 21:44:56 -0600] [57828] [INFO] Shutting down: Master
+[2024-09-02 21:44:56 -0600] [65401] [INFO] Starting gunicorn 23.0.0
+[2024-09-02 21:44:56 -0600] [65401] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (65401)
+[2024-09-02 21:44:56 -0600] [65401] [INFO] Using worker: gthread
+[2024-09-02 21:44:56 -0600] [65410] [INFO] Booting worker with pid: 65410
+[2024-09-02 21:44:56 -0600] [65414] [INFO] Booting worker with pid: 65414
+[2024-09-02 21:44:56 -0600] [65415] [INFO] Booting worker with pid: 65415
+[2024-09-02 21:44:56 -0600] [65416] [INFO] Booting worker with pid: 65416
+[2024-09-02 21:44:56 -0600] [65417] [INFO] Booting worker with pid: 65417
+[2024-09-02 21:44:56 -0600] [65418] [INFO] Booting worker with pid: 65418
+[2024-09-02 21:44:56 -0600] [65419] [INFO] Booting worker with pid: 65419
+[2024-09-02 21:44:56 -0600] [65420] [INFO] Booting worker with pid: 65420
+[2024-09-02 21:44:56 -0600] [65421] [INFO] Booting worker with pid: 65421
+[2024-09-02 21:44:56 -0600] [65422] [INFO] Booting worker with pid: 65422
+[2024-09-02 21:44:56 -0600] [65423] [INFO] Booting worker with pid: 65423
+[2024-09-02 21:44:56 -0600] [65424] [INFO] Booting worker with pid: 65424
+[2024-09-02 21:44:56 -0600] [65425] [INFO] Booting worker with pid: 65425
+[2024-09-02 21:44:57 -0600] [65426] [INFO] Booting worker with pid: 65426
+[2024-09-02 21:44:57 -0600] [65427] [INFO] Booting worker with pid: 65427
+[2024-09-02 21:44:57 -0600] [65428] [INFO] Booting worker with pid: 65428
+[2024-09-02 21:44:57 -0600] [65429] [INFO] Booting worker with pid: 65429
+[2024-09-02 21:44:57 -0600] [65430] [INFO] Booting worker with pid: 65430
+[2024-09-02 21:44:57 -0600] [65431] [INFO] Booting worker with pid: 65431
+[2024-09-02 21:44:57 -0600] [65435] [INFO] Booting worker with pid: 65435
+[2024-09-02 21:45:37 -0600] [65401] [INFO] Handling signal: term
+[2024-09-02 21:45:38 -0600] [65418] [INFO] Worker exiting (pid: 65418)
+[2024-09-02 21:45:38 -0600] [65421] [INFO] Worker exiting (pid: 65421)
+[2024-09-02 21:45:38 -0600] [65419] [INFO] Worker exiting (pid: 65419)
+[2024-09-02 21:45:38 -0600] [65423] [INFO] Worker exiting (pid: 65423)
+[2024-09-02 21:45:38 -0600] [65417] [INFO] Worker exiting (pid: 65417)
+[2024-09-02 21:45:38 -0600] [65428] [INFO] Worker exiting (pid: 65428)
+[2024-09-02 21:45:38 -0600] [65415] [INFO] Worker exiting (pid: 65415)
+[2024-09-02 21:45:38 -0600] [65422] [INFO] Worker exiting (pid: 65422)
+[2024-09-02 21:45:38 -0600] [65431] [INFO] Worker exiting (pid: 65431)
+[2024-09-02 21:45:38 -0600] [65414] [INFO] Worker exiting (pid: 65414)
+[2024-09-02 21:45:38 -0600] [65416] [INFO] Worker exiting (pid: 65416)
+[2024-09-02 21:45:38 -0600] [65425] [INFO] Worker exiting (pid: 65425)
+[2024-09-02 21:45:38 -0600] [65426] [INFO] Worker exiting (pid: 65426)
+[2024-09-02 21:45:38 -0600] [65420] [INFO] Worker exiting (pid: 65420)
+[2024-09-02 21:45:38 -0600] [65424] [INFO] Worker exiting (pid: 65424)
+[2024-09-02 21:45:38 -0600] [65429] [INFO] Worker exiting (pid: 65429)
+[2024-09-02 21:45:38 -0600] [65430] [INFO] Worker exiting (pid: 65430)
+[2024-09-02 21:45:38 -0600] [65410] [INFO] Worker exiting (pid: 65410)
+[2024-09-02 21:45:38 -0600] [65435] [INFO] Worker exiting (pid: 65435)
+[2024-09-02 21:45:38 -0600] [65427] [INFO] Worker exiting (pid: 65427)
+[2024-09-02 21:45:38 -0600] [65401] [INFO] Shutting down: Master
+[2024-09-02 21:45:38 -0600] [65533] [INFO] Starting gunicorn 23.0.0
+[2024-09-02 21:45:38 -0600] [65533] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (65533)
+[2024-09-02 21:45:38 -0600] [65533] [INFO] Using worker: gthread
+[2024-09-02 21:45:38 -0600] [65536] [INFO] Booting worker with pid: 65536
+[2024-09-02 21:45:38 -0600] [65537] [INFO] Booting worker with pid: 65537
+[2024-09-02 21:45:38 -0600] [65538] [INFO] Booting worker with pid: 65538
+[2024-09-02 21:45:38 -0600] [65539] [INFO] Booting worker with pid: 65539
+[2024-09-02 21:45:38 -0600] [65540] [INFO] Booting worker with pid: 65540
+[2024-09-02 21:45:38 -0600] [65541] [INFO] Booting worker with pid: 65541
+[2024-09-02 21:45:38 -0600] [65542] [INFO] Booting worker with pid: 65542
+[2024-09-02 21:45:39 -0600] [65543] [INFO] Booting worker with pid: 65543
+[2024-09-02 21:45:39 -0600] [65544] [INFO] Booting worker with pid: 65544
+[2024-09-02 21:45:39 -0600] [65545] [INFO] Booting worker with pid: 65545
+[2024-09-02 21:45:39 -0600] [65546] [INFO] Booting worker with pid: 65546
+[2024-09-02 21:45:39 -0600] [65547] [INFO] Booting worker with pid: 65547
+[2024-09-02 21:45:39 -0600] [65548] [INFO] Booting worker with pid: 65548
+[2024-09-02 21:45:39 -0600] [65549] [INFO] Booting worker with pid: 65549
+[2024-09-02 21:45:39 -0600] [65550] [INFO] Booting worker with pid: 65550
+[2024-09-02 21:45:39 -0600] [65558] [INFO] Booting worker with pid: 65558
+[2024-09-02 21:45:39 -0600] [65559] [INFO] Booting worker with pid: 65559
+[2024-09-02 21:45:39 -0600] [65560] [INFO] Booting worker with pid: 65560
+[2024-09-02 21:45:39 -0600] [65561] [INFO] Booting worker with pid: 65561
+[2024-09-02 21:45:39 -0600] [65562] [INFO] Booting worker with pid: 65562
+[2024-09-02 21:56:18 -0600] [65533] [INFO] Handling signal: term
+[2024-09-02 21:56:18 -0600] [65548] [INFO] Worker exiting (pid: 65548)
+[2024-09-02 21:56:18 -0600] [65559] [INFO] Worker exiting (pid: 65559)
+[2024-09-02 21:56:18 -0600] [65549] [INFO] Worker exiting (pid: 65549)
+[2024-09-02 21:56:18 -0600] [65547] [INFO] Worker exiting (pid: 65547)
+[2024-09-02 21:56:18 -0600] [65541] [INFO] Worker exiting (pid: 65541)
+[2024-09-02 21:56:18 -0600] [65542] [INFO] Worker exiting (pid: 65542)
+[2024-09-02 21:56:18 -0600] [65539] [INFO] Worker exiting (pid: 65539)
+[2024-09-02 21:56:18 -0600] [65540] [INFO] Worker exiting (pid: 65540)
+[2024-09-02 21:56:18 -0600] [65545] [INFO] Worker exiting (pid: 65545)
+[2024-09-02 21:56:18 -0600] [65537] [INFO] Worker exiting (pid: 65537)
+[2024-09-02 21:56:18 -0600] [65538] [INFO] Worker exiting (pid: 65538)
+[2024-09-02 21:56:18 -0600] [65546] [INFO] Worker exiting (pid: 65546)
+[2024-09-02 21:56:18 -0600] [65562] [INFO] Worker exiting (pid: 65562)
+[2024-09-02 21:56:18 -0600] [65561] [INFO] Worker exiting (pid: 65561)
+[2024-09-02 21:56:18 -0600] [65560] [INFO] Worker exiting (pid: 65560)
+[2024-09-02 21:56:19 -0600] [65558] [INFO] Worker exiting (pid: 65558)
+[2024-09-02 21:56:19 -0600] [65544] [INFO] Worker exiting (pid: 65544)
+[2024-09-02 21:56:19 -0600] [65536] [INFO] Worker exiting (pid: 65536)
+[2024-09-02 21:56:19 -0600] [65543] [INFO] Worker exiting (pid: 65543)
+[2024-09-02 21:56:19 -0600] [65550] [INFO] Worker exiting (pid: 65550)
+[2024-09-02 21:56:19 -0600] [65533] [INFO] Shutting down: Master
+[2024-09-02 21:56:19 -0600] [66674] [INFO] Starting gunicorn 23.0.0
+[2024-09-02 21:56:19 -0600] [66674] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (66674)
+[2024-09-02 21:56:19 -0600] [66674] [INFO] Using worker: gthread
+[2024-09-02 21:56:19 -0600] [66677] [INFO] Booting worker with pid: 66677
+[2024-09-02 21:56:19 -0600] [66678] [INFO] Booting worker with pid: 66678
+[2024-09-02 21:56:19 -0600] [66679] [INFO] Booting worker with pid: 66679
+[2024-09-02 21:56:19 -0600] [66680] [INFO] Booting worker with pid: 66680
+[2024-09-02 21:56:19 -0600] [66681] [INFO] Booting worker with pid: 66681
+[2024-09-02 21:56:19 -0600] [66682] [INFO] Booting worker with pid: 66682
+[2024-09-02 21:56:20 -0600] [66683] [INFO] Booting worker with pid: 66683
+[2024-09-02 21:56:20 -0600] [66684] [INFO] Booting worker with pid: 66684
+[2024-09-02 21:56:20 -0600] [66685] [INFO] Booting worker with pid: 66685
+[2024-09-02 21:56:20 -0600] [66686] [INFO] Booting worker with pid: 66686
+[2024-09-02 21:56:20 -0600] [66687] [INFO] Booting worker with pid: 66687
+[2024-09-02 21:56:20 -0600] [66688] [INFO] Booting worker with pid: 66688
+[2024-09-02 21:56:20 -0600] [66689] [INFO] Booting worker with pid: 66689
+[2024-09-02 21:56:20 -0600] [66697] [INFO] Booting worker with pid: 66697
+[2024-09-02 21:56:20 -0600] [66698] [INFO] Booting worker with pid: 66698
+[2024-09-02 21:56:20 -0600] [66699] [INFO] Booting worker with pid: 66699
+[2024-09-02 21:56:20 -0600] [66700] [INFO] Booting worker with pid: 66700
+[2024-09-02 21:56:20 -0600] [66701] [INFO] Booting worker with pid: 66701
+[2024-09-02 21:56:20 -0600] [66702] [INFO] Booting worker with pid: 66702
+[2024-09-02 21:56:20 -0600] [66703] [INFO] Booting worker with pid: 66703
+[2024-09-02 22:05:19 -0600] [66674] [INFO] Handling signal: term
+[2024-09-02 22:05:20 -0600] [66685] [INFO] Worker exiting (pid: 66685)
+[2024-09-02 22:05:20 -0600] [66679] [INFO] Worker exiting (pid: 66679)
+[2024-09-02 22:05:20 -0600] [66699] [INFO] Worker exiting (pid: 66699)
+[2024-09-02 22:05:20 -0600] [66688] [INFO] Worker exiting (pid: 66688)
+[2024-09-02 22:05:20 -0600] [66684] [INFO] Worker exiting (pid: 66684)
+[2024-09-02 22:05:20 -0600] [66698] [INFO] Worker exiting (pid: 66698)
+[2024-09-02 22:05:20 -0600] [66683] [INFO] Worker exiting (pid: 66683)
+[2024-09-02 22:05:20 -0600] [66697] [INFO] Worker exiting (pid: 66697)
+[2024-09-02 22:05:20 -0600] [66681] [INFO] Worker exiting (pid: 66681)
+[2024-09-02 22:05:20 -0600] [66680] [INFO] Worker exiting (pid: 66680)
+[2024-09-02 22:05:20 -0600] [66677] [INFO] Worker exiting (pid: 66677)
+[2024-09-02 22:05:20 -0600] [66702] [INFO] Worker exiting (pid: 66702)
+[2024-09-02 22:05:20 -0600] [66700] [INFO] Worker exiting (pid: 66700)
+[2024-09-02 22:05:20 -0600] [66703] [INFO] Worker exiting (pid: 66703)
+[2024-09-02 22:05:20 -0600] [66687] [INFO] Worker exiting (pid: 66687)
+[2024-09-02 22:05:20 -0600] [66686] [INFO] Worker exiting (pid: 66686)
+[2024-09-02 22:05:20 -0600] [66701] [INFO] Worker exiting (pid: 66701)
+[2024-09-02 22:05:20 -0600] [66689] [INFO] Worker exiting (pid: 66689)
+[2024-09-02 22:05:20 -0600] [66682] [INFO] Worker exiting (pid: 66682)
+[2024-09-02 22:05:20 -0600] [66678] [INFO] Worker exiting (pid: 66678)
+[2024-09-02 22:05:20 -0600] [66674] [INFO] Shutting down: Master
+[2024-09-02 22:05:20 -0600] [67810] [INFO] Starting gunicorn 23.0.0
+[2024-09-02 22:05:20 -0600] [67810] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (67810)
+[2024-09-02 22:05:20 -0600] [67810] [INFO] Using worker: gthread
+[2024-09-02 22:05:20 -0600] [67813] [INFO] Booting worker with pid: 67813
+[2024-09-02 22:05:20 -0600] [67814] [INFO] Booting worker with pid: 67814
+[2024-09-02 22:05:20 -0600] [67820] [INFO] Booting worker with pid: 67820
+[2024-09-02 22:05:20 -0600] [67825] [INFO] Booting worker with pid: 67825
+[2024-09-02 22:05:20 -0600] [67826] [INFO] Booting worker with pid: 67826
+[2024-09-02 22:05:20 -0600] [67827] [INFO] Booting worker with pid: 67827
+[2024-09-02 22:05:20 -0600] [67828] [INFO] Booting worker with pid: 67828
+[2024-09-02 22:05:20 -0600] [67829] [INFO] Booting worker with pid: 67829
+[2024-09-02 22:05:20 -0600] [67830] [INFO] Booting worker with pid: 67830
+[2024-09-02 22:05:20 -0600] [67831] [INFO] Booting worker with pid: 67831
+[2024-09-02 22:05:20 -0600] [67832] [INFO] Booting worker with pid: 67832
+[2024-09-02 22:05:21 -0600] [67833] [INFO] Booting worker with pid: 67833
+[2024-09-02 22:05:21 -0600] [67834] [INFO] Booting worker with pid: 67834
+[2024-09-02 22:05:21 -0600] [67835] [INFO] Booting worker with pid: 67835
+[2024-09-02 22:05:21 -0600] [67836] [INFO] Booting worker with pid: 67836
+[2024-09-02 22:05:21 -0600] [67837] [INFO] Booting worker with pid: 67837
+[2024-09-02 22:05:21 -0600] [67838] [INFO] Booting worker with pid: 67838
+[2024-09-02 22:05:21 -0600] [67839] [INFO] Booting worker with pid: 67839
+[2024-09-02 22:05:21 -0600] [67840] [INFO] Booting worker with pid: 67840
+[2024-09-02 22:05:21 -0600] [67841] [INFO] Booting worker with pid: 67841
+[2024-09-02 22:21:11 -0600] [67810] [INFO] Handling signal: term
+[2024-09-02 22:21:11 -0600] [67829] [INFO] Worker exiting (pid: 67829)
+[2024-09-02 22:21:11 -0600] [67838] [INFO] Worker exiting (pid: 67838)
+[2024-09-02 22:21:11 -0600] [67830] [INFO] Worker exiting (pid: 67830)
+[2024-09-02 22:21:11 -0600] [67836] [INFO] Worker exiting (pid: 67836)
+[2024-09-02 22:21:11 -0600] [67839] [INFO] Worker exiting (pid: 67839)
+[2024-09-02 22:21:11 -0600] [67840] [INFO] Worker exiting (pid: 67840)
+[2024-09-02 22:21:11 -0600] [67833] [INFO] Worker exiting (pid: 67833)
+[2024-09-02 22:21:11 -0600] [67826] [INFO] Worker exiting (pid: 67826)
+[2024-09-02 22:21:11 -0600] [67828] [INFO] Worker exiting (pid: 67828)
+[2024-09-02 22:21:11 -0600] [67834] [INFO] Worker exiting (pid: 67834)
+[2024-09-02 22:21:11 -0600] [67827] [INFO] Worker exiting (pid: 67827)
+[2024-09-02 22:21:11 -0600] [67831] [INFO] Worker exiting (pid: 67831)
+[2024-09-02 22:21:11 -0600] [67813] [INFO] Worker exiting (pid: 67813)
+[2024-09-02 22:21:11 -0600] [67832] [INFO] Worker exiting (pid: 67832)
+[2024-09-02 22:21:11 -0600] [67835] [INFO] Worker exiting (pid: 67835)
+[2024-09-02 22:21:11 -0600] [67814] [INFO] Worker exiting (pid: 67814)
+[2024-09-02 22:21:11 -0600] [67837] [INFO] Worker exiting (pid: 67837)
+[2024-09-02 22:21:12 -0600] [67825] [INFO] Worker exiting (pid: 67825)
+[2024-09-02 22:21:12 -0600] [67820] [INFO] Worker exiting (pid: 67820)
+[2024-09-02 22:21:12 -0600] [67841] [INFO] Worker exiting (pid: 67841)
+[2024-09-02 22:21:12 -0600] [67810] [INFO] Shutting down: Master
+[2024-09-02 22:21:12 -0600] [69144] [INFO] Starting gunicorn 23.0.0
+[2024-09-02 22:21:12 -0600] [69144] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (69144)
+[2024-09-02 22:21:12 -0600] [69144] [INFO] Using worker: gthread
+[2024-09-02 22:21:12 -0600] [69148] [INFO] Booting worker with pid: 69148
+[2024-09-02 22:21:12 -0600] [69149] [INFO] Booting worker with pid: 69149
+[2024-09-02 22:21:13 -0600] [69150] [INFO] Booting worker with pid: 69150
+[2024-09-02 22:21:13 -0600] [69151] [INFO] Booting worker with pid: 69151
+[2024-09-02 22:21:13 -0600] [69152] [INFO] Booting worker with pid: 69152
+[2024-09-02 22:21:13 -0600] [69153] [INFO] Booting worker with pid: 69153
+[2024-09-02 22:21:13 -0600] [69154] [INFO] Booting worker with pid: 69154
+[2024-09-02 22:21:13 -0600] [69155] [INFO] Booting worker with pid: 69155
+[2024-09-02 22:21:13 -0600] [69156] [INFO] Booting worker with pid: 69156
+[2024-09-02 22:21:13 -0600] [69157] [INFO] Booting worker with pid: 69157
+[2024-09-02 22:21:13 -0600] [69158] [INFO] Booting worker with pid: 69158
+[2024-09-02 22:21:13 -0600] [69159] [INFO] Booting worker with pid: 69159
+[2024-09-02 22:21:13 -0600] [69160] [INFO] Booting worker with pid: 69160
+[2024-09-02 22:21:13 -0600] [69168] [INFO] Booting worker with pid: 69168
+[2024-09-02 22:21:13 -0600] [69169] [INFO] Booting worker with pid: 69169
+[2024-09-02 22:21:13 -0600] [69170] [INFO] Booting worker with pid: 69170
+[2024-09-02 22:21:13 -0600] [69171] [INFO] Booting worker with pid: 69171
+[2024-09-02 22:21:13 -0600] [69172] [INFO] Booting worker with pid: 69172
+[2024-09-02 22:21:13 -0600] [69173] [INFO] Booting worker with pid: 69173
+[2024-09-02 22:21:13 -0600] [69174] [INFO] Booting worker with pid: 69174
+[2024-09-02 22:21:57 -0600] [69144] [INFO] Handling signal: term
+[2024-09-02 22:21:57 -0600] [69158] [INFO] Worker exiting (pid: 69158)
+[2024-09-02 22:21:57 -0600] [69152] [INFO] Worker exiting (pid: 69152)
+[2024-09-02 22:21:57 -0600] [69150] [INFO] Worker exiting (pid: 69150)
+[2024-09-02 22:21:57 -0600] [69157] [INFO] Worker exiting (pid: 69157)
+[2024-09-02 22:21:57 -0600] [69169] [INFO] Worker exiting (pid: 69169)
+[2024-09-02 22:21:57 -0600] [69151] [INFO] Worker exiting (pid: 69151)
+[2024-09-02 22:21:57 -0600] [69160] [INFO] Worker exiting (pid: 69160)
+[2024-09-02 22:21:57 -0600] [69149] [INFO] Worker exiting (pid: 69149)
+[2024-09-02 22:21:57 -0600] [69172] [INFO] Worker exiting (pid: 69172)
+[2024-09-02 22:21:57 -0600] [69174] [INFO] Worker exiting (pid: 69174)
+[2024-09-02 22:21:57 -0600] [69148] [INFO] Worker exiting (pid: 69148)
+[2024-09-02 22:21:57 -0600] [69170] [INFO] Worker exiting (pid: 69170)
+[2024-09-02 22:21:57 -0600] [69173] [INFO] Worker exiting (pid: 69173)
+[2024-09-02 22:21:57 -0600] [69159] [INFO] Worker exiting (pid: 69159)
+[2024-09-02 22:21:57 -0600] [69153] [INFO] Worker exiting (pid: 69153)
+[2024-09-02 22:21:57 -0600] [69171] [INFO] Worker exiting (pid: 69171)
+[2024-09-02 22:21:57 -0600] [69168] [INFO] Worker exiting (pid: 69168)
+[2024-09-02 22:21:58 -0600] [69154] [INFO] Worker exiting (pid: 69154)
+[2024-09-02 22:21:58 -0600] [69156] [INFO] Worker exiting (pid: 69156)
+[2024-09-02 22:21:58 -0600] [69155] [INFO] Worker exiting (pid: 69155)
+[2024-09-02 22:21:58 -0600] [69144] [INFO] Shutting down: Master
+[2024-09-02 22:21:58 -0600] [69363] [INFO] Starting gunicorn 23.0.0
+[2024-09-02 22:21:58 -0600] [69363] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (69363)
+[2024-09-02 22:21:58 -0600] [69363] [INFO] Using worker: gthread
+[2024-09-02 22:21:58 -0600] [69365] [INFO] Booting worker with pid: 69365
+[2024-09-02 22:21:58 -0600] [69366] [INFO] Booting worker with pid: 69366
+[2024-09-02 22:21:58 -0600] [69367] [INFO] Booting worker with pid: 69367
+[2024-09-02 22:21:58 -0600] [69368] [INFO] Booting worker with pid: 69368
+[2024-09-02 22:21:58 -0600] [69369] [INFO] Booting worker with pid: 69369
+[2024-09-02 22:21:59 -0600] [69370] [INFO] Booting worker with pid: 69370
+[2024-09-02 22:21:59 -0600] [69371] [INFO] Booting worker with pid: 69371
+[2024-09-02 22:21:59 -0600] [69373] [INFO] Booting worker with pid: 69373
+[2024-09-02 22:21:59 -0600] [69374] [INFO] Booting worker with pid: 69374
+[2024-09-02 22:21:59 -0600] [69375] [INFO] Booting worker with pid: 69375
+[2024-09-02 22:21:59 -0600] [69376] [INFO] Booting worker with pid: 69376
+[2024-09-02 22:21:59 -0600] [69377] [INFO] Booting worker with pid: 69377
+[2024-09-02 22:21:59 -0600] [69378] [INFO] Booting worker with pid: 69378
+[2024-09-02 22:21:59 -0600] [69386] [INFO] Booting worker with pid: 69386
+[2024-09-02 22:21:59 -0600] [69387] [INFO] Booting worker with pid: 69387
+[2024-09-02 22:21:59 -0600] [69388] [INFO] Booting worker with pid: 69388
+[2024-09-02 22:21:59 -0600] [69389] [INFO] Booting worker with pid: 69389
+[2024-09-02 22:21:59 -0600] [69390] [INFO] Booting worker with pid: 69390
+[2024-09-02 22:21:59 -0600] [69391] [INFO] Booting worker with pid: 69391
+[2024-09-02 22:21:59 -0600] [69392] [INFO] Booting worker with pid: 69392
+[2024-09-02 22:22:38 -0600] [69363] [INFO] Handling signal: term
+[2024-09-02 22:22:38 -0600] [69386] [INFO] Worker exiting (pid: 69386)
+[2024-09-02 22:22:38 -0600] [69387] [INFO] Worker exiting (pid: 69387)
+[2024-09-02 22:22:38 -0600] [69388] [INFO] Worker exiting (pid: 69388)
+[2024-09-02 22:22:38 -0600] [69389] [INFO] Worker exiting (pid: 69389)
+[2024-09-02 22:22:38 -0600] [69390] [INFO] Worker exiting (pid: 69390)
+[2024-09-02 22:22:38 -0600] [69365] [INFO] Worker exiting (pid: 69365)
+[2024-09-02 22:22:38 -0600] [69366] [INFO] Worker exiting (pid: 69366)
+[2024-09-02 22:22:38 -0600] [69368] [INFO] Worker exiting (pid: 69368)
+[2024-09-02 22:22:38 -0600] [69370] [INFO] Worker exiting (pid: 69370)
+[2024-09-02 22:22:38 -0600] [69392] [INFO] Worker exiting (pid: 69392)
+[2024-09-02 22:22:38 -0600] [69391] [INFO] Worker exiting (pid: 69391)
+[2024-09-02 22:22:38 -0600] [69367] [INFO] Worker exiting (pid: 69367)
+[2024-09-02 22:22:38 -0600] [69369] [INFO] Worker exiting (pid: 69369)
+[2024-09-02 22:22:38 -0600] [69371] [INFO] Worker exiting (pid: 69371)
+[2024-09-02 22:22:38 -0600] [69373] [INFO] Worker exiting (pid: 69373)
+[2024-09-02 22:22:38 -0600] [69374] [INFO] Worker exiting (pid: 69374)
+[2024-09-02 22:22:38 -0600] [69375] [INFO] Worker exiting (pid: 69375)
+[2024-09-02 22:22:38 -0600] [69376] [INFO] Worker exiting (pid: 69376)
+[2024-09-02 22:22:39 -0600] [69377] [INFO] Worker exiting (pid: 69377)
+[2024-09-02 22:22:39 -0600] [69378] [INFO] Worker exiting (pid: 69378)
+[2024-09-02 22:22:39 -0600] [69363] [INFO] Shutting down: Master
+[2024-09-02 22:22:39 -0600] [69495] [INFO] Starting gunicorn 23.0.0
+[2024-09-02 22:22:39 -0600] [69495] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (69495)
+[2024-09-02 22:22:39 -0600] [69495] [INFO] Using worker: gthread
+[2024-09-02 22:22:39 -0600] [69497] [INFO] Booting worker with pid: 69497
+[2024-09-02 22:22:39 -0600] [69500] [INFO] Booting worker with pid: 69500
+[2024-09-02 22:22:39 -0600] [69510] [INFO] Booting worker with pid: 69510
+[2024-09-02 22:22:39 -0600] [69511] [INFO] Booting worker with pid: 69511
+[2024-09-02 22:22:39 -0600] [69512] [INFO] Booting worker with pid: 69512
+[2024-09-02 22:22:39 -0600] [69515] [INFO] Booting worker with pid: 69515
+[2024-09-02 22:22:39 -0600] [69516] [INFO] Booting worker with pid: 69516
+[2024-09-02 22:22:39 -0600] [69517] [INFO] Booting worker with pid: 69517
+[2024-09-02 22:22:39 -0600] [69518] [INFO] Booting worker with pid: 69518
+[2024-09-02 22:22:40 -0600] [69519] [INFO] Booting worker with pid: 69519
+[2024-09-02 22:22:40 -0600] [69520] [INFO] Booting worker with pid: 69520
+[2024-09-02 22:22:40 -0600] [69521] [INFO] Booting worker with pid: 69521
+[2024-09-02 22:22:40 -0600] [69529] [INFO] Booting worker with pid: 69529
+[2024-09-02 22:22:40 -0600] [69530] [INFO] Booting worker with pid: 69530
+[2024-09-02 22:22:40 -0600] [69531] [INFO] Booting worker with pid: 69531
+[2024-09-02 22:22:40 -0600] [69532] [INFO] Booting worker with pid: 69532
+[2024-09-02 22:22:40 -0600] [69533] [INFO] Booting worker with pid: 69533
+[2024-09-02 22:22:40 -0600] [69534] [INFO] Booting worker with pid: 69534
+[2024-09-02 22:22:40 -0600] [69535] [INFO] Booting worker with pid: 69535
+[2024-09-02 22:22:40 -0600] [69536] [INFO] Booting worker with pid: 69536
+[2024-09-02 22:35:40 -0600] [69495] [INFO] Handling signal: term
+[2024-09-02 22:35:40 -0600] [69497] [INFO] Worker exiting (pid: 69497)
+[2024-09-02 22:35:40 -0600] [69533] [INFO] Worker exiting (pid: 69533)
+[2024-09-02 22:35:40 -0600] [69531] [INFO] Worker exiting (pid: 69531)
+[2024-09-02 22:35:40 -0600] [69530] [INFO] Worker exiting (pid: 69530)
+[2024-09-02 22:35:40 -0600] [69516] [INFO] Worker exiting (pid: 69516)
+[2024-09-02 22:35:40 -0600] [69520] [INFO] Worker exiting (pid: 69520)
+[2024-09-02 22:35:40 -0600] [69515] [INFO] Worker exiting (pid: 69515)
+[2024-09-02 22:35:40 -0600] [69535] [INFO] Worker exiting (pid: 69535)
+[2024-09-02 22:35:40 -0600] [69534] [INFO] Worker exiting (pid: 69534)
+[2024-09-02 22:35:40 -0600] [69510] [INFO] Worker exiting (pid: 69510)
+[2024-09-02 22:35:40 -0600] [69517] [INFO] Worker exiting (pid: 69517)
+[2024-09-02 22:35:40 -0600] [69521] [INFO] Worker exiting (pid: 69521)
+[2024-09-02 22:35:40 -0600] [69532] [INFO] Worker exiting (pid: 69532)
+[2024-09-02 22:35:40 -0600] [69518] [INFO] Worker exiting (pid: 69518)
+[2024-09-02 22:35:40 -0600] [69512] [INFO] Worker exiting (pid: 69512)
+[2024-09-02 22:35:40 -0600] [69511] [INFO] Worker exiting (pid: 69511)
+[2024-09-02 22:35:40 -0600] [69536] [INFO] Worker exiting (pid: 69536)
+[2024-09-02 22:35:40 -0600] [69529] [INFO] Worker exiting (pid: 69529)
+[2024-09-02 22:35:40 -0600] [69500] [INFO] Worker exiting (pid: 69500)
+[2024-09-02 22:35:40 -0600] [69519] [INFO] Worker exiting (pid: 69519)
+[2024-09-02 22:35:40 -0600] [69495] [INFO] Shutting down: Master
+[2024-09-02 22:35:40 -0600] [70421] [INFO] Starting gunicorn 23.0.0
+[2024-09-02 22:35:40 -0600] [70421] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (70421)
+[2024-09-02 22:35:40 -0600] [70421] [INFO] Using worker: gthread
+[2024-09-02 22:35:40 -0600] [70425] [INFO] Booting worker with pid: 70425
+[2024-09-02 22:35:40 -0600] [70426] [INFO] Booting worker with pid: 70426
+[2024-09-02 22:35:40 -0600] [70427] [INFO] Booting worker with pid: 70427
+[2024-09-02 22:35:40 -0600] [70428] [INFO] Booting worker with pid: 70428
+[2024-09-02 22:35:40 -0600] [70429] [INFO] Booting worker with pid: 70429
+[2024-09-02 22:35:40 -0600] [70430] [INFO] Booting worker with pid: 70430
+[2024-09-02 22:35:41 -0600] [70433] [INFO] Booting worker with pid: 70433
+[2024-09-02 22:35:41 -0600] [70441] [INFO] Booting worker with pid: 70441
+[2024-09-02 22:35:41 -0600] [70442] [INFO] Booting worker with pid: 70442
+[2024-09-02 22:35:41 -0600] [70443] [INFO] Booting worker with pid: 70443
+[2024-09-02 22:35:41 -0600] [70444] [INFO] Booting worker with pid: 70444
+[2024-09-02 22:35:41 -0600] [70445] [INFO] Booting worker with pid: 70445
+[2024-09-02 22:35:41 -0600] [70446] [INFO] Booting worker with pid: 70446
+[2024-09-02 22:35:41 -0600] [70447] [INFO] Booting worker with pid: 70447
+[2024-09-02 22:35:41 -0600] [70448] [INFO] Booting worker with pid: 70448
+[2024-09-02 22:35:41 -0600] [70449] [INFO] Booting worker with pid: 70449
+[2024-09-02 22:35:41 -0600] [70450] [INFO] Booting worker with pid: 70450
+[2024-09-02 22:35:41 -0600] [70451] [INFO] Booting worker with pid: 70451
+[2024-09-02 22:35:41 -0600] [70452] [INFO] Booting worker with pid: 70452
+[2024-09-02 22:35:41 -0600] [70453] [INFO] Booting worker with pid: 70453
+[2024-09-02 23:08:15 -0600] [70421] [INFO] Handling signal: term
+[2024-09-02 23:08:16 -0600] [70444] [INFO] Worker exiting (pid: 70444)
+[2024-09-02 23:08:16 -0600] [70427] [INFO] Worker exiting (pid: 70427)
+[2024-09-02 23:08:16 -0600] [70428] [INFO] Worker exiting (pid: 70428)
+[2024-09-02 23:08:16 -0600] [70450] [INFO] Worker exiting (pid: 70450)
+[2024-09-02 23:08:16 -0600] [70441] [INFO] Worker exiting (pid: 70441)
+[2024-09-02 23:08:16 -0600] [70445] [INFO] Worker exiting (pid: 70445)
+[2024-09-02 23:08:16 -0600] [70442] [INFO] Worker exiting (pid: 70442)
+[2024-09-02 23:08:16 -0600] [70448] [INFO] Worker exiting (pid: 70448)
+[2024-09-02 23:08:16 -0600] [70453] [INFO] Worker exiting (pid: 70453)
+[2024-09-02 23:08:16 -0600] [70449] [INFO] Worker exiting (pid: 70449)
+[2024-09-02 23:08:16 -0600] [70447] [INFO] Worker exiting (pid: 70447)
+[2024-09-02 23:08:16 -0600] [70451] [INFO] Worker exiting (pid: 70451)
+[2024-09-02 23:08:16 -0600] [70452] [INFO] Worker exiting (pid: 70452)
+[2024-09-02 23:08:16 -0600] [70430] [INFO] Worker exiting (pid: 70430)
+[2024-09-02 23:08:16 -0600] [70446] [INFO] Worker exiting (pid: 70446)
+[2024-09-02 23:08:16 -0600] [70429] [INFO] Worker exiting (pid: 70429)
+[2024-09-02 23:08:16 -0600] [70433] [INFO] Worker exiting (pid: 70433)
+[2024-09-02 23:08:16 -0600] [70443] [INFO] Worker exiting (pid: 70443)
+[2024-09-02 23:08:16 -0600] [70425] [INFO] Worker exiting (pid: 70425)
+[2024-09-02 23:08:16 -0600] [70426] [INFO] Worker exiting (pid: 70426)
+[2024-09-02 23:08:16 -0600] [70421] [INFO] Shutting down: Master
+[2024-09-02 23:08:17 -0600] [71555] [INFO] Starting gunicorn 23.0.0
+[2024-09-02 23:08:17 -0600] [71555] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (71555)
+[2024-09-02 23:08:17 -0600] [71555] [INFO] Using worker: gthread
+[2024-09-02 23:08:17 -0600] [71559] [INFO] Booting worker with pid: 71559
+[2024-09-02 23:08:17 -0600] [71560] [INFO] Booting worker with pid: 71560
+[2024-09-02 23:08:17 -0600] [71561] [INFO] Booting worker with pid: 71561
+[2024-09-02 23:08:17 -0600] [71562] [INFO] Booting worker with pid: 71562
+[2024-09-02 23:08:17 -0600] [71563] [INFO] Booting worker with pid: 71563
+[2024-09-02 23:08:17 -0600] [71564] [INFO] Booting worker with pid: 71564
+[2024-09-02 23:08:17 -0600] [71565] [INFO] Booting worker with pid: 71565
+[2024-09-02 23:08:17 -0600] [71566] [INFO] Booting worker with pid: 71566
+[2024-09-02 23:08:17 -0600] [71567] [INFO] Booting worker with pid: 71567
+[2024-09-02 23:08:17 -0600] [71568] [INFO] Booting worker with pid: 71568
+[2024-09-02 23:08:17 -0600] [71569] [INFO] Booting worker with pid: 71569
+[2024-09-02 23:08:17 -0600] [71570] [INFO] Booting worker with pid: 71570
+[2024-09-02 23:08:17 -0600] [71571] [INFO] Booting worker with pid: 71571
+[2024-09-02 23:08:17 -0600] [71572] [INFO] Booting worker with pid: 71572
+[2024-09-02 23:08:17 -0600] [71580] [INFO] Booting worker with pid: 71580
+[2024-09-02 23:08:17 -0600] [71581] [INFO] Booting worker with pid: 71581
+[2024-09-02 23:08:17 -0600] [71582] [INFO] Booting worker with pid: 71582
+[2024-09-02 23:08:17 -0600] [71583] [INFO] Booting worker with pid: 71583
+[2024-09-02 23:08:17 -0600] [71584] [INFO] Booting worker with pid: 71584
+[2024-09-02 23:08:17 -0600] [71585] [INFO] Booting worker with pid: 71585
+[2024-09-02 23:08:59 -0600] [71555] [INFO] Handling signal: term
+[2024-09-02 23:08:59 -0600] [71583] [INFO] Worker exiting (pid: 71583)
+[2024-09-02 23:08:59 -0600] [71561] [INFO] Worker exiting (pid: 71561)
+[2024-09-02 23:08:59 -0600] [71559] [INFO] Worker exiting (pid: 71559)
+[2024-09-02 23:08:59 -0600] [71584] [INFO] Worker exiting (pid: 71584)
+[2024-09-02 23:08:59 -0600] [71568] [INFO] Worker exiting (pid: 71568)
+[2024-09-02 23:08:59 -0600] [71581] [INFO] Worker exiting (pid: 71581)
+[2024-09-02 23:08:59 -0600] [71585] [INFO] Worker exiting (pid: 71585)
+[2024-09-02 23:08:59 -0600] [71560] [INFO] Worker exiting (pid: 71560)
+[2024-09-02 23:08:59 -0600] [71565] [INFO] Worker exiting (pid: 71565)
+[2024-09-02 23:08:59 -0600] [71562] [INFO] Worker exiting (pid: 71562)
+[2024-09-02 23:08:59 -0600] [71564] [INFO] Worker exiting (pid: 71564)
+[2024-09-02 23:08:59 -0600] [71569] [INFO] Worker exiting (pid: 71569)
+[2024-09-02 23:08:59 -0600] [71566] [INFO] Worker exiting (pid: 71566)
+[2024-09-02 23:09:00 -0600] [71563] [INFO] Worker exiting (pid: 71563)
+[2024-09-02 23:09:00 -0600] [71570] [INFO] Worker exiting (pid: 71570)
+[2024-09-02 23:09:00 -0600] [71571] [INFO] Worker exiting (pid: 71571)
+[2024-09-02 23:09:00 -0600] [71567] [INFO] Worker exiting (pid: 71567)
+[2024-09-02 23:09:00 -0600] [71572] [INFO] Worker exiting (pid: 71572)
+[2024-09-02 23:09:00 -0600] [71582] [INFO] Worker exiting (pid: 71582)
+[2024-09-02 23:09:00 -0600] [71580] [INFO] Worker exiting (pid: 71580)
+[2024-09-02 23:09:00 -0600] [71555] [INFO] Shutting down: Master
+[2024-09-02 23:09:00 -0600] [71668] [INFO] Starting gunicorn 23.0.0
+[2024-09-02 23:09:00 -0600] [71668] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (71668)
+[2024-09-02 23:09:00 -0600] [71668] [INFO] Using worker: gthread
+[2024-09-02 23:09:00 -0600] [71672] [INFO] Booting worker with pid: 71672
+[2024-09-02 23:09:00 -0600] [71673] [INFO] Booting worker with pid: 71673
+[2024-09-02 23:09:00 -0600] [71674] [INFO] Booting worker with pid: 71674
+[2024-09-02 23:09:00 -0600] [71675] [INFO] Booting worker with pid: 71675
+[2024-09-02 23:09:00 -0600] [71676] [INFO] Booting worker with pid: 71676
+[2024-09-02 23:09:00 -0600] [71677] [INFO] Booting worker with pid: 71677
+[2024-09-02 23:09:00 -0600] [71678] [INFO] Booting worker with pid: 71678
+[2024-09-02 23:09:01 -0600] [71679] [INFO] Booting worker with pid: 71679
+[2024-09-02 23:09:01 -0600] [71680] [INFO] Booting worker with pid: 71680
+[2024-09-02 23:09:01 -0600] [71681] [INFO] Booting worker with pid: 71681
+[2024-09-02 23:09:01 -0600] [71682] [INFO] Booting worker with pid: 71682
+[2024-09-02 23:09:01 -0600] [71683] [INFO] Booting worker with pid: 71683
+[2024-09-02 23:09:01 -0600] [71684] [INFO] Booting worker with pid: 71684
+[2024-09-02 23:09:01 -0600] [71685] [INFO] Booting worker with pid: 71685
+[2024-09-02 23:09:01 -0600] [71693] [INFO] Booting worker with pid: 71693
+[2024-09-02 23:09:01 -0600] [71694] [INFO] Booting worker with pid: 71694
+[2024-09-02 23:09:01 -0600] [71695] [INFO] Booting worker with pid: 71695
+[2024-09-02 23:09:01 -0600] [71696] [INFO] Booting worker with pid: 71696
+[2024-09-02 23:09:01 -0600] [71697] [INFO] Booting worker with pid: 71697
+[2024-09-02 23:09:01 -0600] [71698] [INFO] Booting worker with pid: 71698
+[2024-09-02 23:11:02 -0600] [71668] [INFO] Handling signal: term
+[2024-09-02 23:11:02 -0600] [71680] [INFO] Worker exiting (pid: 71680)
+[2024-09-02 23:11:02 -0600] [71675] [INFO] Worker exiting (pid: 71675)
+[2024-09-02 23:11:02 -0600] [71681] [INFO] Worker exiting (pid: 71681)
+[2024-09-02 23:11:02 -0600] [71698] [INFO] Worker exiting (pid: 71698)
+[2024-09-02 23:11:02 -0600] [71685] [INFO] Worker exiting (pid: 71685)
+[2024-09-02 23:11:02 -0600] [71682] [INFO] Worker exiting (pid: 71682)
+[2024-09-02 23:11:02 -0600] [71683] [INFO] Worker exiting (pid: 71683)
+[2024-09-02 23:11:02 -0600] [71697] [INFO] Worker exiting (pid: 71697)
+[2024-09-02 23:11:02 -0600] [71674] [INFO] Worker exiting (pid: 71674)
+[2024-09-02 23:11:02 -0600] [71695] [INFO] Worker exiting (pid: 71695)
+[2024-09-02 23:11:02 -0600] [71672] [INFO] Worker exiting (pid: 71672)
+[2024-09-02 23:11:02 -0600] [71677] [INFO] Worker exiting (pid: 71677)
+[2024-09-02 23:11:02 -0600] [71678] [INFO] Worker exiting (pid: 71678)
+[2024-09-02 23:11:02 -0600] [71684] [INFO] Worker exiting (pid: 71684)
+[2024-09-02 23:11:02 -0600] [71679] [INFO] Worker exiting (pid: 71679)
+[2024-09-02 23:11:02 -0600] [71696] [INFO] Worker exiting (pid: 71696)
+[2024-09-02 23:11:02 -0600] [71673] [INFO] Worker exiting (pid: 71673)
+[2024-09-02 23:11:02 -0600] [71694] [INFO] Worker exiting (pid: 71694)
+[2024-09-02 23:11:02 -0600] [71693] [INFO] Worker exiting (pid: 71693)
+[2024-09-02 23:11:02 -0600] [71676] [INFO] Worker exiting (pid: 71676)
+[2024-09-02 23:11:02 -0600] [71668] [INFO] Shutting down: Master
+[2024-09-02 23:11:02 -0600] [71837] [INFO] Starting gunicorn 23.0.0
+[2024-09-02 23:11:02 -0600] [71837] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (71837)
+[2024-09-02 23:11:02 -0600] [71837] [INFO] Using worker: gthread
+[2024-09-02 23:11:02 -0600] [71839] [INFO] Booting worker with pid: 71839
+[2024-09-02 23:11:02 -0600] [71840] [INFO] Booting worker with pid: 71840
+[2024-09-02 23:11:02 -0600] [71841] [INFO] Booting worker with pid: 71841
+[2024-09-02 23:11:02 -0600] [71842] [INFO] Booting worker with pid: 71842
+[2024-09-02 23:11:02 -0600] [71843] [INFO] Booting worker with pid: 71843
+[2024-09-02 23:11:03 -0600] [71844] [INFO] Booting worker with pid: 71844
+[2024-09-02 23:11:03 -0600] [71845] [INFO] Booting worker with pid: 71845
+[2024-09-02 23:11:03 -0600] [71850] [INFO] Booting worker with pid: 71850
+[2024-09-02 23:11:03 -0600] [71856] [INFO] Booting worker with pid: 71856
+[2024-09-02 23:11:03 -0600] [71857] [INFO] Booting worker with pid: 71857
+[2024-09-02 23:11:03 -0600] [71858] [INFO] Booting worker with pid: 71858
+[2024-09-02 23:11:03 -0600] [71859] [INFO] Booting worker with pid: 71859
+[2024-09-02 23:11:03 -0600] [71860] [INFO] Booting worker with pid: 71860
+[2024-09-02 23:11:03 -0600] [71861] [INFO] Booting worker with pid: 71861
+[2024-09-02 23:11:03 -0600] [71862] [INFO] Booting worker with pid: 71862
+[2024-09-02 23:11:03 -0600] [71863] [INFO] Booting worker with pid: 71863
+[2024-09-02 23:11:03 -0600] [71864] [INFO] Booting worker with pid: 71864
+[2024-09-02 23:11:03 -0600] [71865] [INFO] Booting worker with pid: 71865
+[2024-09-02 23:11:03 -0600] [71866] [INFO] Booting worker with pid: 71866
+[2024-09-02 23:11:03 -0600] [71867] [INFO] Booting worker with pid: 71867
+[2024-09-02 23:14:54 -0600] [71837] [INFO] Handling signal: term
+[2024-09-02 23:14:54 -0600] [71850] [INFO] Worker exiting (pid: 71850)
+[2024-09-02 23:14:54 -0600] [71856] [INFO] Worker exiting (pid: 71856)
+[2024-09-02 23:14:54 -0600] [71844] [INFO] Worker exiting (pid: 71844)
+[2024-09-02 23:14:54 -0600] [71860] [INFO] Worker exiting (pid: 71860)
+[2024-09-02 23:14:54 -0600] [71865] [INFO] Worker exiting (pid: 71865)
+[2024-09-02 23:14:54 -0600] [71864] [INFO] Worker exiting (pid: 71864)
+[2024-09-02 23:14:54 -0600] [71845] [INFO] Worker exiting (pid: 71845)
+[2024-09-02 23:14:54 -0600] [71867] [INFO] Worker exiting (pid: 71867)
+[2024-09-02 23:14:54 -0600] [71858] [INFO] Worker exiting (pid: 71858)
+[2024-09-02 23:14:54 -0600] [71862] [INFO] Worker exiting (pid: 71862)
+[2024-09-02 23:14:54 -0600] [71857] [INFO] Worker exiting (pid: 71857)
+[2024-09-02 23:14:54 -0600] [71866] [INFO] Worker exiting (pid: 71866)
+[2024-09-02 23:14:54 -0600] [71863] [INFO] Worker exiting (pid: 71863)
+[2024-09-02 23:14:54 -0600] [71861] [INFO] Worker exiting (pid: 71861)
+[2024-09-02 23:14:54 -0600] [71859] [INFO] Worker exiting (pid: 71859)
+[2024-09-02 23:14:54 -0600] [71840] [INFO] Worker exiting (pid: 71840)
+[2024-09-02 23:14:55 -0600] [71839] [INFO] Worker exiting (pid: 71839)
+[2024-09-02 23:14:55 -0600] [71843] [INFO] Worker exiting (pid: 71843)
+[2024-09-02 23:14:55 -0600] [71842] [INFO] Worker exiting (pid: 71842)
+[2024-09-02 23:14:55 -0600] [71841] [INFO] Worker exiting (pid: 71841)
+[2024-09-02 23:14:55 -0600] [71837] [INFO] Shutting down: Master
+[2024-09-02 23:14:55 -0600] [72052] [INFO] Starting gunicorn 23.0.0
+[2024-09-02 23:14:55 -0600] [72052] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (72052)
+[2024-09-02 23:14:55 -0600] [72052] [INFO] Using worker: gthread
+[2024-09-02 23:14:55 -0600] [72056] [INFO] Booting worker with pid: 72056
+[2024-09-02 23:14:55 -0600] [72057] [INFO] Booting worker with pid: 72057
+[2024-09-02 23:14:55 -0600] [72058] [INFO] Booting worker with pid: 72058
+[2024-09-02 23:14:55 -0600] [72059] [INFO] Booting worker with pid: 72059
+[2024-09-02 23:14:55 -0600] [72060] [INFO] Booting worker with pid: 72060
+[2024-09-02 23:14:55 -0600] [72061] [INFO] Booting worker with pid: 72061
+[2024-09-02 23:14:55 -0600] [72062] [INFO] Booting worker with pid: 72062
+[2024-09-02 23:14:55 -0600] [72063] [INFO] Booting worker with pid: 72063
+[2024-09-02 23:14:55 -0600] [72064] [INFO] Booting worker with pid: 72064
+[2024-09-02 23:14:55 -0600] [72065] [INFO] Booting worker with pid: 72065
+[2024-09-02 23:14:56 -0600] [72066] [INFO] Booting worker with pid: 72066
+[2024-09-02 23:14:56 -0600] [72067] [INFO] Booting worker with pid: 72067
+[2024-09-02 23:14:56 -0600] [72068] [INFO] Booting worker with pid: 72068
+[2024-09-02 23:14:56 -0600] [72069] [INFO] Booting worker with pid: 72069
+[2024-09-02 23:14:56 -0600] [72070] [INFO] Booting worker with pid: 72070
+[2024-09-02 23:14:56 -0600] [72072] [INFO] Booting worker with pid: 72072
+[2024-09-02 23:14:56 -0600] [72073] [INFO] Booting worker with pid: 72073
+[2024-09-02 23:14:56 -0600] [72074] [INFO] Booting worker with pid: 72074
+[2024-09-02 23:14:56 -0600] [72082] [INFO] Booting worker with pid: 72082
+[2024-09-02 23:14:56 -0600] [72083] [INFO] Booting worker with pid: 72083
+[2024-09-03 09:40:28 -0600] [72052] [INFO] Handling signal: term
+[2024-09-03 09:40:28 -0600] [72060] [INFO] Worker exiting (pid: 72060)
+[2024-09-03 09:40:28 -0600] [72065] [INFO] Worker exiting (pid: 72065)
+[2024-09-03 09:40:28 -0600] [72073] [INFO] Worker exiting (pid: 72073)
+[2024-09-03 09:40:28 -0600] [72068] [INFO] Worker exiting (pid: 72068)
+[2024-09-03 09:40:28 -0600] [72057] [INFO] Worker exiting (pid: 72057)
+[2024-09-03 09:40:28 -0600] [72058] [INFO] Worker exiting (pid: 72058)
+[2024-09-03 09:40:28 -0600] [72061] [INFO] Worker exiting (pid: 72061)
+[2024-09-03 09:40:28 -0600] [72062] [INFO] Worker exiting (pid: 72062)
+[2024-09-03 09:40:28 -0600] [72063] [INFO] Worker exiting (pid: 72063)
+[2024-09-03 09:40:28 -0600] [72069] [INFO] Worker exiting (pid: 72069)
+[2024-09-03 09:40:28 -0600] [72067] [INFO] Worker exiting (pid: 72067)
+[2024-09-03 09:40:28 -0600] [72064] [INFO] Worker exiting (pid: 72064)
+[2024-09-03 09:40:28 -0600] [72059] [INFO] Worker exiting (pid: 72059)
+[2024-09-03 09:40:28 -0600] [72056] [INFO] Worker exiting (pid: 72056)
+[2024-09-03 09:40:28 -0600] [72074] [INFO] Worker exiting (pid: 72074)
+[2024-09-03 09:40:28 -0600] [72072] [INFO] Worker exiting (pid: 72072)
+[2024-09-03 09:40:28 -0600] [72066] [INFO] Worker exiting (pid: 72066)
+[2024-09-03 09:40:29 -0600] [72083] [INFO] Worker exiting (pid: 72083)
+[2024-09-03 09:40:29 -0600] [72070] [INFO] Worker exiting (pid: 72070)
+[2024-09-03 09:40:29 -0600] [72082] [INFO] Worker exiting (pid: 72082)
+[2024-09-03 09:40:29 -0600] [72052] [INFO] Shutting down: Master
+[2024-09-03 09:40:29 -0600] [84319] [INFO] Starting gunicorn 23.0.0
+[2024-09-03 09:40:29 -0600] [84319] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (84319)
+[2024-09-03 09:40:29 -0600] [84319] [INFO] Using worker: gthread
+[2024-09-03 09:40:29 -0600] [84323] [INFO] Booting worker with pid: 84323
+[2024-09-03 09:40:29 -0600] [84324] [INFO] Booting worker with pid: 84324
+[2024-09-03 09:40:29 -0600] [84325] [INFO] Booting worker with pid: 84325
+[2024-09-03 09:40:29 -0600] [84326] [INFO] Booting worker with pid: 84326
+[2024-09-03 09:40:30 -0600] [84327] [INFO] Booting worker with pid: 84327
+[2024-09-03 09:40:30 -0600] [84328] [INFO] Booting worker with pid: 84328
+[2024-09-03 09:40:30 -0600] [84330] [INFO] Booting worker with pid: 84330
+[2024-09-03 09:40:30 -0600] [84332] [INFO] Booting worker with pid: 84332
+[2024-09-03 09:40:30 -0600] [84335] [INFO] Booting worker with pid: 84335
+[2024-09-03 09:40:30 -0600] [84337] [INFO] Booting worker with pid: 84337
+[2024-09-03 09:40:30 -0600] [84338] [INFO] Booting worker with pid: 84338
+[2024-09-03 09:40:30 -0600] [84339] [INFO] Booting worker with pid: 84339
+[2024-09-03 09:40:30 -0600] [84340] [INFO] Booting worker with pid: 84340
+[2024-09-03 09:40:30 -0600] [84341] [INFO] Booting worker with pid: 84341
+[2024-09-03 09:40:30 -0600] [84342] [INFO] Booting worker with pid: 84342
+[2024-09-03 09:40:30 -0600] [84350] [INFO] Booting worker with pid: 84350
+[2024-09-03 09:40:30 -0600] [84351] [INFO] Booting worker with pid: 84351
+[2024-09-03 09:40:30 -0600] [84352] [INFO] Booting worker with pid: 84352
+[2024-09-03 09:40:30 -0600] [84353] [INFO] Booting worker with pid: 84353
+[2024-09-03 09:40:30 -0600] [84354] [INFO] Booting worker with pid: 84354
+[2024-09-03 11:39:42 -0600] [84319] [INFO] Handling signal: term
+[2024-09-03 11:39:43 -0600] [84340] [INFO] Worker exiting (pid: 84340)
+[2024-09-03 11:39:43 -0600] [84338] [INFO] Worker exiting (pid: 84338)
+[2024-09-03 11:39:43 -0600] [84332] [INFO] Worker exiting (pid: 84332)
+[2024-09-03 11:39:43 -0600] [84323] [INFO] Worker exiting (pid: 84323)
+[2024-09-03 11:39:43 -0600] [84342] [INFO] Worker exiting (pid: 84342)
+[2024-09-03 11:39:43 -0600] [84350] [INFO] Worker exiting (pid: 84350)
+[2024-09-03 11:39:43 -0600] [84327] [INFO] Worker exiting (pid: 84327)
+[2024-09-03 11:39:43 -0600] [84325] [INFO] Worker exiting (pid: 84325)
+[2024-09-03 11:39:43 -0600] [84337] [INFO] Worker exiting (pid: 84337)
+[2024-09-03 11:39:43 -0600] [84326] [INFO] Worker exiting (pid: 84326)
+[2024-09-03 11:39:43 -0600] [84353] [INFO] Worker exiting (pid: 84353)
+[2024-09-03 11:39:43 -0600] [84351] [INFO] Worker exiting (pid: 84351)
+[2024-09-03 11:39:43 -0600] [84328] [INFO] Worker exiting (pid: 84328)
+[2024-09-03 11:39:43 -0600] [84339] [INFO] Worker exiting (pid: 84339)
+[2024-09-03 11:39:43 -0600] [84324] [INFO] Worker exiting (pid: 84324)
+[2024-09-03 11:39:43 -0600] [84352] [INFO] Worker exiting (pid: 84352)
+[2024-09-03 11:39:43 -0600] [84341] [INFO] Worker exiting (pid: 84341)
+[2024-09-03 11:39:43 -0600] [84335] [INFO] Worker exiting (pid: 84335)
+[2024-09-03 11:39:43 -0600] [84330] [INFO] Worker exiting (pid: 84330)
+[2024-09-03 11:39:43 -0600] [84354] [INFO] Worker exiting (pid: 84354)
+[2024-09-03 11:39:43 -0600] [84319] [INFO] Shutting down: Master
+[2024-09-03 11:39:43 -0600] [87721] [INFO] Starting gunicorn 23.0.0
+[2024-09-03 11:39:43 -0600] [87721] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (87721)
+[2024-09-03 11:39:43 -0600] [87721] [INFO] Using worker: gthread
+[2024-09-03 11:39:43 -0600] [87723] [INFO] Booting worker with pid: 87723
+[2024-09-03 11:39:43 -0600] [87724] [INFO] Booting worker with pid: 87724
+[2024-09-03 11:39:44 -0600] [87725] [INFO] Booting worker with pid: 87725
+[2024-09-03 11:39:44 -0600] [87726] [INFO] Booting worker with pid: 87726
+[2024-09-03 11:39:44 -0600] [87727] [INFO] Booting worker with pid: 87727
+[2024-09-03 11:39:44 -0600] [87737] [INFO] Booting worker with pid: 87737
+[2024-09-03 11:39:44 -0600] [87738] [INFO] Booting worker with pid: 87738
+[2024-09-03 11:39:44 -0600] [87739] [INFO] Booting worker with pid: 87739
+[2024-09-03 11:39:44 -0600] [87740] [INFO] Booting worker with pid: 87740
+[2024-09-03 11:39:44 -0600] [87741] [INFO] Booting worker with pid: 87741
+[2024-09-03 11:39:44 -0600] [87742] [INFO] Booting worker with pid: 87742
+[2024-09-03 11:39:44 -0600] [87743] [INFO] Booting worker with pid: 87743
+[2024-09-03 11:39:44 -0600] [87744] [INFO] Booting worker with pid: 87744
+[2024-09-03 11:39:44 -0600] [87745] [INFO] Booting worker with pid: 87745
+[2024-09-03 11:39:44 -0600] [87747] [INFO] Booting worker with pid: 87747
+[2024-09-03 11:39:44 -0600] [87748] [INFO] Booting worker with pid: 87748
+[2024-09-03 11:39:44 -0600] [87749] [INFO] Booting worker with pid: 87749
+[2024-09-03 11:39:44 -0600] [87750] [INFO] Booting worker with pid: 87750
+[2024-09-03 11:39:44 -0600] [87751] [INFO] Booting worker with pid: 87751
+[2024-09-03 11:39:44 -0600] [87752] [INFO] Booting worker with pid: 87752
+[2024-09-03 11:46:33 -0600] [87721] [INFO] Handling signal: term
+[2024-09-03 11:46:33 -0600] [87740] [INFO] Worker exiting (pid: 87740)
+[2024-09-03 11:46:33 -0600] [87723] [INFO] Worker exiting (pid: 87723)
+[2024-09-03 11:46:33 -0600] [87752] [INFO] Worker exiting (pid: 87752)
+[2024-09-03 11:46:33 -0600] [87738] [INFO] Worker exiting (pid: 87738)
+[2024-09-03 11:46:33 -0600] [87725] [INFO] Worker exiting (pid: 87725)
+[2024-09-03 11:46:34 -0600] [87726] [INFO] Worker exiting (pid: 87726)
+[2024-09-03 11:46:34 -0600] [87748] [INFO] Worker exiting (pid: 87748)
+[2024-09-03 11:46:34 -0600] [87749] [INFO] Worker exiting (pid: 87749)
+[2024-09-03 11:46:34 -0600] [87745] [INFO] Worker exiting (pid: 87745)
+[2024-09-03 11:46:34 -0600] [87741] [INFO] Worker exiting (pid: 87741)
+[2024-09-03 11:46:34 -0600] [87724] [INFO] Worker exiting (pid: 87724)
+[2024-09-03 11:46:34 -0600] [87739] [INFO] Worker exiting (pid: 87739)
+[2024-09-03 11:46:34 -0600] [87751] [INFO] Worker exiting (pid: 87751)
+[2024-09-03 11:46:34 -0600] [87737] [INFO] Worker exiting (pid: 87737)
+[2024-09-03 11:46:34 -0600] [87743] [INFO] Worker exiting (pid: 87743)
+[2024-09-03 11:46:34 -0600] [87727] [INFO] Worker exiting (pid: 87727)
+[2024-09-03 11:46:34 -0600] [87742] [INFO] Worker exiting (pid: 87742)
+[2024-09-03 11:46:34 -0600] [87744] [INFO] Worker exiting (pid: 87744)
+[2024-09-03 11:46:34 -0600] [87747] [INFO] Worker exiting (pid: 87747)
+[2024-09-03 11:46:34 -0600] [87750] [INFO] Worker exiting (pid: 87750)
+[2024-09-03 11:46:34 -0600] [87721] [INFO] Shutting down: Master
+[2024-09-03 11:46:34 -0600] [88430] [INFO] Starting gunicorn 23.0.0
+[2024-09-03 11:46:34 -0600] [88430] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (88430)
+[2024-09-03 11:46:34 -0600] [88430] [INFO] Using worker: gthread
+[2024-09-03 11:46:34 -0600] [88432] [INFO] Booting worker with pid: 88432
+[2024-09-03 11:46:34 -0600] [88433] [INFO] Booting worker with pid: 88433
+[2024-09-03 11:46:35 -0600] [88434] [INFO] Booting worker with pid: 88434
+[2024-09-03 11:46:35 -0600] [88435] [INFO] Booting worker with pid: 88435
+[2024-09-03 11:46:35 -0600] [88436] [INFO] Booting worker with pid: 88436
+[2024-09-03 11:46:35 -0600] [88437] [INFO] Booting worker with pid: 88437
+[2024-09-03 11:46:35 -0600] [88438] [INFO] Booting worker with pid: 88438
+[2024-09-03 11:46:35 -0600] [88439] [INFO] Booting worker with pid: 88439
+[2024-09-03 11:46:35 -0600] [88440] [INFO] Booting worker with pid: 88440
+[2024-09-03 11:46:35 -0600] [88441] [INFO] Booting worker with pid: 88441
+[2024-09-03 11:46:35 -0600] [88442] [INFO] Booting worker with pid: 88442
+[2024-09-03 11:46:35 -0600] [88443] [INFO] Booting worker with pid: 88443
+[2024-09-03 11:46:35 -0600] [88444] [INFO] Booting worker with pid: 88444
+[2024-09-03 11:46:35 -0600] [88452] [INFO] Booting worker with pid: 88452
+[2024-09-03 11:46:35 -0600] [88453] [INFO] Booting worker with pid: 88453
+[2024-09-03 11:46:35 -0600] [88454] [INFO] Booting worker with pid: 88454
+[2024-09-03 11:46:35 -0600] [88455] [INFO] Booting worker with pid: 88455
+[2024-09-03 11:46:35 -0600] [88456] [INFO] Booting worker with pid: 88456
+[2024-09-03 11:46:35 -0600] [88466] [INFO] Booting worker with pid: 88466
+[2024-09-03 11:46:35 -0600] [88467] [INFO] Booting worker with pid: 88467
+[2024-09-03 11:47:30 -0600] [88430] [INFO] Handling signal: term
+[2024-09-03 11:47:30 -0600] [88444] [INFO] Worker exiting (pid: 88444)
+[2024-09-03 11:47:30 -0600] [88439] [INFO] Worker exiting (pid: 88439)
+[2024-09-03 11:47:30 -0600] [88456] [INFO] Worker exiting (pid: 88456)
+[2024-09-03 11:47:31 -0600] [88434] [INFO] Worker exiting (pid: 88434)
+[2024-09-03 11:47:31 -0600] [88432] [INFO] Worker exiting (pid: 88432)
+[2024-09-03 11:47:31 -0600] [88435] [INFO] Worker exiting (pid: 88435)
+[2024-09-03 11:47:31 -0600] [88436] [INFO] Worker exiting (pid: 88436)
+[2024-09-03 11:47:31 -0600] [88467] [INFO] Worker exiting (pid: 88467)
+[2024-09-03 11:47:31 -0600] [88466] [INFO] Worker exiting (pid: 88466)
+[2024-09-03 11:47:31 -0600] [88438] [INFO] Worker exiting (pid: 88438)
+[2024-09-03 11:47:31 -0600] [88454] [INFO] Worker exiting (pid: 88454)
+[2024-09-03 11:47:31 -0600] [88441] [INFO] Worker exiting (pid: 88441)
+[2024-09-03 11:47:31 -0600] [88433] [INFO] Worker exiting (pid: 88433)
+[2024-09-03 11:47:31 -0600] [88437] [INFO] Worker exiting (pid: 88437)
+[2024-09-03 11:47:31 -0600] [88440] [INFO] Worker exiting (pid: 88440)
+[2024-09-03 11:47:31 -0600] [88455] [INFO] Worker exiting (pid: 88455)
+[2024-09-03 11:47:31 -0600] [88443] [INFO] Worker exiting (pid: 88443)
+[2024-09-03 11:47:31 -0600] [88452] [INFO] Worker exiting (pid: 88452)
+[2024-09-03 11:47:31 -0600] [88453] [INFO] Worker exiting (pid: 88453)
+[2024-09-03 11:47:31 -0600] [88442] [INFO] Worker exiting (pid: 88442)
+[2024-09-03 11:47:31 -0600] [88430] [INFO] Shutting down: Master
+[2024-09-03 11:47:32 -0600] [88552] [INFO] Starting gunicorn 23.0.0
+[2024-09-03 11:47:32 -0600] [88552] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (88552)
+[2024-09-03 11:47:32 -0600] [88552] [INFO] Using worker: gthread
+[2024-09-03 11:47:32 -0600] [88556] [INFO] Booting worker with pid: 88556
+[2024-09-03 11:47:32 -0600] [88557] [INFO] Booting worker with pid: 88557
+[2024-09-03 11:47:32 -0600] [88558] [INFO] Booting worker with pid: 88558
+[2024-09-03 11:47:32 -0600] [88559] [INFO] Booting worker with pid: 88559
+[2024-09-03 11:47:32 -0600] [88560] [INFO] Booting worker with pid: 88560
+[2024-09-03 11:47:32 -0600] [88561] [INFO] Booting worker with pid: 88561
+[2024-09-03 11:47:32 -0600] [88562] [INFO] Booting worker with pid: 88562
+[2024-09-03 11:47:32 -0600] [88563] [INFO] Booting worker with pid: 88563
+[2024-09-03 11:47:32 -0600] [88564] [INFO] Booting worker with pid: 88564
+[2024-09-03 11:47:32 -0600] [88565] [INFO] Booting worker with pid: 88565
+[2024-09-03 11:47:32 -0600] [88566] [INFO] Booting worker with pid: 88566
+[2024-09-03 11:47:32 -0600] [88574] [INFO] Booting worker with pid: 88574
+[2024-09-03 11:47:32 -0600] [88575] [INFO] Booting worker with pid: 88575
+[2024-09-03 11:47:32 -0600] [88576] [INFO] Booting worker with pid: 88576
+[2024-09-03 11:47:32 -0600] [88577] [INFO] Booting worker with pid: 88577
+[2024-09-03 11:47:32 -0600] [88578] [INFO] Booting worker with pid: 88578
+[2024-09-03 11:47:32 -0600] [88579] [INFO] Booting worker with pid: 88579
+[2024-09-03 11:47:32 -0600] [88580] [INFO] Booting worker with pid: 88580
+[2024-09-03 11:47:33 -0600] [88581] [INFO] Booting worker with pid: 88581
+[2024-09-03 11:47:33 -0600] [88584] [INFO] Booting worker with pid: 88584
+[2024-09-03 11:49:05 -0600] [88552] [INFO] Handling signal: term
+[2024-09-03 11:49:05 -0600] [88560] [INFO] Worker exiting (pid: 88560)
+[2024-09-03 11:49:05 -0600] [88576] [INFO] Worker exiting (pid: 88576)
+[2024-09-03 11:49:05 -0600] [88565] [INFO] Worker exiting (pid: 88565)
+[2024-09-03 11:49:05 -0600] [88562] [INFO] Worker exiting (pid: 88562)
+[2024-09-03 11:49:05 -0600] [88566] [INFO] Worker exiting (pid: 88566)
+[2024-09-03 11:49:05 -0600] [88574] [INFO] Worker exiting (pid: 88574)
+[2024-09-03 11:49:05 -0600] [88557] [INFO] Worker exiting (pid: 88557)
+[2024-09-03 11:49:05 -0600] [88558] [INFO] Worker exiting (pid: 88558)
+[2024-09-03 11:49:05 -0600] [88563] [INFO] Worker exiting (pid: 88563)
+[2024-09-03 11:49:05 -0600] [88564] [INFO] Worker exiting (pid: 88564)
+[2024-09-03 11:49:05 -0600] [88559] [INFO] Worker exiting (pid: 88559)
+[2024-09-03 11:49:05 -0600] [88561] [INFO] Worker exiting (pid: 88561)
+[2024-09-03 11:49:05 -0600] [88579] [INFO] Worker exiting (pid: 88579)
+[2024-09-03 11:49:05 -0600] [88577] [INFO] Worker exiting (pid: 88577)
+[2024-09-03 11:49:05 -0600] [88556] [INFO] Worker exiting (pid: 88556)
+[2024-09-03 11:49:06 -0600] [88580] [INFO] Worker exiting (pid: 88580)
+[2024-09-03 11:49:06 -0600] [88575] [INFO] Worker exiting (pid: 88575)
+[2024-09-03 11:49:06 -0600] [88581] [INFO] Worker exiting (pid: 88581)
+[2024-09-03 11:49:06 -0600] [88578] [INFO] Worker exiting (pid: 88578)
+[2024-09-03 11:49:06 -0600] [88584] [INFO] Worker exiting (pid: 88584)
+[2024-09-03 11:49:06 -0600] [88552] [INFO] Shutting down: Master
+[2024-09-03 11:49:06 -0600] [88852] [INFO] Starting gunicorn 23.0.0
+[2024-09-03 11:49:06 -0600] [88852] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (88852)
+[2024-09-03 11:49:06 -0600] [88852] [INFO] Using worker: gthread
+[2024-09-03 11:49:06 -0600] [88854] [INFO] Booting worker with pid: 88854
+[2024-09-03 11:49:06 -0600] [88856] [INFO] Booting worker with pid: 88856
+[2024-09-03 11:49:06 -0600] [88857] [INFO] Booting worker with pid: 88857
+[2024-09-03 11:49:06 -0600] [88858] [INFO] Booting worker with pid: 88858
+[2024-09-03 11:49:07 -0600] [88859] [INFO] Booting worker with pid: 88859
+[2024-09-03 11:49:07 -0600] [88860] [INFO] Booting worker with pid: 88860
+[2024-09-03 11:49:07 -0600] [88861] [INFO] Booting worker with pid: 88861
+[2024-09-03 11:49:07 -0600] [88862] [INFO] Booting worker with pid: 88862
+[2024-09-03 11:49:07 -0600] [88863] [INFO] Booting worker with pid: 88863
+[2024-09-03 11:49:07 -0600] [88864] [INFO] Booting worker with pid: 88864
+[2024-09-03 11:49:07 -0600] [88865] [INFO] Booting worker with pid: 88865
+[2024-09-03 11:49:07 -0600] [88866] [INFO] Booting worker with pid: 88866
+[2024-09-03 11:49:07 -0600] [88867] [INFO] Booting worker with pid: 88867
+[2024-09-03 11:49:07 -0600] [88868] [INFO] Booting worker with pid: 88868
+[2024-09-03 11:49:07 -0600] [88876] [INFO] Booting worker with pid: 88876
+[2024-09-03 11:49:07 -0600] [88877] [INFO] Booting worker with pid: 88877
+[2024-09-03 11:49:07 -0600] [88878] [INFO] Booting worker with pid: 88878
+[2024-09-03 11:49:07 -0600] [88879] [INFO] Booting worker with pid: 88879
+[2024-09-03 11:49:07 -0600] [88880] [INFO] Booting worker with pid: 88880
+[2024-09-03 11:49:07 -0600] [88881] [INFO] Booting worker with pid: 88881

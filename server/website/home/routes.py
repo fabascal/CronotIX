@@ -6,19 +6,15 @@ from website.home.forms import AssistantForm, CounterAssistantForm, AssistantHan
 from website.home.models import AssistantsModels, Assistants, AssistantsVersion, AssistantsApiKey, AssistantsFiles, AssistantsVector
 import time 
 from datetime import datetime
-
 from website.home.models import Assistants
 #from website.home.controller.assistant import AssistantController
-
 from website.home.controller.assistant_v2 import AssistantController
-
 from website.auth.api_key import require_api_key
 from website import csrf, db
-
 import secrets
 import json
-
 import traceback
+from website.log import logging_decorator
 
 
 @blueprint.route('/', methods=['GET'])
@@ -110,35 +106,39 @@ def handler_assistant_form(assistant_id=None):
 @blueprint.route('/assistant_addFile', methods=['POST'])
 @login_required
 def assistant_addFile():
-    assistant_id = request.form.get('assistant_id')
-    file = request.files.get('file')
-    if not assistant_id or not file:
-        return jsonify({'status': 'error', 'message': 'No se han recibido los datos necesarios'}), 400
-    
-    assistant = Assistants.query.get(assistant_id)
-    if not assistant:
-        return jsonify({'status': 'error', 'message': 'No se ha encontrado el asistente'}), 404
-    
-    # validar si el asistente ya tiene un vector, en caso contrario crearlo
-    vector_obj = AssistantsVector.query.filter_by(assistant_id=assistant_id).first()
-    if not vector_obj:
-        vector_obj = AssistantsVector(assistant_id=assistant_id)
-        db.session.add(vector_obj)
-        db.session.commit()
+    try:
+        assistant_id = request.form.get('assistant_id')
+        file = request.files.get('file')
+        if not assistant_id or not file:
+            return jsonify({'status': 'error', 'message': 'No se han recibido los datos necesarios'}), 400
+        
+        assistant = Assistants.query.get(assistant_id)
+        if not assistant:
+            return jsonify({'status': 'error', 'message': 'No se ha encontrado el asistente'}), 404
+        
+        # validar si el asistente ya tiene un vector, en caso contrario crearlo
+        vector_obj = AssistantsVector.query.filter_by(assistant_id=assistant_id).first()
+        if not vector_obj:
+            vector_obj = AssistantsVector(assistant_id=assistant_id)
+            db.session.add(vector_obj)
+            db.session.commit()
 
-    path = f'home/controller/files/{current_user.id}/{assistant_id}'
-    absolute_path = os.path.join('website', path)
-    if not os.path.exists(absolute_path):
-        os.makedirs(absolute_path)
-    file_path = os.path.join(absolute_path, file.filename)
-    file.save(file_path)
-    assistantsFile = AssistantsFiles(name=file.filename, path=path, assistant_id=assistant_id, vector_id=vector_obj.id ,type=os.path.splitext(file.filename)[1], size= os.path.getsize(file_path))
-    current_app.logger.info(f'assistantFile: {assistantsFile}') 
+        path = f'home/controller/files/{current_user.id}/{assistant_id}'
+        absolute_path = os.path.join('website', path)
+        if not os.path.exists(absolute_path):
+            os.makedirs(absolute_path)
+        file_path = os.path.join(absolute_path, file.filename)
+        file.save(file_path)
+        assistantsFile = AssistantsFiles(name=file.filename, path=path, assistant_id=assistant_id, vector_id=vector_obj.id ,type=os.path.splitext(file.filename)[1], size= os.path.getsize(file_path))
+        current_app.logger.info(f'assistantFile: {assistantsFile}') 
+    except Exception as e:
+        current_app.logger.error(traceback.format_exc())
     try:
         db.session.add(assistantsFile)
         db.session.commit()
     except Exception as e:
         db.session.rollback()
+        current_app.logger.error(traceback.format_exc())
         error_traceback = traceback.format_exc()
         current_app.logger.error(f"Error al guardar el archivo: {str(e)}\n{error_traceback}")
         return jsonify({'status': 'error', 'message': str(error_traceback)}), 400
@@ -267,11 +267,12 @@ def ApiKeyAssistantCopy(assistant_id):
         current_app.logger.error(f"Error al copiar la clave de API: {str(e)}\n{error}")
         return jsonify({'status': 'error', 'message': str(error)}), 400
     
-@blueprint.route('/chatbot', methods=['GET','POST'])
+@blueprint.route('/chatbot/<assistant_id>', methods=['GET','POST'])
 @login_required
-def chatbot():
+def chatbot(assistant_id):
     form = AssistantForm()
-    return render_template('home/chatbot.html', segment='chatbot', form=form)
+    assistant = Assistants.query.get(assistant_id)
+    return render_template('home/chatbot.html', segment='chatbot', form=form, assistant=assistant)
 
 @blueprint.route('/finanzas', methods=['GET','POST'])
 @login_required
@@ -365,33 +366,40 @@ def enviar_mensaje():
     current_app.logger.info("Enviando mensaje")
     form = AssistantForm()
     if form.validate_on_submit():
-        mensaje = form.message.data
-        current_app.logger.info(f"Mensaje recibido: {mensaje}")
+        data1 = request.get_json()
+        assistantObj = Assistants.query.get(data1.get("assistant_id"))
+        current_app.logger.info(f'{data1}') 
         # Obtener el thread_id de la sesión
         thread_id = session.get('thread_id')
         current_app.logger.info(f"Thread ID: {thread_id}")
         assistant = AssistantController(client_id=current_user.id, thread_id=thread_id)
-        response = assistant.sendMessage(mensaje)
+        data = {
+        'message': data1.get("message"),
+        'thread_id': assistant.thread_id,
+        'assistant_id': assistantObj.id_openai
+    }
+        response = assistant.sendMessage(data)
         current_app.logger.info(f"Respuesta recibida: {response}")
 
-        # Procesar la respuesta para asegurar que es serializable
-        messages = [{
-            'id': msg.id,
-            'content': msg.content[0].text.value,  # Asumiendo estructura de la respuesta
-            'type': 'response'
-        } for msg in response.data]  # Ajusta esto según la estructura real de 'response'
+        # # Procesar la respuesta para asegurar que es serializable
+        # messages = [{
+        #     'id': msg.id,
+        #     'content': msg.content[0].text.value,  # Asumiendo estructura de la respuesta
+        #     'type': 'response'
+        # } for msg in response.data]  # Ajusta esto según la estructura real de 'response'
+        
 
         # Actualizar el thread_id en la sesión si ha cambiado
         session['thread_id'] = assistant.thread_id
-
+    
         return jsonify({
             'status': 'success',
-            'message': messages[0].get('content'),
-            'username': 'GreetBotIX',
-            'image_url': 'images/greetbotix.png',  # Asegúrate de usar url_for correctamente
+            'message': response.value,
+            'username': assistantObj.name,
+            'image_url': assistantObj.avatar_path,
             'time': datetime.now().strftime('%d %b %I:%M %p'),
             'type': 'chatbot'
-        })
+        }), 202 
 
     else:
         # Registrar los errores si la validación falla

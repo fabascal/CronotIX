@@ -1,0 +1,48 @@
+server {
+    listen 80;
+    server_name www.cronotix.mx cronotix.mx;
+    return 301 https://cronotix.mx$request_uri;
+}
+
+
+server {
+    listen 443 ssl;
+    server_name cronotix.mx www.cronotix.mx;
+
+    ssl_certificate /etc/nginx/ssl/cronotix.mx_ssl_certificate.cer;
+    ssl_certificate_key /etc/nginx/ssl/_.cronotix.mx_private_key.key;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_prefer_server_ciphers off;
+    ssl_ciphers 'TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDH>';
+
+    # Bloque CORS para las solicitudes a /api/
+    location /api/ {
+        add_header 'Access-Control-Allow-Origin' '*' always;
+        add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS' always;
+        add_header 'Access-Control-Allow-Headers' 'Origin, Content-Type, Accept, Authorization' always;
+
+        if ($request_method = 'OPTIONS') {
+            return 204;
+        }
+
+        # El resto de tu configuración para /api/
+        include proxy_params;
+        proxy_pass http://unix:/home/webops/Cronotix/server/cronotix.sock;
+    }
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/home/webops/Cronotix/server/cronotix.sock;
+    }
+
+    location /static/ {
+        alias /home/webops/Cronotix/server/website/static/;
+    }
+
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+    add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://trusted.com";
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+    add_header Permissions-Policy "geolocation=(self), microphone=(), camera=(), fullscreen=(self), payment=()";
+}
+

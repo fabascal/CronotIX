@@ -455,8 +455,7 @@
 
 
 {% block javascripts %}
-  <script src="{{url_for('static', filename='js/home/assistant_form.js')}}"></script>
-  <!-- bs-custom-file-input -->
-  <script src="{{url_for('static', filename='AdminLTE/plugins/bs-custom-file-input/bs-custom-file-input.min.js')}}"></script>
-
+<!-- bs-custom-file-input -->
+<script src="{{url_for('static', filename='AdminLTE/plugins/bs-custom-file-input/bs-custom-file-input.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/home/assistant_form.js')}}"></script>
 {% endblock %}

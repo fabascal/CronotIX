@@ -21,7 +21,7 @@ function fillChat (data) {
                     <span class="direct-chat-name ${data.type === 'user' ? 'float-right' : 'float-left'}">${data.username}</span>
                     <span class="direct-chat-timestamp ${data.type === 'user' ? 'float-left' : 'float-right'}">${data.time}</span> <!-- Añade la hora si la tienes -->
                 </div>
-                <img class="direct-chat-img" src="static/${data.image_url}" alt="Imagen de usuario">
+                <img class="direct-chat-img" src="/static/${data.image_url}" alt="Imagen de usuario">
                 <div class="direct-chat-text">${formattedMessage}</div>
             </div>`;
     return mensajeHTML;
@@ -56,7 +56,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
             let data = {
                 message: mensajeUsuario,
-                type: 'user'
+                type: 'user',
+                assistant_id: form.getAttribute('data-assistant-id')  
             };
             const csrf_token = document.querySelector('input[name="csrf_token"]').value;
 
