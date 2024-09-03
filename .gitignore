@@ -5,3 +5,4 @@ server/venv/
 server/website/blipo.sqlite3
 server/website/config.py
 server/log/cronotix.log
+server/log/*
