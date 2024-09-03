@@ -1693,3 +1693,25 @@ TypeError: 'module' object is not callable
 [2024-09-03 11:49:07 -0600] [88879] [INFO] Booting worker with pid: 88879
 [2024-09-03 11:49:07 -0600] [88880] [INFO] Booting worker with pid: 88880
 [2024-09-03 11:49:07 -0600] [88881] [INFO] Booting worker with pid: 88881
+[2024-09-03 13:00:47 -0600] [88852] [INFO] Handling signal: term
+[2024-09-03 13:00:48 -0600] [88868] [INFO] Worker exiting (pid: 88868)
+[2024-09-03 13:00:48 -0600] [88877] [INFO] Worker exiting (pid: 88877)
+[2024-09-03 13:00:48 -0600] [88867] [INFO] Worker exiting (pid: 88867)
+[2024-09-03 13:00:48 -0600] [88863] [INFO] Worker exiting (pid: 88863)
+[2024-09-03 13:00:48 -0600] [88879] [INFO] Worker exiting (pid: 88879)
+[2024-09-03 13:00:48 -0600] [88854] [INFO] Worker exiting (pid: 88854)
+[2024-09-03 13:00:48 -0600] [88864] [INFO] Worker exiting (pid: 88864)
+[2024-09-03 13:00:48 -0600] [88881] [INFO] Worker exiting (pid: 88881)
+[2024-09-03 13:00:48 -0600] [88865] [INFO] Worker exiting (pid: 88865)
+[2024-09-03 13:00:48 -0600] [88876] [INFO] Worker exiting (pid: 88876)
+[2024-09-03 13:00:48 -0600] [88861] [INFO] Worker exiting (pid: 88861)
+[2024-09-03 13:00:48 -0600] [88878] [INFO] Worker exiting (pid: 88878)
+[2024-09-03 13:00:48 -0600] [88860] [INFO] Worker exiting (pid: 88860)
+[2024-09-03 13:00:48 -0600] [88856] [INFO] Worker exiting (pid: 88856)
+[2024-09-03 13:00:48 -0600] [88866] [INFO] Worker exiting (pid: 88866)
+[2024-09-03 13:00:48 -0600] [88859] [INFO] Worker exiting (pid: 88859)
+[2024-09-03 13:00:48 -0600] [88880] [INFO] Worker exiting (pid: 88880)
+[2024-09-03 13:00:48 -0600] [88857] [INFO] Worker exiting (pid: 88857)
+[2024-09-03 13:00:48 -0600] [88862] [INFO] Worker exiting (pid: 88862)
+[2024-09-03 13:00:48 -0600] [88858] [INFO] Worker exiting (pid: 88858)
+[2024-09-03 13:00:48 -0600] [88852] [INFO] Shutting down: Master
