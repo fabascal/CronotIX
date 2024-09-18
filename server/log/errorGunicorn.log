@@ -1715,3 +1715,476 @@ TypeError: 'module' object is not callable
 [2024-09-03 13:00:48 -0600] [88862] [INFO] Worker exiting (pid: 88862)
 [2024-09-03 13:00:48 -0600] [88858] [INFO] Worker exiting (pid: 88858)
 [2024-09-03 13:00:48 -0600] [88852] [INFO] Shutting down: Master
+[2024-09-12 10:55:59 -0600] [254975] [INFO] Starting gunicorn 23.0.0
+[2024-09-12 10:55:59 -0600] [254975] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (254975)
+[2024-09-12 10:55:59 -0600] [254975] [INFO] Using worker: gthread
+[2024-09-12 10:55:59 -0600] [254977] [INFO] Booting worker with pid: 254977
+[2024-09-12 10:55:59 -0600] [254978] [INFO] Booting worker with pid: 254978
+[2024-09-12 10:55:59 -0600] [254979] [INFO] Booting worker with pid: 254979
+[2024-09-12 10:56:00 -0600] [254980] [INFO] Booting worker with pid: 254980
+[2024-09-12 10:56:00 -0600] [254981] [INFO] Booting worker with pid: 254981
+[2024-09-12 10:56:00 -0600] [254982] [INFO] Booting worker with pid: 254982
+[2024-09-12 10:56:00 -0600] [254983] [INFO] Booting worker with pid: 254983
+[2024-09-12 10:56:00 -0600] [254984] [INFO] Booting worker with pid: 254984
+[2024-09-12 10:56:00 -0600] [254985] [INFO] Booting worker with pid: 254985
+[2024-09-12 10:56:00 -0600] [254986] [INFO] Booting worker with pid: 254986
+[2024-09-12 10:56:00 -0600] [254987] [INFO] Booting worker with pid: 254987
+[2024-09-12 10:56:00 -0600] [254988] [INFO] Booting worker with pid: 254988
+[2024-09-12 10:56:00 -0600] [254989] [INFO] Booting worker with pid: 254989
+[2024-09-12 10:56:00 -0600] [254990] [INFO] Booting worker with pid: 254990
+[2024-09-12 10:56:00 -0600] [254991] [INFO] Booting worker with pid: 254991
+[2024-09-12 10:56:00 -0600] [254992] [INFO] Booting worker with pid: 254992
+[2024-09-12 10:56:00 -0600] [254993] [INFO] Booting worker with pid: 254993
+[2024-09-12 10:56:00 -0600] [254994] [INFO] Booting worker with pid: 254994
+[2024-09-12 10:56:00 -0600] [254995] [INFO] Booting worker with pid: 254995
+[2024-09-12 10:56:00 -0600] [254996] [INFO] Booting worker with pid: 254996
+[2024-09-12 10:56:05 -0600] [254975] [INFO] Handling signal: term
+[2024-09-12 10:56:05 -0600] [254993] [INFO] Worker exiting (pid: 254993)
+[2024-09-12 10:56:05 -0600] [254994] [INFO] Worker exiting (pid: 254994)
+[2024-09-12 10:56:05 -0600] [254995] [INFO] Worker exiting (pid: 254995)
+[2024-09-12 10:56:05 -0600] [254996] [INFO] Worker exiting (pid: 254996)
+[2024-09-12 10:56:05 -0600] [254977] [INFO] Worker exiting (pid: 254977)
+[2024-09-12 10:56:05 -0600] [254979] [INFO] Worker exiting (pid: 254979)
+[2024-09-12 10:56:05 -0600] [254978] [INFO] Worker exiting (pid: 254978)
+[2024-09-12 10:56:05 -0600] [254980] [INFO] Worker exiting (pid: 254980)
+[2024-09-12 10:56:05 -0600] [254981] [INFO] Worker exiting (pid: 254981)
+[2024-09-12 10:56:05 -0600] [254982] [INFO] Worker exiting (pid: 254982)
+[2024-09-12 10:56:05 -0600] [254983] [INFO] Worker exiting (pid: 254983)
+[2024-09-12 10:56:05 -0600] [254984] [INFO] Worker exiting (pid: 254984)
+[2024-09-12 10:56:05 -0600] [254986] [INFO] Worker exiting (pid: 254986)
+[2024-09-12 10:56:05 -0600] [254985] [INFO] Worker exiting (pid: 254985)
+[2024-09-12 10:56:05 -0600] [254987] [INFO] Worker exiting (pid: 254987)
+[2024-09-12 10:56:06 -0600] [254988] [INFO] Worker exiting (pid: 254988)
+[2024-09-12 10:56:06 -0600] [254989] [INFO] Worker exiting (pid: 254989)
+[2024-09-12 10:56:06 -0600] [254990] [INFO] Worker exiting (pid: 254990)
+[2024-09-12 10:56:06 -0600] [254991] [INFO] Worker exiting (pid: 254991)
+[2024-09-12 10:56:06 -0600] [254992] [INFO] Worker exiting (pid: 254992)
+[2024-09-12 10:56:06 -0600] [254975] [INFO] Shutting down: Master
+[2024-09-12 10:56:06 -0600] [255002] [INFO] Starting gunicorn 23.0.0
+[2024-09-12 10:56:06 -0600] [255002] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (255002)
+[2024-09-12 10:56:06 -0600] [255002] [INFO] Using worker: gthread
+[2024-09-12 10:56:06 -0600] [255005] [INFO] Booting worker with pid: 255005
+[2024-09-12 10:56:06 -0600] [255006] [INFO] Booting worker with pid: 255006
+[2024-09-12 10:56:06 -0600] [255007] [INFO] Booting worker with pid: 255007
+[2024-09-12 10:56:06 -0600] [255008] [INFO] Booting worker with pid: 255008
+[2024-09-12 10:56:07 -0600] [255009] [INFO] Booting worker with pid: 255009
+[2024-09-12 10:56:07 -0600] [255010] [INFO] Booting worker with pid: 255010
+[2024-09-12 10:56:07 -0600] [255011] [INFO] Booting worker with pid: 255011
+[2024-09-12 10:56:07 -0600] [255012] [INFO] Booting worker with pid: 255012
+[2024-09-12 10:56:07 -0600] [255013] [INFO] Booting worker with pid: 255013
+[2024-09-12 10:56:07 -0600] [255014] [INFO] Booting worker with pid: 255014
+[2024-09-12 10:56:07 -0600] [255015] [INFO] Booting worker with pid: 255015
+[2024-09-12 10:56:07 -0600] [255016] [INFO] Booting worker with pid: 255016
+[2024-09-12 10:56:07 -0600] [255017] [INFO] Booting worker with pid: 255017
+[2024-09-12 10:56:07 -0600] [255018] [INFO] Booting worker with pid: 255018
+[2024-09-12 10:56:07 -0600] [255019] [INFO] Booting worker with pid: 255019
+[2024-09-12 10:56:07 -0600] [255020] [INFO] Booting worker with pid: 255020
+[2024-09-12 10:56:07 -0600] [255021] [INFO] Booting worker with pid: 255021
+[2024-09-12 10:56:07 -0600] [255022] [INFO] Booting worker with pid: 255022
+[2024-09-12 10:56:07 -0600] [255023] [INFO] Booting worker with pid: 255023
+[2024-09-12 10:56:07 -0600] [255024] [INFO] Booting worker with pid: 255024
+[2024-09-12 11:21:07 -0600] [255002] [INFO] Handling signal: term
+[2024-09-12 11:21:07 -0600] [255006] [INFO] Worker exiting (pid: 255006)
+[2024-09-12 11:21:07 -0600] [255007] [INFO] Worker exiting (pid: 255007)
+[2024-09-12 11:21:07 -0600] [255012] [INFO] Worker exiting (pid: 255012)
+[2024-09-12 11:21:07 -0600] [255011] [INFO] Worker exiting (pid: 255011)
+[2024-09-12 11:21:07 -0600] [255010] [INFO] Worker exiting (pid: 255010)
+[2024-09-12 11:21:07 -0600] [255008] [INFO] Worker exiting (pid: 255008)
+[2024-09-12 11:21:07 -0600] [255009] [INFO] Worker exiting (pid: 255009)
+[2024-09-12 11:21:07 -0600] [255005] [INFO] Worker exiting (pid: 255005)
+[2024-09-12 11:21:07 -0600] [255018] [INFO] Worker exiting (pid: 255018)
+[2024-09-12 11:21:07 -0600] [255019] [INFO] Worker exiting (pid: 255019)
+[2024-09-12 11:21:07 -0600] [255014] [INFO] Worker exiting (pid: 255014)
+[2024-09-12 11:21:07 -0600] [255024] [INFO] Worker exiting (pid: 255024)
+[2024-09-12 11:21:07 -0600] [255022] [INFO] Worker exiting (pid: 255022)
+[2024-09-12 11:21:07 -0600] [255020] [INFO] Worker exiting (pid: 255020)
+[2024-09-12 11:21:07 -0600] [255013] [INFO] Worker exiting (pid: 255013)
+[2024-09-12 11:21:07 -0600] [255023] [INFO] Worker exiting (pid: 255023)
+[2024-09-12 11:21:07 -0600] [255017] [INFO] Worker exiting (pid: 255017)
+[2024-09-12 11:21:07 -0600] [255021] [INFO] Worker exiting (pid: 255021)
+[2024-09-12 11:21:07 -0600] [255016] [INFO] Worker exiting (pid: 255016)
+[2024-09-12 11:21:07 -0600] [255015] [INFO] Worker exiting (pid: 255015)
+[2024-09-12 11:21:07 -0600] [255002] [INFO] Shutting down: Master
+[2024-09-12 11:21:07 -0600] [256526] [INFO] Starting gunicorn 23.0.0
+[2024-09-12 11:21:07 -0600] [256526] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (256526)
+[2024-09-12 11:21:07 -0600] [256526] [INFO] Using worker: gthread
+[2024-09-12 11:21:07 -0600] [256530] [INFO] Booting worker with pid: 256530
+[2024-09-12 11:21:08 -0600] [256531] [INFO] Booting worker with pid: 256531
+[2024-09-12 11:21:08 -0600] [256532] [INFO] Booting worker with pid: 256532
+[2024-09-12 11:21:08 -0600] [256533] [INFO] Booting worker with pid: 256533
+[2024-09-12 11:21:08 -0600] [256534] [INFO] Booting worker with pid: 256534
+[2024-09-12 11:21:08 -0600] [256535] [INFO] Booting worker with pid: 256535
+[2024-09-12 11:21:08 -0600] [256536] [INFO] Booting worker with pid: 256536
+[2024-09-12 11:21:08 -0600] [256537] [INFO] Booting worker with pid: 256537
+[2024-09-12 11:21:08 -0600] [256547] [INFO] Booting worker with pid: 256547
+[2024-09-12 11:21:08 -0600] [256548] [INFO] Booting worker with pid: 256548
+[2024-09-12 11:21:08 -0600] [256549] [INFO] Booting worker with pid: 256549
+[2024-09-12 11:21:08 -0600] [256550] [INFO] Booting worker with pid: 256550
+[2024-09-12 11:21:08 -0600] [256551] [INFO] Booting worker with pid: 256551
+[2024-09-12 11:21:08 -0600] [256552] [INFO] Booting worker with pid: 256552
+[2024-09-12 11:21:08 -0600] [256553] [INFO] Booting worker with pid: 256553
+[2024-09-12 11:21:08 -0600] [256554] [INFO] Booting worker with pid: 256554
+[2024-09-12 11:21:08 -0600] [256555] [INFO] Booting worker with pid: 256555
+[2024-09-12 11:21:08 -0600] [256556] [INFO] Booting worker with pid: 256556
+[2024-09-12 11:21:09 -0600] [256557] [INFO] Booting worker with pid: 256557
+[2024-09-12 11:21:09 -0600] [256558] [INFO] Booting worker with pid: 256558
+[2024-09-12 11:24:35 -0600] [256526] [INFO] Handling signal: term
+[2024-09-12 11:24:35 -0600] [256537] [INFO] Worker exiting (pid: 256537)
+[2024-09-12 11:24:35 -0600] [256552] [INFO] Worker exiting (pid: 256552)
+[2024-09-12 11:24:35 -0600] [256550] [INFO] Worker exiting (pid: 256550)
+[2024-09-12 11:24:35 -0600] [256553] [INFO] Worker exiting (pid: 256553)
+[2024-09-12 11:24:35 -0600] [256530] [INFO] Worker exiting (pid: 256530)
+[2024-09-12 11:24:35 -0600] [256555] [INFO] Worker exiting (pid: 256555)
+[2024-09-12 11:24:35 -0600] [256532] [INFO] Worker exiting (pid: 256532)
+[2024-09-12 11:24:35 -0600] [256549] [INFO] Worker exiting (pid: 256549)
+[2024-09-12 11:24:35 -0600] [256547] [INFO] Worker exiting (pid: 256547)
+[2024-09-12 11:24:35 -0600] [256551] [INFO] Worker exiting (pid: 256551)
+[2024-09-12 11:24:35 -0600] [256556] [INFO] Worker exiting (pid: 256556)
+[2024-09-12 11:24:35 -0600] [256557] [INFO] Worker exiting (pid: 256557)
+[2024-09-12 11:24:35 -0600] [256534] [INFO] Worker exiting (pid: 256534)
+[2024-09-12 11:24:35 -0600] [256558] [INFO] Worker exiting (pid: 256558)
+[2024-09-12 11:24:35 -0600] [256535] [INFO] Worker exiting (pid: 256535)
+[2024-09-12 11:24:35 -0600] [256536] [INFO] Worker exiting (pid: 256536)
+[2024-09-12 11:24:35 -0600] [256554] [INFO] Worker exiting (pid: 256554)
+[2024-09-12 11:24:35 -0600] [256548] [INFO] Worker exiting (pid: 256548)
+[2024-09-12 11:24:35 -0600] [256531] [INFO] Worker exiting (pid: 256531)
+[2024-09-12 11:24:35 -0600] [256533] [INFO] Worker exiting (pid: 256533)
+[2024-09-12 11:24:36 -0600] [256526] [INFO] Shutting down: Master
+[2024-09-12 11:24:36 -0600] [256954] [INFO] Starting gunicorn 23.0.0
+[2024-09-12 11:24:36 -0600] [256954] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (256954)
+[2024-09-12 11:24:36 -0600] [256954] [INFO] Using worker: gthread
+[2024-09-12 11:24:36 -0600] [256967] [INFO] Booting worker with pid: 256967
+[2024-09-12 11:24:36 -0600] [256968] [INFO] Booting worker with pid: 256968
+[2024-09-12 11:24:36 -0600] [256969] [INFO] Booting worker with pid: 256969
+[2024-09-12 11:24:36 -0600] [256970] [INFO] Booting worker with pid: 256970
+[2024-09-12 11:24:36 -0600] [256971] [INFO] Booting worker with pid: 256971
+[2024-09-12 11:24:36 -0600] [256972] [INFO] Booting worker with pid: 256972
+[2024-09-12 11:24:36 -0600] [256973] [INFO] Booting worker with pid: 256973
+[2024-09-12 11:24:36 -0600] [256974] [INFO] Booting worker with pid: 256974
+[2024-09-12 11:24:36 -0600] [256975] [INFO] Booting worker with pid: 256975
+[2024-09-12 11:24:36 -0600] [256976] [INFO] Booting worker with pid: 256976
+[2024-09-12 11:24:36 -0600] [256977] [INFO] Booting worker with pid: 256977
+[2024-09-12 11:24:36 -0600] [256978] [INFO] Booting worker with pid: 256978
+[2024-09-12 11:24:36 -0600] [256979] [INFO] Booting worker with pid: 256979
+[2024-09-12 11:24:37 -0600] [256980] [INFO] Booting worker with pid: 256980
+[2024-09-12 11:24:37 -0600] [256981] [INFO] Booting worker with pid: 256981
+[2024-09-12 11:24:37 -0600] [256982] [INFO] Booting worker with pid: 256982
+[2024-09-12 11:24:37 -0600] [256983] [INFO] Booting worker with pid: 256983
+[2024-09-12 11:24:37 -0600] [256984] [INFO] Booting worker with pid: 256984
+[2024-09-12 11:24:37 -0600] [256988] [INFO] Booting worker with pid: 256988
+[2024-09-12 11:24:37 -0600] [256989] [INFO] Booting worker with pid: 256989
+[2024-09-12 11:25:24 -0600] [256954] [INFO] Handling signal: term
+[2024-09-12 11:25:24 -0600] [256969] [INFO] Worker exiting (pid: 256969)
+[2024-09-12 11:25:24 -0600] [256970] [INFO] Worker exiting (pid: 256970)
+[2024-09-12 11:25:24 -0600] [256971] [INFO] Worker exiting (pid: 256971)
+[2024-09-12 11:25:24 -0600] [256972] [INFO] Worker exiting (pid: 256972)
+[2024-09-12 11:25:25 -0600] [256982] [INFO] Worker exiting (pid: 256982)
+[2024-09-12 11:25:25 -0600] [256983] [INFO] Worker exiting (pid: 256983)
+[2024-09-12 11:25:25 -0600] [256988] [INFO] Worker exiting (pid: 256988)
+[2024-09-12 11:25:25 -0600] [256979] [INFO] Worker exiting (pid: 256979)
+[2024-09-12 11:25:25 -0600] [256980] [INFO] Worker exiting (pid: 256980)
+[2024-09-12 11:25:25 -0600] [256975] [INFO] Worker exiting (pid: 256975)
+[2024-09-12 11:25:25 -0600] [256974] [INFO] Worker exiting (pid: 256974)
+[2024-09-12 11:25:25 -0600] [256989] [INFO] Worker exiting (pid: 256989)
+[2024-09-12 11:25:25 -0600] [256984] [INFO] Worker exiting (pid: 256984)
+[2024-09-12 11:25:25 -0600] [256978] [INFO] Worker exiting (pid: 256978)
+[2024-09-12 11:25:25 -0600] [256976] [INFO] Worker exiting (pid: 256976)
+[2024-09-12 11:25:25 -0600] [256973] [INFO] Worker exiting (pid: 256973)
+[2024-09-12 11:25:25 -0600] [256977] [INFO] Worker exiting (pid: 256977)
+[2024-09-12 11:25:25 -0600] [256981] [INFO] Worker exiting (pid: 256981)
+[2024-09-12 11:25:25 -0600] [256967] [INFO] Worker exiting (pid: 256967)
+[2024-09-12 11:25:25 -0600] [256968] [INFO] Worker exiting (pid: 256968)
+[2024-09-12 11:25:25 -0600] [256954] [INFO] Shutting down: Master
+[2024-09-12 11:25:25 -0600] [257140] [INFO] Starting gunicorn 23.0.0
+[2024-09-12 11:25:25 -0600] [257140] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (257140)
+[2024-09-12 11:25:25 -0600] [257140] [INFO] Using worker: gthread
+[2024-09-12 11:25:25 -0600] [257142] [INFO] Booting worker with pid: 257142
+[2024-09-12 11:25:25 -0600] [257143] [INFO] Booting worker with pid: 257143
+[2024-09-12 11:25:25 -0600] [257144] [INFO] Booting worker with pid: 257144
+[2024-09-12 11:25:25 -0600] [257145] [INFO] Booting worker with pid: 257145
+[2024-09-12 11:25:25 -0600] [257146] [INFO] Booting worker with pid: 257146
+[2024-09-12 11:25:25 -0600] [257147] [INFO] Booting worker with pid: 257147
+[2024-09-12 11:25:25 -0600] [257148] [INFO] Booting worker with pid: 257148
+[2024-09-12 11:25:25 -0600] [257149] [INFO] Booting worker with pid: 257149
+[2024-09-12 11:25:25 -0600] [257150] [INFO] Booting worker with pid: 257150
+[2024-09-12 11:25:26 -0600] [257151] [INFO] Booting worker with pid: 257151
+[2024-09-12 11:25:26 -0600] [257159] [INFO] Booting worker with pid: 257159
+[2024-09-12 11:25:26 -0600] [257160] [INFO] Booting worker with pid: 257160
+[2024-09-12 11:25:26 -0600] [257161] [INFO] Booting worker with pid: 257161
+[2024-09-12 11:25:26 -0600] [257162] [INFO] Booting worker with pid: 257162
+[2024-09-12 11:25:26 -0600] [257163] [INFO] Booting worker with pid: 257163
+[2024-09-12 11:25:26 -0600] [257164] [INFO] Booting worker with pid: 257164
+[2024-09-12 11:25:26 -0600] [257165] [INFO] Booting worker with pid: 257165
+[2024-09-12 11:25:26 -0600] [257166] [INFO] Booting worker with pid: 257166
+[2024-09-12 11:25:26 -0600] [257167] [INFO] Booting worker with pid: 257167
+[2024-09-12 11:25:26 -0600] [257168] [INFO] Booting worker with pid: 257168
+[2024-09-12 11:40:17 -0600] [257140] [INFO] Handling signal: term
+[2024-09-12 11:40:17 -0600] [257167] [INFO] Worker exiting (pid: 257167)
+[2024-09-12 11:40:17 -0600] [257147] [INFO] Worker exiting (pid: 257147)
+[2024-09-12 11:40:17 -0600] [257166] [INFO] Worker exiting (pid: 257166)
+[2024-09-12 11:40:17 -0600] [257142] [INFO] Worker exiting (pid: 257142)
+[2024-09-12 11:40:17 -0600] [257161] [INFO] Worker exiting (pid: 257161)
+[2024-09-12 11:40:17 -0600] [257143] [INFO] Worker exiting (pid: 257143)
+[2024-09-12 11:40:17 -0600] [257148] [INFO] Worker exiting (pid: 257148)
+[2024-09-12 11:40:17 -0600] [257163] [INFO] Worker exiting (pid: 257163)
+[2024-09-12 11:40:17 -0600] [257162] [INFO] Worker exiting (pid: 257162)
+[2024-09-12 11:40:17 -0600] [257150] [INFO] Worker exiting (pid: 257150)
+[2024-09-12 11:40:17 -0600] [257160] [INFO] Worker exiting (pid: 257160)
+[2024-09-12 11:40:17 -0600] [257145] [INFO] Worker exiting (pid: 257145)
+[2024-09-12 11:40:17 -0600] [257168] [INFO] Worker exiting (pid: 257168)
+[2024-09-12 11:40:17 -0600] [257144] [INFO] Worker exiting (pid: 257144)
+[2024-09-12 11:40:17 -0600] [257149] [INFO] Worker exiting (pid: 257149)
+[2024-09-12 11:40:17 -0600] [257165] [INFO] Worker exiting (pid: 257165)
+[2024-09-12 11:40:17 -0600] [257164] [INFO] Worker exiting (pid: 257164)
+[2024-09-12 11:40:17 -0600] [257151] [INFO] Worker exiting (pid: 257151)
+[2024-09-12 11:40:17 -0600] [257159] [INFO] Worker exiting (pid: 257159)
+[2024-09-12 11:40:17 -0600] [257146] [INFO] Worker exiting (pid: 257146)
+[2024-09-12 11:40:17 -0600] [257140] [INFO] Shutting down: Master
+[2024-09-12 11:40:17 -0600] [257533] [INFO] Starting gunicorn 23.0.0
+[2024-09-12 11:40:17 -0600] [257533] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (257533)
+[2024-09-12 11:40:17 -0600] [257533] [INFO] Using worker: gthread
+[2024-09-12 11:40:17 -0600] [257537] [INFO] Booting worker with pid: 257537
+[2024-09-12 11:40:17 -0600] [257538] [INFO] Booting worker with pid: 257538
+[2024-09-12 11:40:17 -0600] [257539] [INFO] Booting worker with pid: 257539
+[2024-09-12 11:40:18 -0600] [257540] [INFO] Booting worker with pid: 257540
+[2024-09-12 11:40:18 -0600] [257541] [INFO] Booting worker with pid: 257541
+[2024-09-12 11:40:18 -0600] [257542] [INFO] Booting worker with pid: 257542
+[2024-09-12 11:40:18 -0600] [257547] [INFO] Booting worker with pid: 257547
+[2024-09-12 11:40:18 -0600] [257553] [INFO] Booting worker with pid: 257553
+[2024-09-12 11:40:18 -0600] [257554] [INFO] Booting worker with pid: 257554
+[2024-09-12 11:40:18 -0600] [257555] [INFO] Booting worker with pid: 257555
+[2024-09-12 11:40:18 -0600] [257556] [INFO] Booting worker with pid: 257556
+[2024-09-12 11:40:18 -0600] [257557] [INFO] Booting worker with pid: 257557
+[2024-09-12 11:40:18 -0600] [257558] [INFO] Booting worker with pid: 257558
+[2024-09-12 11:40:18 -0600] [257559] [INFO] Booting worker with pid: 257559
+[2024-09-12 11:40:18 -0600] [257560] [INFO] Booting worker with pid: 257560
+[2024-09-12 11:40:18 -0600] [257561] [INFO] Booting worker with pid: 257561
+[2024-09-12 11:40:18 -0600] [257562] [INFO] Booting worker with pid: 257562
+[2024-09-12 11:40:18 -0600] [257563] [INFO] Booting worker with pid: 257563
+[2024-09-12 11:40:18 -0600] [257564] [INFO] Booting worker with pid: 257564
+[2024-09-12 11:40:18 -0600] [257565] [INFO] Booting worker with pid: 257565
+[2024-09-12 11:46:43 -0600] [257533] [INFO] Handling signal: term
+[2024-09-12 11:46:43 -0600] [257547] [INFO] Worker exiting (pid: 257547)
+[2024-09-12 11:46:43 -0600] [257539] [INFO] Worker exiting (pid: 257539)
+[2024-09-12 11:46:43 -0600] [257555] [INFO] Worker exiting (pid: 257555)
+[2024-09-12 11:46:43 -0600] [257556] [INFO] Worker exiting (pid: 257556)
+[2024-09-12 11:46:43 -0600] [257561] [INFO] Worker exiting (pid: 257561)
+[2024-09-12 11:46:43 -0600] [257559] [INFO] Worker exiting (pid: 257559)
+[2024-09-12 11:46:43 -0600] [257542] [INFO] Worker exiting (pid: 257542)
+[2024-09-12 11:46:43 -0600] [257541] [INFO] Worker exiting (pid: 257541)
+[2024-09-12 11:46:43 -0600] [257538] [INFO] Worker exiting (pid: 257538)
+[2024-09-12 11:46:43 -0600] [257558] [INFO] Worker exiting (pid: 257558)
+[2024-09-12 11:46:43 -0600] [257557] [INFO] Worker exiting (pid: 257557)
+[2024-09-12 11:46:43 -0600] [257540] [INFO] Worker exiting (pid: 257540)
+[2024-09-12 11:46:43 -0600] [257554] [INFO] Worker exiting (pid: 257554)
+[2024-09-12 11:46:43 -0600] [257564] [INFO] Worker exiting (pid: 257564)
+[2024-09-12 11:46:43 -0600] [257562] [INFO] Worker exiting (pid: 257562)
+[2024-09-12 11:46:43 -0600] [257553] [INFO] Worker exiting (pid: 257553)
+[2024-09-12 11:46:43 -0600] [257560] [INFO] Worker exiting (pid: 257560)
+[2024-09-12 11:46:43 -0600] [257563] [INFO] Worker exiting (pid: 257563)
+[2024-09-12 11:46:43 -0600] [257537] [INFO] Worker exiting (pid: 257537)
+[2024-09-12 11:46:43 -0600] [257565] [INFO] Worker exiting (pid: 257565)
+[2024-09-12 11:46:44 -0600] [257533] [INFO] Shutting down: Master
+[2024-09-12 11:46:44 -0600] [258010] [INFO] Starting gunicorn 23.0.0
+[2024-09-12 11:46:44 -0600] [258010] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (258010)
+[2024-09-12 11:46:44 -0600] [258010] [INFO] Using worker: gthread
+[2024-09-12 11:46:44 -0600] [258014] [INFO] Booting worker with pid: 258014
+[2024-09-12 11:46:44 -0600] [258015] [INFO] Booting worker with pid: 258015
+[2024-09-12 11:46:44 -0600] [258016] [INFO] Booting worker with pid: 258016
+[2024-09-12 11:46:44 -0600] [258017] [INFO] Booting worker with pid: 258017
+[2024-09-12 11:46:44 -0600] [258018] [INFO] Booting worker with pid: 258018
+[2024-09-12 11:46:44 -0600] [258019] [INFO] Booting worker with pid: 258019
+[2024-09-12 11:46:44 -0600] [258020] [INFO] Booting worker with pid: 258020
+[2024-09-12 11:46:44 -0600] [258021] [INFO] Booting worker with pid: 258021
+[2024-09-12 11:46:44 -0600] [258022] [INFO] Booting worker with pid: 258022
+[2024-09-12 11:46:44 -0600] [258027] [INFO] Booting worker with pid: 258027
+[2024-09-12 11:46:44 -0600] [258033] [INFO] Booting worker with pid: 258033
+[2024-09-12 11:46:44 -0600] [258034] [INFO] Booting worker with pid: 258034
+[2024-09-12 11:46:44 -0600] [258035] [INFO] Booting worker with pid: 258035
+[2024-09-12 11:46:44 -0600] [258036] [INFO] Booting worker with pid: 258036
+[2024-09-12 11:46:44 -0600] [258037] [INFO] Booting worker with pid: 258037
+[2024-09-12 11:46:44 -0600] [258038] [INFO] Booting worker with pid: 258038
+[2024-09-12 11:46:44 -0600] [258039] [INFO] Booting worker with pid: 258039
+[2024-09-12 11:46:44 -0600] [258040] [INFO] Booting worker with pid: 258040
+[2024-09-12 11:46:45 -0600] [258041] [INFO] Booting worker with pid: 258041
+[2024-09-12 11:46:45 -0600] [258042] [INFO] Booting worker with pid: 258042
+[2024-09-12 11:48:31 -0600] [258010] [INFO] Handling signal: term
+[2024-09-12 11:48:31 -0600] [258027] [INFO] Worker exiting (pid: 258027)
+[2024-09-12 11:48:31 -0600] [258017] [INFO] Worker exiting (pid: 258017)
+[2024-09-12 11:48:31 -0600] [258038] [INFO] Worker exiting (pid: 258038)
+[2024-09-12 11:48:31 -0600] [258039] [INFO] Worker exiting (pid: 258039)
+[2024-09-12 11:48:31 -0600] [258042] [INFO] Worker exiting (pid: 258042)
+[2024-09-12 11:48:31 -0600] [258040] [INFO] Worker exiting (pid: 258040)
+[2024-09-12 11:48:31 -0600] [258036] [INFO] Worker exiting (pid: 258036)
+[2024-09-12 11:48:31 -0600] [258035] [INFO] Worker exiting (pid: 258035)
+[2024-09-12 11:48:31 -0600] [258037] [INFO] Worker exiting (pid: 258037)
+[2024-09-12 11:48:31 -0600] [258014] [INFO] Worker exiting (pid: 258014)
+[2024-09-12 11:48:31 -0600] [258021] [INFO] Worker exiting (pid: 258021)
+[2024-09-12 11:48:31 -0600] [258041] [INFO] Worker exiting (pid: 258041)
+[2024-09-12 11:48:31 -0600] [258033] [INFO] Worker exiting (pid: 258033)
+[2024-09-12 11:48:31 -0600] [258034] [INFO] Worker exiting (pid: 258034)
+[2024-09-12 11:48:32 -0600] [258015] [INFO] Worker exiting (pid: 258015)
+[2024-09-12 11:48:32 -0600] [258016] [INFO] Worker exiting (pid: 258016)
+[2024-09-12 11:48:32 -0600] [258018] [INFO] Worker exiting (pid: 258018)
+[2024-09-12 11:48:32 -0600] [258019] [INFO] Worker exiting (pid: 258019)
+[2024-09-12 11:48:32 -0600] [258020] [INFO] Worker exiting (pid: 258020)
+[2024-09-12 11:48:32 -0600] [258022] [INFO] Worker exiting (pid: 258022)
+[2024-09-12 11:48:32 -0600] [258010] [INFO] Shutting down: Master
+[2024-09-12 11:48:32 -0600] [258285] [INFO] Starting gunicorn 23.0.0
+[2024-09-12 11:48:32 -0600] [258285] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (258285)
+[2024-09-12 11:48:32 -0600] [258285] [INFO] Using worker: gthread
+[2024-09-12 11:48:32 -0600] [258288] [INFO] Booting worker with pid: 258288
+[2024-09-12 11:48:32 -0600] [258289] [INFO] Booting worker with pid: 258289
+[2024-09-12 11:48:32 -0600] [258290] [INFO] Booting worker with pid: 258290
+[2024-09-12 11:48:32 -0600] [258291] [INFO] Booting worker with pid: 258291
+[2024-09-12 11:48:32 -0600] [258292] [INFO] Booting worker with pid: 258292
+[2024-09-12 11:48:32 -0600] [258293] [INFO] Booting worker with pid: 258293
+[2024-09-12 11:48:33 -0600] [258294] [INFO] Booting worker with pid: 258294
+[2024-09-12 11:48:33 -0600] [258295] [INFO] Booting worker with pid: 258295
+[2024-09-12 11:48:33 -0600] [258296] [INFO] Booting worker with pid: 258296
+[2024-09-12 11:48:33 -0600] [258297] [INFO] Booting worker with pid: 258297
+[2024-09-12 11:48:33 -0600] [258298] [INFO] Booting worker with pid: 258298
+[2024-09-12 11:48:33 -0600] [258299] [INFO] Booting worker with pid: 258299
+[2024-09-12 11:48:33 -0600] [258307] [INFO] Booting worker with pid: 258307
+[2024-09-12 11:48:33 -0600] [258308] [INFO] Booting worker with pid: 258308
+[2024-09-12 11:48:33 -0600] [258309] [INFO] Booting worker with pid: 258309
+[2024-09-12 11:48:33 -0600] [258310] [INFO] Booting worker with pid: 258310
+[2024-09-12 11:48:33 -0600] [258311] [INFO] Booting worker with pid: 258311
+[2024-09-12 11:48:33 -0600] [258312] [INFO] Booting worker with pid: 258312
+[2024-09-12 11:48:33 -0600] [258313] [INFO] Booting worker with pid: 258313
+[2024-09-12 11:48:33 -0600] [258314] [INFO] Booting worker with pid: 258314
+[2024-09-12 13:39:09 -0600] [258285] [INFO] Handling signal: term
+[2024-09-12 13:39:10 -0600] [258312] [INFO] Worker exiting (pid: 258312)
+[2024-09-12 13:39:10 -0600] [258298] [INFO] Worker exiting (pid: 258298)
+[2024-09-12 13:39:10 -0600] [258309] [INFO] Worker exiting (pid: 258309)
+[2024-09-12 13:39:10 -0600] [258289] [INFO] Worker exiting (pid: 258289)
+[2024-09-12 13:39:10 -0600] [258294] [INFO] Worker exiting (pid: 258294)
+[2024-09-12 13:39:10 -0600] [258288] [INFO] Worker exiting (pid: 258288)
+[2024-09-12 13:39:10 -0600] [258299] [INFO] Worker exiting (pid: 258299)
+[2024-09-12 13:39:10 -0600] [258290] [INFO] Worker exiting (pid: 258290)
+[2024-09-12 13:39:10 -0600] [258307] [INFO] Worker exiting (pid: 258307)
+[2024-09-12 13:39:10 -0600] [258293] [INFO] Worker exiting (pid: 258293)
+[2024-09-12 13:39:10 -0600] [258291] [INFO] Worker exiting (pid: 258291)
+[2024-09-12 13:39:10 -0600] [258311] [INFO] Worker exiting (pid: 258311)
+[2024-09-12 13:39:10 -0600] [258292] [INFO] Worker exiting (pid: 258292)
+[2024-09-12 13:39:10 -0600] [258310] [INFO] Worker exiting (pid: 258310)
+[2024-09-12 13:39:10 -0600] [258313] [INFO] Worker exiting (pid: 258313)
+[2024-09-12 13:39:10 -0600] [258314] [INFO] Worker exiting (pid: 258314)
+[2024-09-12 13:39:10 -0600] [258308] [INFO] Worker exiting (pid: 258308)
+[2024-09-12 13:39:10 -0600] [258297] [INFO] Worker exiting (pid: 258297)
+[2024-09-12 13:39:10 -0600] [258296] [INFO] Worker exiting (pid: 258296)
+[2024-09-12 13:39:10 -0600] [258295] [INFO] Worker exiting (pid: 258295)
+[2024-09-12 13:39:11 -0600] [258285] [INFO] Shutting down: Master
+[2024-09-12 13:39:11 -0600] [261010] [INFO] Starting gunicorn 23.0.0
+[2024-09-12 13:39:11 -0600] [261010] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (261010)
+[2024-09-12 13:39:11 -0600] [261010] [INFO] Using worker: gthread
+[2024-09-12 13:39:11 -0600] [261012] [INFO] Booting worker with pid: 261012
+[2024-09-12 13:39:11 -0600] [261013] [INFO] Booting worker with pid: 261013
+[2024-09-12 13:39:11 -0600] [261014] [INFO] Booting worker with pid: 261014
+[2024-09-12 13:39:11 -0600] [261015] [INFO] Booting worker with pid: 261015
+[2024-09-12 13:39:11 -0600] [261016] [INFO] Booting worker with pid: 261016
+[2024-09-12 13:39:11 -0600] [261017] [INFO] Booting worker with pid: 261017
+[2024-09-12 13:39:11 -0600] [261018] [INFO] Booting worker with pid: 261018
+[2024-09-12 13:39:11 -0600] [261019] [INFO] Booting worker with pid: 261019
+[2024-09-12 13:39:11 -0600] [261020] [INFO] Booting worker with pid: 261020
+[2024-09-12 13:39:11 -0600] [261021] [INFO] Booting worker with pid: 261021
+[2024-09-12 13:39:11 -0600] [261022] [INFO] Booting worker with pid: 261022
+[2024-09-12 13:39:11 -0600] [261023] [INFO] Booting worker with pid: 261023
+[2024-09-12 13:39:11 -0600] [261024] [INFO] Booting worker with pid: 261024
+[2024-09-12 13:39:11 -0600] [261025] [INFO] Booting worker with pid: 261025
+[2024-09-12 13:39:11 -0600] [261033] [INFO] Booting worker with pid: 261033
+[2024-09-12 13:39:11 -0600] [261034] [INFO] Booting worker with pid: 261034
+[2024-09-12 13:39:11 -0600] [261035] [INFO] Booting worker with pid: 261035
+[2024-09-12 13:39:11 -0600] [261036] [INFO] Booting worker with pid: 261036
+[2024-09-12 13:39:11 -0600] [261037] [INFO] Booting worker with pid: 261037
+[2024-09-12 13:39:12 -0600] [261038] [INFO] Booting worker with pid: 261038
+[2024-09-12 13:49:45 -0600] [261010] [INFO] Handling signal: term
+[2024-09-12 13:49:46 -0600] [261037] [INFO] Worker exiting (pid: 261037)
+[2024-09-12 13:49:46 -0600] [261036] [INFO] Worker exiting (pid: 261036)
+[2024-09-12 13:49:46 -0600] [261023] [INFO] Worker exiting (pid: 261023)
+[2024-09-12 13:49:46 -0600] [261038] [INFO] Worker exiting (pid: 261038)
+[2024-09-12 13:49:46 -0600] [261034] [INFO] Worker exiting (pid: 261034)
+[2024-09-12 13:49:46 -0600] [261022] [INFO] Worker exiting (pid: 261022)
+[2024-09-12 13:49:46 -0600] [261018] [INFO] Worker exiting (pid: 261018)
+[2024-09-12 13:49:46 -0600] [261012] [INFO] Worker exiting (pid: 261012)
+[2024-09-12 13:49:46 -0600] [261019] [INFO] Worker exiting (pid: 261019)
+[2024-09-12 13:49:46 -0600] [261021] [INFO] Worker exiting (pid: 261021)
+[2024-09-12 13:49:46 -0600] [261033] [INFO] Worker exiting (pid: 261033)
+[2024-09-12 13:49:46 -0600] [261016] [INFO] Worker exiting (pid: 261016)
+[2024-09-12 13:49:46 -0600] [261013] [INFO] Worker exiting (pid: 261013)
+[2024-09-12 13:49:46 -0600] [261015] [INFO] Worker exiting (pid: 261015)
+[2024-09-12 13:49:46 -0600] [261025] [INFO] Worker exiting (pid: 261025)
+[2024-09-12 13:49:46 -0600] [261035] [INFO] Worker exiting (pid: 261035)
+[2024-09-12 13:49:46 -0600] [261020] [INFO] Worker exiting (pid: 261020)
+[2024-09-12 13:49:46 -0600] [261024] [INFO] Worker exiting (pid: 261024)
+[2024-09-12 13:49:46 -0600] [261014] [INFO] Worker exiting (pid: 261014)
+[2024-09-12 13:49:46 -0600] [261017] [INFO] Worker exiting (pid: 261017)
+[2024-09-12 13:49:46 -0600] [261010] [INFO] Shutting down: Master
+[2024-09-12 13:49:46 -0600] [261352] [INFO] Starting gunicorn 23.0.0
+[2024-09-12 13:49:46 -0600] [261352] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (261352)
+[2024-09-12 13:49:46 -0600] [261352] [INFO] Using worker: gthread
+[2024-09-12 13:49:46 -0600] [261354] [INFO] Booting worker with pid: 261354
+[2024-09-12 13:49:46 -0600] [261355] [INFO] Booting worker with pid: 261355
+[2024-09-12 13:49:46 -0600] [261356] [INFO] Booting worker with pid: 261356
+[2024-09-12 13:49:46 -0600] [261357] [INFO] Booting worker with pid: 261357
+[2024-09-12 13:49:47 -0600] [261358] [INFO] Booting worker with pid: 261358
+[2024-09-12 13:49:47 -0600] [261359] [INFO] Booting worker with pid: 261359
+[2024-09-12 13:49:47 -0600] [261360] [INFO] Booting worker with pid: 261360
+[2024-09-12 13:49:47 -0600] [261361] [INFO] Booting worker with pid: 261361
+[2024-09-12 13:49:47 -0600] [261362] [INFO] Booting worker with pid: 261362
+[2024-09-12 13:49:47 -0600] [261363] [INFO] Booting worker with pid: 261363
+[2024-09-12 13:49:47 -0600] [261364] [INFO] Booting worker with pid: 261364
+[2024-09-12 13:49:47 -0600] [261365] [INFO] Booting worker with pid: 261365
+[2024-09-12 13:49:47 -0600] [261366] [INFO] Booting worker with pid: 261366
+[2024-09-12 13:49:47 -0600] [261367] [INFO] Booting worker with pid: 261367
+[2024-09-12 13:49:47 -0600] [261368] [INFO] Booting worker with pid: 261368
+[2024-09-12 13:49:47 -0600] [261369] [INFO] Booting worker with pid: 261369
+[2024-09-12 13:49:47 -0600] [261370] [INFO] Booting worker with pid: 261370
+[2024-09-12 13:49:47 -0600] [261371] [INFO] Booting worker with pid: 261371
+[2024-09-12 13:49:47 -0600] [261372] [INFO] Booting worker with pid: 261372
+[2024-09-12 13:49:47 -0600] [261373] [INFO] Booting worker with pid: 261373
+[2024-09-12 14:21:25 -0600] [261352] [INFO] Handling signal: term
+[2024-09-12 14:21:26 -0600] [261366] [INFO] Worker exiting (pid: 261366)
+[2024-09-12 14:21:26 -0600] [261360] [INFO] Worker exiting (pid: 261360)
+[2024-09-12 14:21:26 -0600] [261367] [INFO] Worker exiting (pid: 261367)
+[2024-09-12 14:21:26 -0600] [261361] [INFO] Worker exiting (pid: 261361)
+[2024-09-12 14:21:26 -0600] [261358] [INFO] Worker exiting (pid: 261358)
+[2024-09-12 14:21:26 -0600] [261357] [INFO] Worker exiting (pid: 261357)
+[2024-09-12 14:21:26 -0600] [261355] [INFO] Worker exiting (pid: 261355)
+[2024-09-12 14:21:26 -0600] [261368] [INFO] Worker exiting (pid: 261368)
+[2024-09-12 14:21:26 -0600] [261365] [INFO] Worker exiting (pid: 261365)
+[2024-09-12 14:21:26 -0600] [261359] [INFO] Worker exiting (pid: 261359)
+[2024-09-12 14:21:26 -0600] [261363] [INFO] Worker exiting (pid: 261363)
+[2024-09-12 14:21:26 -0600] [261371] [INFO] Worker exiting (pid: 261371)
+[2024-09-12 14:21:26 -0600] [261369] [INFO] Worker exiting (pid: 261369)
+[2024-09-12 14:21:26 -0600] [261356] [INFO] Worker exiting (pid: 261356)
+[2024-09-12 14:21:26 -0600] [261372] [INFO] Worker exiting (pid: 261372)
+[2024-09-12 14:21:26 -0600] [261354] [INFO] Worker exiting (pid: 261354)
+[2024-09-12 14:21:26 -0600] [261373] [INFO] Worker exiting (pid: 261373)
+[2024-09-12 14:21:26 -0600] [261364] [INFO] Worker exiting (pid: 261364)
+[2024-09-12 14:21:26 -0600] [261370] [INFO] Worker exiting (pid: 261370)
+[2024-09-12 14:21:26 -0600] [261362] [INFO] Worker exiting (pid: 261362)
+[2024-09-12 14:21:26 -0600] [261352] [INFO] Shutting down: Master
+[2024-09-12 14:21:26 -0600] [264065] [INFO] Starting gunicorn 23.0.0
+[2024-09-12 14:21:26 -0600] [264065] [INFO] Listening at: unix:/home/webops/Cronotix/server/cronotix.sock (264065)
+[2024-09-12 14:21:26 -0600] [264065] [INFO] Using worker: gthread
+[2024-09-12 14:21:26 -0600] [264069] [INFO] Booting worker with pid: 264069
+[2024-09-12 14:21:26 -0600] [264070] [INFO] Booting worker with pid: 264070
+[2024-09-12 14:21:27 -0600] [264071] [INFO] Booting worker with pid: 264071
+[2024-09-12 14:21:27 -0600] [264072] [INFO] Booting worker with pid: 264072
+[2024-09-12 14:21:27 -0600] [264073] [INFO] Booting worker with pid: 264073
+[2024-09-12 14:21:27 -0600] [264074] [INFO] Booting worker with pid: 264074
+[2024-09-12 14:21:27 -0600] [264075] [INFO] Booting worker with pid: 264075
+[2024-09-12 14:21:27 -0600] [264076] [INFO] Booting worker with pid: 264076
+[2024-09-12 14:21:27 -0600] [264077] [INFO] Booting worker with pid: 264077
+[2024-09-12 14:21:27 -0600] [264078] [INFO] Booting worker with pid: 264078
+[2024-09-12 14:21:27 -0600] [264079] [INFO] Booting worker with pid: 264079
+[2024-09-12 14:21:27 -0600] [264080] [INFO] Booting worker with pid: 264080
+[2024-09-12 14:21:27 -0600] [264081] [INFO] Booting worker with pid: 264081
+[2024-09-12 14:21:27 -0600] [264082] [INFO] Booting worker with pid: 264082
+[2024-09-12 14:21:27 -0600] [264083] [INFO] Booting worker with pid: 264083
+[2024-09-12 14:21:27 -0600] [264084] [INFO] Booting worker with pid: 264084
+[2024-09-12 14:21:27 -0600] [264092] [INFO] Booting worker with pid: 264092
+[2024-09-12 14:21:27 -0600] [264093] [INFO] Booting worker with pid: 264093
+[2024-09-12 14:21:27 -0600] [264094] [INFO] Booting worker with pid: 264094
+[2024-09-12 14:21:27 -0600] [264095] [INFO] Booting worker with pid: 264095

@@ -12,8 +12,7 @@ ASSISTANT_ID = os.getenv('ASSISTANT_ID')
 class AssistantController:
     def __init__(self, client_id=None, thread_id=None, assistant_id=None):
         self.client = OpenAI()
-        self.client.api_key = KEY
-        current_app.logger.info(f'llave {KEY}')
+        self.client.api_key = KEY 
         self.assistant_id = assistant_id
         self.message = None
         self.run = None
@@ -131,5 +130,12 @@ class AssistantController:
         )
         messages = list(self.client.beta.threads.messages.list(thread_id=data['thread_id'], run_id=run.id))
         current_app.logger.info(f"Messages: {messages}")
-        message_content = messages[0].content[0].text
+        if messages and messages[0].content:
+            # Si la lista de mensajes y el contenido del primer mensaje no están vacíos
+            current_app.logger.info(f"Messages: {messages}")
+            message_content = messages[0].content[0].text  # Asegúrate de acceder a 'value' también
+        else:
+            # Manejar el caso donde no hay contenido o está vacío
+            current_app.logger.warning("No hay contenido en el mensaje o la lista de mensajes está vacía")
+            message_content = "Ups algo salio mal, por favor intenta de nuevo."
         return message_content

@@ -321,11 +321,11 @@ def virtualAgent():
     print(f'Mensaje recibido: {message}')
 
     # Obtén el thread_id de la sesión si existe, o genera uno nuevo
-    thread_id = session.get('thread_id')
+    thread_id = request_data.get('thread_id')
     if not thread_id:
         # Aquí deberías crear un nuevo thread_id y guardarlo en la sesión
         assistant = AssistantController(client_id=user_id, thread_id=None)
-        thread_id = assistant.create_thread()
+        thread_id = assistant.thread_id
         session['thread_id'] = thread_id
     current_app.logger.info(f'thread type : {type(thread_id)}')
     current_app.logger.info(f"Thread ID: {thread_id}")
@@ -355,7 +355,8 @@ def virtualAgent():
         'asistente': assistantObj.name,
         'image_url': 'images/greetbotix.png',
         'time': datetime.now().strftime('%d %b %I:%M %p'),
-        'type': 'chatbot'
+        'type': 'chatbot',
+        'thread_id': thread_id 
     }), 202 , CORS_DATA
 
 
