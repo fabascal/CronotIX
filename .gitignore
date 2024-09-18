@@ -1,10 +1,10 @@
-
 server/.flaskenv
 server/.env
-server/venv/
+.venv/*
+server/venv/*
 server/website/blipo.sqlite3
 server/website/config.py
-server/migrations/*
+server/migrations/
 server/migrations/alembic.ini
 server/migrations/env.py
 server/migrations/README
