@@ -182,8 +182,9 @@ def assistant_run():
     }
     try:
         vector = AssistantsVector.query.filter_by(assistant_id=assistant_id).first()
-        assistant_openai, vector_store_id = AssistantController().run_assistant(data, assistant.id, vector)
+        assistant_openai, vector_store_id, file_batch = AssistantController().run_assistant(data, assistant.id, vector)
         current_app.logger.info(f'vector_store_id: {vector_store_id}')
+        current_app.logger.info(f'file_batch: {file_batch}')
         vector.vector = vector_store_id
         db.session.commit()
         assistant.vector_id = vector.id
@@ -197,6 +198,11 @@ def assistant_run():
                 'upload': file_obj.upload
             })
         db.session.commit()
+        # Actualizar archivos para obtenr el id de openai
+        files_batch = AssistantController().readFiles(assistant.id)
+        for file in files_batch:
+            current_app.logger.info(f'file: {file}')
+        
         flash("Asistente ejecutado correctamente.", 'success')
         # Prepara los datos para la respuesta
         current_app.logger.info(f'updated_files: {updated_files}')
@@ -218,6 +224,37 @@ def download_file(file_id):
         return jsonify({'status': 'error', 'message': 'No se ha encontrado el archivo'}), 404
     file_path = os.path.join(file.path, file.name)
     return send_file(file_path, as_attachment=True)
+
+@blueprint.route('/delete-file/<file_id>', methods=['DELETE'])
+@login_required
+def delete_file(file_id):
+    # Buscar el archivo en la base de datos
+    file = AssistantsFiles.query.get(file_id)
+    if not file:
+        return jsonify({'status': 'error', 'message': 'No se ha encontrado el archivo'}), 404
+
+    current_app.logger.info(f'file: {file}')
+    
+    try:
+        vector_obj = AssistantsVector.query.filter_by(id=file.vector_id).first()
+        current_app.logger.info(f'file to delete: {file.file_id}')
+        file_delete = AssistantController().deleteFile(vector_obj.vector, file.file_id)
+        if not file_delete:
+            return jsonify({'status': 'error', 'message': 'Error al eliminar el archivo en Vector'}), 400
+        # Actualizar el campo 'activo' a False en lugar de eliminar el archivo
+        file.active = False
+
+        # Guardar el cambio en la base de datos
+        db.session.commit()
+
+        return jsonify({'status': 'success', 'message': 'Archivo marcado como inactivo correctamente'}), 200
+
+    except Exception as e:
+        error_traceback = traceback.format_exc()
+        error_message = f"Error al marcar el archivo como inactivo: {str(e)}"
+        current_app.logger.error(f"{error_message}\n{error_traceback}") 
+        return jsonify({'status': 'error', 'message': str(error_traceback)}), 500        
+    
     
 
 @blueprint.route('/create-assistant', methods=['POST', 'GET'])
@@ -353,7 +390,7 @@ def virtualAgent():
         'status': 'success',
         'message': response.value,
         'asistente': assistantObj.name,
-        'image_url': 'images/greetbotix.png',
+        'image_url': os.path.join('static', assistantObj.avatar_path),
         'time': datetime.now().strftime('%d %b %I:%M %p'),
         'type': 'chatbot'
     }), 202 , CORS_DATA

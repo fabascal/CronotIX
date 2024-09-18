@@ -6,10 +6,12 @@ from flask_login import login_user, logout_user, login_required, current_user
 from website.auth.forms import LoginForm, ForgotPasswordForm
 from website.auth.models import User
 from website.auth.utils.loginUtils import verify_pass
+from website.log.logging_decorator import log_function
 
 
 
 @blueprint.route('/login', methods=['GET', 'POST'])
+@log_function
 def login():
     if current_user.is_authenticated:
         return redirect(url_for('home_blueprint.index'))
@@ -31,6 +33,7 @@ def register():
     return render_template('auth/register.html')
 
 @blueprint.route('/logout')
+@log_function
 @login_required
 def logout():
     logout_user()

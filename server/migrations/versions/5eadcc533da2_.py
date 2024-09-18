@@ -1,8 +1,8 @@
 """empty message
 
-Revision ID: d918d6233f25
+Revision ID: 5eadcc533da2
 Revises: 
-Create Date: 2024-09-02 11:32:01.783341
+Create Date: 2024-09-11 22:37:45.808291
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = 'd918d6233f25'
+revision = '5eadcc533da2'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -23,16 +23,16 @@ def upgrade():
     sa.Column('name', sa.String(length=100), nullable=True),
     sa.Column('oa_name', sa.String(length=100), nullable=True),
     sa.Column('active', sa.Boolean(), nullable=True),
-    sa.Column('created_at', sa.DateTime(), server_default=sa.text('now()'), nullable=True),
-    sa.Column('updated_at', sa.DateTime(), server_default=sa.text('now()'), nullable=True),
+    sa.Column('created_at', sa.DateTime(), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
+    sa.Column('updated_at', sa.DateTime(), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
     sa.PrimaryKeyConstraint('id'),
     sa.UniqueConstraint('id')
     )
     op.create_table('assistantsversion',
     sa.Column('id', sa.String(length=60), nullable=False),
     sa.Column('name', sa.String(length=100), nullable=True),
-    sa.Column('created_at', sa.DateTime(), server_default=sa.text('now()'), nullable=True),
-    sa.Column('updated_at', sa.DateTime(), server_default=sa.text('now()'), nullable=True),
+    sa.Column('created_at', sa.DateTime(), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
+    sa.Column('updated_at', sa.DateTime(), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
     sa.PrimaryKeyConstraint('id'),
     sa.UniqueConstraint('id')
     )
@@ -45,8 +45,8 @@ def upgrade():
     sa.Column('customer', sa.Boolean(), nullable=True),
     sa.Column('image_path', sa.String(length=120), nullable=False),
     sa.Column('last_login_at', sa.DateTime(), nullable=True),
-    sa.Column('created_at', sa.DateTime(), server_default=sa.text('now()'), nullable=True),
-    sa.Column('updated_at', sa.DateTime(), server_default=sa.text('now()'), nullable=True),
+    sa.Column('created_at', sa.DateTime(), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
+    sa.Column('updated_at', sa.DateTime(), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
     sa.PrimaryKeyConstraint('id'),
     sa.UniqueConstraint('email'),
     sa.UniqueConstraint('id')
@@ -56,14 +56,14 @@ def upgrade():
     sa.Column('id_openai', sa.String(length=60), nullable=False),
     sa.Column('user_id', sa.String(length=60), nullable=False),
     sa.Column('name', sa.String(length=100), nullable=True),
-    sa.Column('description', sa.String(length=100), nullable=True),
+    sa.Column('description', sa.String(length=300), nullable=True),
     sa.Column('instructions', sa.String(length=1000), nullable=True),
     sa.Column('model_id', sa.String(length=60), nullable=False),
     sa.Column('version_id', sa.String(length=60), nullable=False),
     sa.Column('avatar_path', sa.String(length=100), nullable=True),
     sa.Column('active', sa.Boolean(), nullable=True),
-    sa.Column('created_at', sa.DateTime(), server_default=sa.text('now()'), nullable=True),
-    sa.Column('updated_at', sa.DateTime(), server_default=sa.text('now()'), nullable=True),
+    sa.Column('created_at', sa.DateTime(), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
+    sa.Column('updated_at', sa.DateTime(), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
     sa.ForeignKeyConstraint(['model_id'], ['assistantsmodels.id'], ),
     sa.ForeignKeyConstraint(['user_id'], ['users.id'], ),
     sa.ForeignKeyConstraint(['version_id'], ['assistantsversion.id'], ),
@@ -80,8 +80,8 @@ def upgrade():
     sa.Column('id', sa.String(length=60), nullable=False),
     sa.Column('apikey', sa.String(length=60), nullable=False),
     sa.Column('assistant_id', sa.String(length=60), nullable=False),
-    sa.Column('created_at', sa.DateTime(), server_default=sa.text('now()'), nullable=True),
-    sa.Column('updated_at', sa.DateTime(), server_default=sa.text('now()'), nullable=True),
+    sa.Column('created_at', sa.DateTime(), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
+    sa.Column('updated_at', sa.DateTime(), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
     sa.ForeignKeyConstraint(['assistant_id'], ['assistants.id'], ),
     sa.PrimaryKeyConstraint('id'),
     sa.UniqueConstraint('apikey'),
@@ -94,8 +94,8 @@ def upgrade():
     sa.Column('parameters', sa.JSON(), nullable=False),
     sa.Column('assistant_id', sa.String(length=60), nullable=False),
     sa.Column('active', sa.Boolean(), nullable=True),
-    sa.Column('created_at', sa.DateTime(), server_default=sa.text('now()'), nullable=True),
-    sa.Column('updated_at', sa.DateTime(), server_default=sa.text('now()'), nullable=True),
+    sa.Column('created_at', sa.DateTime(), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
+    sa.Column('updated_at', sa.DateTime(), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
     sa.ForeignKeyConstraint(['assistant_id'], ['assistants.id'], ),
     sa.PrimaryKeyConstraint('id'),
     sa.UniqueConstraint('id')
@@ -104,8 +104,8 @@ def upgrade():
     sa.Column('id', sa.String(length=60), nullable=False),
     sa.Column('vector', sa.String(), nullable=True),
     sa.Column('assistant_id', sa.String(length=60), nullable=False),
-    sa.Column('created_at', sa.DateTime(), server_default=sa.text('now()'), nullable=True),
-    sa.Column('updated_at', sa.DateTime(), server_default=sa.text('now()'), nullable=True),
+    sa.Column('created_at', sa.DateTime(), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
+    sa.Column('updated_at', sa.DateTime(), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
     sa.ForeignKeyConstraint(['assistant_id'], ['assistants.id'], ),
     sa.PrimaryKeyConstraint('id'),
     sa.UniqueConstraint('assistant_id'),
@@ -113,6 +113,7 @@ def upgrade():
     )
     op.create_table('assistantsfiles',
     sa.Column('id', sa.String(length=60), nullable=False),
+    sa.Column('file_id', sa.String(), nullable=False),
     sa.Column('name', sa.String(length=100), nullable=True),
     sa.Column('type', sa.String(length=50), nullable=True),
     sa.Column('size', sa.String(length=50), nullable=True),
@@ -120,11 +121,12 @@ def upgrade():
     sa.Column('upload', sa.Boolean(), nullable=True),
     sa.Column('vector_id', sa.String(length=60), nullable=True),
     sa.Column('assistant_id', sa.String(length=60), nullable=True),
-    sa.Column('created_at', sa.DateTime(), server_default=sa.text('now()'), nullable=True),
-    sa.Column('updated_at', sa.DateTime(), server_default=sa.text('now()'), nullable=True),
+    sa.Column('created_at', sa.DateTime(), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
+    sa.Column('updated_at', sa.DateTime(), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
     sa.ForeignKeyConstraint(['assistant_id'], ['assistants.id'], ),
     sa.ForeignKeyConstraint(['vector_id'], ['assistantsvector.id'], ),
     sa.PrimaryKeyConstraint('id'),
+    sa.UniqueConstraint('file_id'),
     sa.UniqueConstraint('id')
     )
     # ### end Alembic commands ###

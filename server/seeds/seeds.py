@@ -35,7 +35,6 @@ def create_models(self):
             print(f"Error al insertar el modelo: {e}")
             self.db.session.rollback()
     
-    
 class UserSeeder(Seeder):
     def run(self):
         create_user_admin(self)

@@ -86,6 +86,7 @@ class AssistantsVector(db.Model):
 class AssistantsFiles(db.Model):
     __tablename__ = 'assistantsfiles'
     id = db.Column(db.String(60), unique=True, nullable=False, default=lambda: GenerateUUIDStyled('file'), primary_key=True)
+    file_id = db.Column(db.String, unique=True, nullable=True)
     name = db.Column(db.String(100), unique=False)
     type = db.Column(db.String(50), unique=False)
     size = db.Column(db.String(50), unique=False)
@@ -95,6 +96,7 @@ class AssistantsFiles(db.Model):
     vector = db.relationship("AssistantsVector", back_populates="files")  # Relación one-to-many con AssistantsVector
     assistant_id = db.Column(db.String(60), db.ForeignKey('assistants.id'), nullable=True)  # Clave foránea hacia Assistants
     assistant = db.relationship("Assistants", back_populates="file")  # Relación one-to-many con Assistants
+    active = db.Column(db.Boolean, default=True)
     created_at = db.Column(db.DateTime, server_default=db.func.now())
     updated_at = db.Column(db.DateTime, server_default=db.func.now(), server_onupdate=db.func.now())
     

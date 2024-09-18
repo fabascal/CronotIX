@@ -13,6 +13,39 @@ function checkPendingFiles() {
         assistantRunButton.style.display = mostrarBoton ? 'block' : 'none';
     }
 }
+function deleteFile(fileId) {
+    showSpinner();
+    const csrf_token = document.querySelector('input[name="csrf_token"]').value;
+
+    fetch(`/delete-file/${fileId}`, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': csrf_token // Si estás usando CSRF en tu aplicación
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'success') {
+            // Eliminar el elemento visualmente
+            const fileRow = document.getElementById(`file-${fileId}`);
+            if (fileRow) {
+                fileRow.remove();
+            }
+            showFlashMessage('Archivo eliminado correctamente.', 'success');
+            
+        } else {
+            showFlashMessage('Error al eliminar el archivo: ' + data.message, 'success');
+        }
+        hideSpinner();
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        showFlashMessage('Error al eliminar el archivo', 'success');
+        hideSpinner();
+        
+    });
+}
 
 document.addEventListener('DOMContentLoaded', (event) => {
     checkPendingFiles();
@@ -23,9 +56,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const addFileButton = document.getElementById('addFileButton');
     const fileInput = document.getElementById('customFile');
     const assistantRun = document.getElementById('assistantRun');
-
+    
     if (assistantRun) {
         assistantRun.addEventListener('click', () => {
+            showSpinner();
             assistantRun.disabled = true;
             const formData = new FormData();
             formData.append('assistant_id', idField.value);
@@ -57,17 +91,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     showFlashMessage(data.message || 'Error al ejecutar el asistente.', 'error');
                 }
                 assistantRun.disabled = false;
+                hideSpinner();
             })
             .catch(error => {
                 console.error('Error:', error);
                 showFlashMessage('Error al ejecutar el asistente.', 'error');
                 assistantRun.disabled = false;
+                hideSpinner();
             });
         });
     }
 
     if (addFileButton) {
         addFileButton.addEventListener('click', () => {
+            showSpinner();
             addFileButton.disabled = true;
             const formData = new FormData();
             formData.append('assistant_id', idField.value);
@@ -92,12 +129,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
                     row.innerHTML = `
                         <td>#</td>
-                        <td><a>${file.vector}</a></td>
                         <td><a>${file.name}</a><br/><small>${file.created_at}</small></td>
                         <td>${file.type === '.pdf' ? '<i class="far fa-file-pdf"></i>' : '<i class="far fa-file-alt"></i>'}</td>
                         <td class="project_progress"><a>${(file.size / 1048576).toFixed(2)} MB</a></td>
                         <td class="project-state">${file.upload ? '<span class="badge badge-success">Success</span>' : '<span class="badge badge-warning">Pendiente</span>'}</td>
-                        <td class="project-actions text-right"><a class="btn btn-primary btn-sm" href="#"><i class="fas fa-file-download"></i> Descargar</a></td>
+                        <td class="project-actions text-right">
+                            <a class="btn btn-primary btn-sm" href="{{url_for('home_blueprint.download_file', file_id=file.id)}}">
+                                <i class="fas fa-file-download"></i> Descargar
+                            </a>
+                            <a class="btn btn-danger btn-sm" href="#" onclick="deleteFile('{{ file.id }}')">
+                                <i class="fas fa-trash-alt"></i>Eliminar
+                            </a>
+                        </td>
                     `;
 
                     tbody.appendChild(row);
@@ -110,10 +153,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 } else {
                     showFlashMessage(data.message || 'Error al subir el archivo.', 'error');
                 }
+                hideSpinner();
             })
             .catch(error => {
                 console.error('Error:', error);
                 showFlashMessage('Error al subir el archivo.', 'error');
+                hideSpinner();
             });
         });
     }
@@ -127,6 +172,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     function generateApiKey() {
+        showSpinner();
         fetch('/generate_apikey', {
             method: 'POST',
             headers: {
@@ -142,8 +188,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
             generateButton.textContent = 'Copiar';
             generateButton.removeEventListener('click', generateApiKey);
             generateButton.addEventListener('click', copyApiKey);
+            hideSpinner();
         })
         .catch(error => showFlashMessage('Error al generar la API Key.', 'error'));
+        hideSpinner
     }
 
     if (generateButton && !apiKeyField.value) {
@@ -152,16 +200,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         generateButton.addEventListener('click', copyApiKey);
     }
 
-    function showFlashMessage(message, type) {
-        Swal.fire({
-            toast: true,
-            position: 'top-end',
-            showConfirmButton: false,
-            timer: 3000,
-            icon: type,
-            title: message
-        });
-    }
 });
 
 $(function () {

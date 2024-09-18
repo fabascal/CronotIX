@@ -2,7 +2,8 @@ import sys
 import os
 from openai import OpenAI
 from flask import current_app
-from website.home.models import Assistants, AssistantsVector
+from website import db
+from website.home.models import Assistants, AssistantsVector, AssistantsFiles
 
 
 KEY = os.getenv('OPENAI_API_KEY')
@@ -54,7 +55,7 @@ class AssistantController:
                 vector_store_id=vector.vector,
                 files = file_stream
             )
-            return assistant.id_openai, vector.vector
+            return assistant.id_openai, vector.vector, file_batch
         #creamos vector y cargamos archivos
         else:
             vector_store = self.client.beta.vector_stores.create(name=data['name'])            
@@ -72,45 +73,7 @@ class AssistantController:
                     }
                 },
             )
-            return assistant, vector_store.id
-        
-        # actualizar = False
-        # assistant = Assistants.query.filter_by(id=assistant_id).first()
-        # vector_store = AssistantsVector.query.filter_by(assistant_id=assistant_id).first()
-        # if not vector_store:
-        #     actualizar = True
-        #     vector_store = self.client.beta.vector_stores.create(name=data['name'])
-        # current_app.logger.info(f"Vector store: {vector_store}")
-        # #cargar los archivos
-        # file_path = data['file_path']
-        # current_app.logger.info(f"File path: {file_path}")
-        # file_stream = [open(path, "rb") for path in file_path]
-        # current_app.logger.info(f"File stream: {file_stream}")
-        # #agregamos los archivos al vector store
-        # if actualizar:
-        #     file_batch = self.client.beta.vector_stores.file_batches.upload_and_poll(
-        #         vector_store_id=vector_store.id,
-        #         files = file_stream
-        #     )
-        #     #Actualizamos el asistente con el vector creado
-        #     assistant = self.client.beta.assistants.update(
-        #         assistant_id=data['assistant_id'],
-        #         tool_resources={
-        #             "file_search": {
-        #                 "vector_store_ids": [vector_store.id]
-        #             }
-        #         },
-        #     )
-        #     vector_id = vector_store.id
-        # else:
-        #     try:
-        #         file_batch = self.client.beta.vector_stores.file_batches.upload_and_poll(
-        #             vector_store_id=vector_store.vector,
-        #             files = file_stream
-        #         )
-        #         vector_id = vector_store.vector
-        #     except Exception as e:
-        #         current_app.logger.error(f"Error al actualizar asistente: {e}")
+            return assistant, vector_store.id, file_batch
         
         
     def create_thread(self):
@@ -131,5 +94,35 @@ class AssistantController:
         )
         messages = list(self.client.beta.threads.messages.list(thread_id=data['thread_id'], run_id=run.id))
         current_app.logger.info(f"Messages: {messages}")
-        message_content = messages[0].content[0].text
+        if messages and messages[0].content:
+            # Si la lista de mensajes y el contenido del primer mensaje no están vacíos
+            current_app.logger.info(f"Messages: {messages}")
+            message_content = messages[0].content[0].text  # Asegúrate de acceder a 'value' también
+        else:
+            # Manejar el caso donde no hay contenido o está vacío
+            current_app.logger.warning("No hay contenido en el mensaje o la lista de mensajes está vacía")
+            message_content = "Ups algo salio mal, por favor intenta de nuevo."
         return message_content
+    
+    def readFiles(self, assistant_id):
+        vector = AssistantsVector.query.filter_by(assistant_id=assistant_id).first()
+        vector_store_files = self.client.beta.vector_stores.files.list(
+            vector_store_id=vector.vector,
+            )
+        
+        for file in vector_store_files:
+            file_openai = self.client.files.retrieve(file.id)
+            file_obj = AssistantsFiles.query.filter_by(name=file_openai.filename).first()
+            file_obj.file_id = file_openai.id
+            db.session.commit()
+        return vector_store_files
+    
+    def deleteFile(self, vectore_id, file_id):
+        
+        deleted_vector_store_file = self.client.beta.vector_stores.files.delete(
+            vector_store_id=vectore_id,
+            file_id=file_id
+        )
+        self.client.files.delete(file_id)
+
+        return deleted_vector_store_file

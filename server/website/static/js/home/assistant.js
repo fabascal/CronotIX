@@ -16,9 +16,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
             .then(response => response.json())
             .then(data => {
                 navigator.clipboard.writeText(data.apikey)
-                alert('API Key copiada al portapapeles');
+                showFlashMessage('API Key copiado con exito.', 'success');
             })
-            .catch(error => console.error('Error al copiar la API Key:', error));
+            .catch(error => 
+                showFlashMessage('Error al copiar API Key.', 'success'),
+                console.error('Error al copiar la API Key:', error));
         });
     });
 });

@@ -21,11 +21,14 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/templates/base.css')}}">
     {% block stylesheets %} {% endblock %}
     <!-- Title Block -->
     <title>{% block title  %} {% endblock %} - Cronotix</title>
 </head>
 <body class="hold-transition sidebar-mini sidebar-collapse layout-fixed  ">
+    <div id="spinner-overlay" style="display: none;"></div>
+    <div id="spinner" class="loader" style="display: none;"></div>
     <div class="wrapper">
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center align-items-center">
@@ -36,6 +39,7 @@
         {% include 'includes/sidebar.html' %}
         <div class="content-wrapper" >
             {% block main %}
+            
             {% endblock %}
         </div>
         <!-- Control Sidebar -->
@@ -51,6 +55,7 @@
     </div>
   </footer>  -->
  
+  
 
     </div>
 </body>
@@ -96,6 +101,6 @@
   });
 </script>
 
-
+<script src="{{url_for('static', filename='js/layouts/base.js')}}"></script>
 {% block javascripts %} {% endblock %}
 </html>
