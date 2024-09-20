@@ -2447,6 +2447,5 @@ server/website/static/AdminLTE/plugins/uplot/uPlot.esm.js
 server/website/static/AdminLTE/plugins/uplot/uPlot.iife.js
 server/website/static/AdminLTE/plugins/uplot/uPlot.iife.min.js
 server/website/static/AdminLTE/plugins/uplot/uPlot.min.css
-server/website/home/controller/*
 server/website/home/controller/functions/*
 server/log/*
