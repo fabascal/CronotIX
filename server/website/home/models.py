@@ -2,6 +2,7 @@ from website import db
 from sqlalchemy.dialects.postgresql import JSON  # Import específico para JSON en PostgreSQL
 from sqlalchemy.types import JSON as JSONType  # Import genérico para compatibilidad
 from website.home.utils.keyUtils import GenerateUUIDStyled
+from website.utils.utils import GenerateSlug
 
 class AssistantsModels(db.Model):
     __tablename__ = 'assistantsmodels'
@@ -99,4 +100,5 @@ class AssistantsFiles(db.Model):
     active = db.Column(db.Boolean, default=True)
     created_at = db.Column(db.DateTime, server_default=db.func.now())
     updated_at = db.Column(db.DateTime, server_default=db.func.now(), server_onupdate=db.func.now())
+    
     

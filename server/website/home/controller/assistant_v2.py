@@ -1,9 +1,13 @@
 import sys
 import os
+import shutil
 from openai import OpenAI
 from flask import current_app
 from website import db
 from website.home.models import Assistants, AssistantsVector, AssistantsFiles
+from website.log.logging_decorator import log_function
+from website.home.utils.assistant_copy_file import handle_file_copies
+from contextlib import ExitStack
 
 
 KEY = os.getenv('OPENAI_API_KEY')
@@ -11,6 +15,7 @@ ASSISTANT_ID = os.getenv('ASSISTANT_ID')
 
 
 class AssistantController:
+    @log_function
     def __init__(self, client_id=None, thread_id=None, assistant_id=None):
         self.client = OpenAI()
         self.client.api_key = KEY
@@ -19,7 +24,8 @@ class AssistantController:
         self.message = None
         self.run = None
         self.thread_id = thread_id if thread_id is not None else self.create_thread()
-        
+    
+    @log_function
     def create_assistant(self, data):
         description = """
             Eres un 'asistente de política' para 'Ener' quien responde a los empleados de manera eficiente con respuestas precisas sobre las políticas de la empresa para esto tendrás que buscar en tus archivos adjuntos, esta información la encontrarás en los manuales.
@@ -39,28 +45,41 @@ class AssistantController:
         current_app.logger.info(f"Assistant created: {assistant}")
         return assistant.id
     
-    def run_assistant(self, data, assistant_id = None, vector=None):
+    @log_function
+    def run_assistant(self, data, assistant_id=None, vector=None):
         current_app.logger.info(f"Data: {data}")
-        #creamos un vector para guardar los archivos
         
         current_app.logger.info(f"Vector in run_assitant: {vector}")
         current_app.logger.info(f"Vector in run_assitant: {vector.vector}")
-        #actualizamos el vector con nuevos archivos
+        
+        # Manejar los archivos copiados
+        copied_files = handle_file_copies(data['files'])
+        
+        # Actualizamos el vector con nuevos archivos
         if vector.vector:
             assistant = Assistants.query.filter_by(id=assistant_id).first()
             current_app.logger.info(f"Vector: {vector}")
-            file_path = data['file_path']
-            file_stream = [open(path, "rb") for path in file_path]
-            file_batch = self.client.beta.vector_stores.file_batches.upload_and_poll(
-                vector_store_id=vector.vector,
-                files = file_stream
-            )
+            
+            # Usamos 'with' para manejar correctamente la apertura y cierre de los archivos
+            file_batch = None
+            try:
+                with ExitStack() as stack:
+                    file_stream = [stack.enter_context(open(path, "rb")) for path in copied_files]
+                    file_batch = self.client.beta.vector_stores.file_batches.upload_and_poll(
+                        vector_store_id=vector.vector,
+                        files=file_stream
+                    )
+            finally:
+                # Eliminar los archivos copiados después de cerrar los streams
+                for copied_file in copied_files:
+                    if os.path.exists(copied_file):
+                        os.remove(copied_file)
+            
             return assistant.id_openai, vector.vector, file_batch
         #creamos vector y cargamos archivos
         else:
             vector_store = self.client.beta.vector_stores.create(name=data['name'])            
-            file_path = data['file_path']
-            file_stream = [open(path, "rb") for path in file_path]
+            file_stream = [open(path, "rb") for path in copied_files]
             file_batch = self.client.beta.vector_stores.file_batches.upload_and_poll(
                 vector_store_id=vector_store.id,
                 files = file_stream
@@ -73,14 +92,18 @@ class AssistantController:
                     }
                 },
             )
+            for copied_file in copied_files:
+                if os.path.exists(copied_file):
+                    os.remove(copied_file)
             return assistant, vector_store.id, file_batch
         
-        
+    @log_function
     def create_thread(self):
         thread = self.client.beta.threads.create()
         current_app.logger.info(f"Thread created: {thread}")
         return thread.id
     
+    @log_function
     def sendMessage(self,data):
         current_app.logger.info(f"Data: {data}")
         message = self.client.beta.threads.messages.create(
@@ -104,6 +127,7 @@ class AssistantController:
             message_content = "Ups algo salio mal, por favor intenta de nuevo."
         return message_content
     
+    @log_function
     def readFiles(self, assistant_id):
         vector = AssistantsVector.query.filter_by(assistant_id=assistant_id).first()
         vector_store_files = self.client.beta.vector_stores.files.list(
@@ -111,12 +135,18 @@ class AssistantController:
             )
         
         for file in vector_store_files:
+            current_app.logger.info(f"File: {file}")
             file_openai = self.client.files.retrieve(file.id)
-            file_obj = AssistantsFiles.query.filter_by(name=file_openai.filename).first()
+            current_app.logger.info(f"File openai: {file_openai}")
+            current_app.logger.info(f"File openai id local: {file_openai.filename.split('-')[0]}")
+            file_obj = AssistantsFiles.query.filter_by(id=file_openai.filename.split('-')[0]).first()
+            current_app.logger.info(f"File openai: {file_openai}")
+            current_app.logger.info(f"File openai id: {file_openai.id}")    
             file_obj.file_id = file_openai.id
             db.session.commit()
         return vector_store_files
     
+    @log_function
     def deleteFile(self, vectore_id, file_id):
         
         deleted_vector_store_file = self.client.beta.vector_stores.files.delete(
@@ -126,3 +156,5 @@ class AssistantController:
         self.client.files.delete(file_id)
 
         return deleted_vector_store_file
+    
+    

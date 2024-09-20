@@ -17,6 +17,7 @@ import traceback
 from website.log import logging_decorator
 
 
+
 @blueprint.route('/', methods=['GET'])
 def index():
     return render_template('home/index.html')
@@ -172,12 +173,12 @@ def assistant_run():
     current_app.logger.info(f'files to upload: {files}')
     if not files:
         return jsonify({'status': 'error', 'message': 'No se han encontrado archivos para subir'}), 404
-
+    # Construir la lista de rutas con los nuevos nombres de archivo
     file_paths = [os.path.join('website', file.path, file.name) for file in files]
     name = f'{assistant.name}-Datos'
     data = {
         'name': name,
-        'file_path': file_paths,
+        'files': files,
         'assistant_id': assistant.id_openai
     }
     try:
@@ -200,8 +201,6 @@ def assistant_run():
         db.session.commit()
         # Actualizar archivos para obtenr el id de openai
         files_batch = AssistantController().readFiles(assistant.id)
-        for file in files_batch:
-            current_app.logger.info(f'file: {file}')
         
         flash("Asistente ejecutado correctamente.", 'success')
         # Prepara los datos para la respuesta
@@ -243,6 +242,7 @@ def delete_file(file_id):
             return jsonify({'status': 'error', 'message': 'Error al eliminar el archivo en Vector'}), 400
         # Actualizar el campo 'activo' a False en lugar de eliminar el archivo
         file.active = False
+        file.name = file.name + datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
         # Guardar el cambio en la base de datos
         db.session.commit()

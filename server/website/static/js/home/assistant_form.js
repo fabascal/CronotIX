@@ -126,7 +126,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     const file = data.file;
                     const row = document.createElement('tr');
                     row.id = `file-${file.id}`;
-
+        
+                    // Construir las URLs dinámicamente
+                    const downloadUrl = `/home_blueprint/download_file/${file.id}`;
+                    const deleteFunction = `deleteFile('${file.id}')`;
+        
                     row.innerHTML = `
                         <td>#</td>
                         <td><a>${file.name}</a><br/><small>${file.created_at}</small></td>
@@ -134,15 +138,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
                         <td class="project_progress"><a>${(file.size / 1048576).toFixed(2)} MB</a></td>
                         <td class="project-state">${file.upload ? '<span class="badge badge-success">Success</span>' : '<span class="badge badge-warning">Pendiente</span>'}</td>
                         <td class="project-actions text-right">
-                            <a class="btn btn-primary btn-sm" href="{{url_for('home_blueprint.download_file', file_id=file.id)}}">
+                            <a class="btn btn-primary btn-sm" href="${downloadUrl}">
                                 <i class="fas fa-file-download"></i> Descargar
                             </a>
-                            <a class="btn btn-danger btn-sm" href="#" onclick="deleteFile('{{ file.id }}')">
-                                <i class="fas fa-trash-alt"></i>Eliminar
+                            <a class="btn btn-danger btn-sm" href="#" onclick="${deleteFunction}">
+                                <i class="fas fa-trash-alt"></i> Eliminar
                             </a>
                         </td>
                     `;
-
+        
                     tbody.appendChild(row);
                     showFlashMessage(message, 'success');
                     $('#modal-lg').modal('hide');
